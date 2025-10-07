@@ -145,26 +145,26 @@ export default function GalleryPage() {
 
             {/* Modal for full-size images */}
             {isModalOpen && selectedImage !== null && (
-                <div className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-                    {/* Close button */}
+                <div className="fixed inset-0 bg-black/90 backdrop-blur-sm z-[70] flex items-center justify-center p-4">
+                    {/* Close button - Better positioning and higher z-index */}
                     <button
                         onClick={closeModal}
-                        className="absolute top-6 right-6 text-white hover:text-white transition-colors duration-300 z-10"
+                        className="absolute top-4 right-4 md:top-6 md:right-6 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-all duration-300 z-[80]"
                     >
-                        <X className="w-8 h-8" />
+                        <X className="w-6 h-6" />
                     </button>
 
                     {/* Navigation buttons */}
                     <button
                         onClick={() => navigateImage('prev')}
-                        className="absolute left-6 top-1/2 transform -translate-y-1/2 text-white hover:text-blue-400 transition-colors duration-300 z-10"
+                        className="absolute left-6 top-1/2 transform -translate-y-1/2 text-white hover:text-blue-400 transition-colors duration-300 z-[75]"
                     >
                         <ChevronLeft className="w-10 h-10" />
                     </button>
                     
                     <button
                         onClick={() => navigateImage('next')}
-                        className="absolute right-6 top-1/2 transform -translate-y-1/2 text-white hover:text-blue-400 transition-colors duration-300 z-10"
+                        className="absolute right-6 top-1/2 transform -translate-y-1/2 text-white hover:text-blue-400 transition-colors duration-300 z-[75]"
                     >
                         <ChevronRight className="w-10 h-10" />
                     </button>

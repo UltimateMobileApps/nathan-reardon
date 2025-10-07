@@ -11,14 +11,14 @@ export default function Patents() {
             title: "Radiation Remediation",
             year: 2024,
             image: "/patents/radia-mel.png",
-            website: "https://radiamel.nathanreardon.com"
+            website: "https://radiamel.com"
         },
         {
             id: 2,
             title: "Vita Choice",
             year: 2023,
             image: "/patents/vita-choice.png",
-            website: "https://vitachoice.nathanreardon.com"
+            website: "https://thevitachoice.com"
         },
         {
             id: 3,

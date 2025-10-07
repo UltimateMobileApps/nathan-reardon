@@ -212,13 +212,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Performance optimizations */
-* {
-  backface-visibility: hidden;
-  perspective: 1000px;
-}
-
-/* Use GPU acceleration for transforms */
+/* GPU acceleration for transforms - excluding modals */
 .gpu-accelerated {
   transform: translateZ(0);
   will-change: transform;
