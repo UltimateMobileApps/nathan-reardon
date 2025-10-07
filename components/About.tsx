@@ -131,7 +131,7 @@ export default function About() {
                                     <span className="text-red-400 font-medium">22 Patents</span>
                                 </div>
                                 <div className="px-4 py-2 bg-blue-500/20 rounded-full">
-                                    <span className="text-blue-400 font-medium">26+ Years Experience</span>
+                                    <span className="text-blue-400 font-medium">26+ Years in Business</span>
                                 </div>
                             </div>
                         </div>

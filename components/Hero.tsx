@@ -37,9 +37,8 @@ export default function Hero() {
                 </p>
 
                 <p className="text-white text-lg max-w-xl mx-auto md:mx-0 leading-relaxed hero-fade-in-up-delay-3">
-                   Nathan Reardon is a prolific American inventor, entrepreneur, 
-                   and strategist with 22 active patents spanning automotive engineering, 
-                   real estate development, health technology, and consumer innovation.
+                   Nathan Reardon is a prolific American inventor, entrepreneur,
+                   and strategist with 22 active patents spanning 14 industries including technology, healthcare, automotive, energy, aerospace, real estate, manufacturing, and consumer products.
                 </p>
 
                 {/* Video Section */}
