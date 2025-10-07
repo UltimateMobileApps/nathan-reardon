@@ -11,24 +11,28 @@ export default function Patents() {
             title: "Radiation Remediation",
             year: 2024,
             image: "/patents/radia-mel.png",
+            website: "https://radiamel.nathanreardon.com"
         },
         {
             id: 2,
             title: "Vita Choice",
             year: 2023,
             image: "/patents/vita-choice.png",
+            website: "https://vitachoice.nathanreardon.com"
         },
         {
             id: 3,
             title: "Patch Worx",
             year: 2022,
             image: "/patents/patch-worx.png",
+            website: "https://patchworx.nathanreardon.com"
         },
         {
             id: 4,
             title: "Quantum-Linked Communication Protocol",
             year: 2021,
             image: "/patents/quantum-comm.jpg",
+            website: "https://quantus.nathanreardon.com"
         },
     ];
 
@@ -54,9 +58,12 @@ export default function Patents() {
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                     {patents.slice(0, 3).map((patent, index) => (
-                        <div
+                        <a
                             key={patent.id}
-                            className={`group relative bg-gradient-to-br from-gray-900/80 to-gray-800/80 backdrop-blur-sm border border-gray-700 rounded-2xl overflow-hidden hover:border-red-500 transition-all duration-300 efficient-hover hero-fade-in-up-delay-${index + 1}`}
+                            href={patent.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`group relative bg-gradient-to-br from-gray-900/80 to-gray-800/80 backdrop-blur-sm border border-gray-700 rounded-2xl overflow-hidden hover:border-red-500 transition-all duration-300 efficient-hover hero-fade-in-up-delay-${index + 1} cursor-pointer block`}
                         >
                             {/* Hover glow */}
                             <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -69,6 +76,15 @@ export default function Patents() {
                                     className="object-cover group-hover:scale-110 transition-transform duration-300"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                
+                                {/* External link indicator */}
+                                <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div className="bg-white/20 backdrop-blur-sm rounded-full p-2">
+                                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div className="relative p-6">
@@ -76,8 +92,13 @@ export default function Patents() {
                                     {patent.title}
                                 </h3>
                                 <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-600 to-transparent group-hover:via-red-500 transition-colors duration-300"></div>
+                                
+                                {/* Visit website text */}
+                                <div className="mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <span className="text-blue-400 text-sm font-medium">Visit Website →</span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
 

@@ -1,17 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, Twitter, Linkedin, Github, MapPin, Mail } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, MapPin, Mail } from "lucide-react";
 import { GRADIENTS, STYLES, ANIMATIONS } from "@/constants/styles";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     const socialLinks = [
-        { icon: Facebook, href: "#", label: "Facebook" },
-        { icon: Twitter, href: "#", label: "Twitter" },
-        { icon: Linkedin, href: "#", label: "LinkedIn" },
-        { icon: Github, href: "#", label: "GitHub" },
+        { icon: Facebook, href: "https://www.facebook.com/share/1D1W2i79M6/?mibextid=wwXIfr", label: "Facebook" },
+        { icon: Twitter, href: "https://x.com/nathanreardon", label: "Twitter" },
+        { icon: Linkedin, href: "https://www.linkedin.com/in/nathanreardon/", label: "LinkedIn" },
+        { icon: Instagram, href: "https://www.instagram.com/thenathanreardon?igsh=MXBjZm44MWdhYmtsMw==&utm_source=ig_contact_invite", label: "Instagram" },
     ];
 
   const siteLinks = [
