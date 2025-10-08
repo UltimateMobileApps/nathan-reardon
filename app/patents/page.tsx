@@ -10,6 +10,7 @@ import {
     ExternalLink,
     Search,
     Filter,
+    X,
 } from "lucide-react";
 import { GRADIENTS } from "@/constants/styles";
 import AnimatedStars from "@/components/AnimatedStars";
@@ -307,6 +308,15 @@ export default function PatentsPage() {
     const [selectedCategory, setSelectedCategory] = useState("All");
     const [searchTerm, setSearchTerm] = useState("");
     const [showFilters, setShowFilters] = useState(false);
+    const [selectedPatent, setSelectedPatent] = useState<Patent | null>(null);
+
+    const openPatentModal = (patent: Patent) => {
+        setSelectedPatent(patent);
+    };
+
+    const closePatentModal = () => {
+        setSelectedPatent(null);
+    };
 
     const categories = useMemo(
         () => ["All", ...Array.from(new Set(allPatents.map((p) => p.category)))],
@@ -408,7 +418,7 @@ export default function PatentsPage() {
             <section className="relative z-10 px-4 pb-20">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {filteredPatents.map((patent) => (
-                        <PatentCard key={patent.id} patent={patent} />
+                        <PatentCard key={patent.id} patent={patent} onImageClick={openPatentModal} />
                     ))}
 
                     {filteredPatents.length === 0 && (
@@ -448,6 +458,85 @@ export default function PatentsPage() {
                     </Link>
                 </div>
             </footer>
+
+            {/* Patent Modal */}
+            {selectedPatent && (
+                <div className="fixed inset-0 z-[70] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+                    <div className="relative max-w-5xl max-h-[90vh] w-full bg-gray-900 rounded-2xl overflow-hidden">
+                        {/* Close button */}
+                        <button
+                            onClick={closePatentModal}
+                            className="absolute top-4 right-4 z-[80] bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-colors duration-300"
+                        >
+                            <X className="w-6 h-6" />
+                        </button>
+
+                        {/* Modal Content */}
+                        <div className="flex flex-col lg:flex-row max-h-[90vh] overflow-y-auto">
+                            {/* Image Section */}
+                            <div className="relative lg:w-1/2 h-64 lg:h-96">
+                                <Image
+                                    src={selectedPatent.image}
+                                    alt={selectedPatent.title}
+                                    fill
+                                    className="object-cover"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                
+                                {/* Status badge in modal */}
+                                <div className="absolute top-4 left-4 bg-green-500/90 text-white px-3 py-2 rounded-full text-sm font-medium">
+                                    {selectedPatent.status}
+                                </div>
+                                <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-blue-400 px-3 py-2 rounded-full text-sm">
+                                    {selectedPatent.category}
+                                </div>
+                            </div>
+
+                            {/* Content Section */}
+                            <div className="lg:w-1/2 p-8">
+                                <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent">
+                                    {selectedPatent.title}
+                                </h2>
+                                
+                                <div className="flex items-center text-gray-400 text-sm mb-6">
+                                    <FileText className="w-4 h-4 mr-2" />
+                                    <span>{selectedPatent.patentNumber}</span>
+                                </div>
+
+                                <p className="text-gray-300 leading-relaxed text-lg mb-6">
+                                    {selectedPatent.description}
+                                </p>
+                                
+                                {/* Applications */}
+                                <div className="mb-8">
+                                    <h3 className="text-white font-semibold text-lg mb-4">Key Applications</h3>
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                        {selectedPatent.applications.map((app, idx) => (
+                                            <div
+                                                key={idx}
+                                                className="bg-gray-800/50 text-gray-300 px-4 py-3 rounded-lg text-sm border border-gray-700/50"
+                                            >
+                                                {app}
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                {/* CTA Button */}
+                                <a
+                                    href={selectedPatent.website}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center bg-gradient-to-r from-red-500 to-blue-600 hover:from-red-600 hover:to-blue-700 text-white px-6 py-3 rounded-lg font-semibold text-base transition-all duration-300 transform hover:scale-105"
+                                >
+                                    <ExternalLink className="w-5 h-5 mr-2" />
+                                    Visit Website
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
@@ -471,11 +560,14 @@ function Stat({
     );
 }
 
-function PatentCard({ patent }: { patent: Patent }) {
+function PatentCard({ patent, onImageClick }: { patent: Patent; onImageClick: (patent: Patent) => void }) {
     return (
         <div className="group relative bg-gray-800/40 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden hover:border-red-500/50 transition-all duration-500 hover:scale-105">
             {/* Image */}
-            <div className="relative h-48 overflow-hidden">
+            <div 
+                className="relative h-48 overflow-hidden cursor-pointer group/image"
+                onClick={() => onImageClick(patent)}
+            >
                 <Image
                     src={patent.image}
                     alt={patent.title}
@@ -488,6 +580,13 @@ function PatentCard({ patent }: { patent: Patent }) {
                 </div>
                 <div className="absolute bottom-3 left-3 bg-black/70 backdrop-blur-sm text-blue-400 px-2 py-1 rounded-full text-xs">
                     {patent.category}
+                </div>
+
+                {/* Click indicator overlay */}
+                <div className="absolute inset-0 bg-black/0 group-hover/image:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <div className="opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
+                        <span className="text-white text-sm font-medium">Click to expand</span>
+                    </div>
                 </div>
             </div>
 
