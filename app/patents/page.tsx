@@ -13,6 +13,7 @@ import {
     X,
 } from "lucide-react";
 import { GRADIENTS } from "@/constants/styles";
+import { slugify } from "@/constants/styleUtils";
 import AnimatedStars from "@/components/AnimatedStars";
 
 type Patent = {
@@ -25,6 +26,28 @@ type Patent = {
     applications: string[];
     patentNumber: string;
     website: string;
+};
+
+// Helper function to check if patent has live website
+const hasLiveWebsite = (patent: Patent): boolean => {
+    return patent.title === "Vita Choice™" || patent.title === "Radiamel™";
+};
+
+// Helper function to get the appropriate link and button text
+const getPatentLink = (patent: Patent) => {
+    if (hasLiveWebsite(patent)) {
+        return {
+            href: patent.website,
+            isExternal: true,
+            buttonText: "Visit Website"
+        };
+    } else {
+        return {
+            href: `/${slugify(patent.title)}`,
+            isExternal: false,
+            buttonText: "Learn More"
+        };
+    }
 };
 
 export default function PatentsPage() {
@@ -523,15 +546,16 @@ export default function PatentsPage() {
                                 </div>
 
                                 {/* CTA Button */}
-                                <a
-                                    href={selectedPatent.website}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center bg-gradient-to-r from-red-500 to-blue-600 hover:from-red-600 hover:to-blue-700 text-white px-6 py-3 rounded-lg font-semibold text-base transition-all duration-300 transform hover:scale-105"
-                                >
-                                    <ExternalLink className="w-5 h-5 mr-2" />
-                                    Visit Website
-                                </a>
+                                {selectedPatent && (
+                                    <a
+                                        href={getPatentLink(selectedPatent).href}
+                                        {...(getPatentLink(selectedPatent).isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                                        className="inline-flex items-center bg-gradient-to-r from-red-500 to-blue-600 hover:from-red-600 hover:to-blue-700 text-white px-6 py-3 rounded-lg font-semibold text-base transition-all duration-300 transform hover:scale-105"
+                                    >
+                                        <ExternalLink className="w-5 h-5 mr-2" />
+                                        {getPatentLink(selectedPatent).buttonText}
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -561,6 +585,8 @@ function Stat({
 }
 
 function PatentCard({ patent, onImageClick }: { patent: Patent; onImageClick: (patent: Patent) => void }) {
+    const { href, isExternal, buttonText } = getPatentLink(patent);
+    
     return (
         <div className="group relative bg-gray-800/40 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden hover:border-red-500/50 transition-all duration-500 hover:scale-105">
             {/* Image */}
@@ -621,13 +647,12 @@ function PatentCard({ patent, onImageClick }: { patent: Patent; onImageClick: (p
 
                 {/* CTA (preserves gradient button design) */}
                 <a
-                    href={patent.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={href}
+                    {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                     className="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300 transform hover:scale-105"
                 >
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    Visit Website
+                    {buttonText}
                 </a>
             </div>
         </div>

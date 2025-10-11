@@ -1,5 +1,17 @@
 import { STYLES, GRADIENTS, ANIMATIONS } from './styles';
 
+// Slugify function for URL generation
+export const slugify = (text: string): string => {
+  return text
+    .toLowerCase()
+    .replace(/™/g, '') // Remove trademark symbol
+    .replace(/®/g, '') // Remove registered symbol
+    .replace(/[^\w\s-]/g, '') // Remove special characters except spaces and hyphens
+    .replace(/\s+/g, '-') // Replace spaces with hyphens
+    .replace(/-+/g, '-') // Replace multiple hyphens with single hyphen
+    .trim(); // Trim whitespace
+};
+
 // Helper function to combine multiple style constants
 export const combineStyles = (...styles: string[]) => {
   return styles.filter(Boolean).join(' ');
