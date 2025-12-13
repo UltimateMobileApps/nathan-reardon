@@ -34,7 +34,7 @@ export default function Footer() {
                         </p>
                         <p className="text-gray-400 leading-relaxed">
                             Innovating across automotive, property, and health sectors with a disciplined approach, 
-                            Nathan combines technical mastery (ASE Triple Master) with personal discipline 
+                            Nathan combines technical mastery (<a href="/ASE.jpeg" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline inline-flex items-center gap-1">ASE Triple Master<svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a>) with personal discipline 
                             (2nd Degree Black Belt) 
                             to transform bold concepts into real-world impact.
                         </p>

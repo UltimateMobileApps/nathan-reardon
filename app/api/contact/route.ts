@@ -1,8 +1,36 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import xss from 'xss';
 
 // Initialize Resend with your API key
 const resend = new Resend(process.env.RESEND_API_KEY);
+
+// HTML escape function for additional safety
+function escapeHtml(text: string): string {
+    const map: { [key: string]: string } = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+    };
+    return text.replace(/[&<>"']/g, (m) => map[m]);
+}
+
+// Sanitize function that escapes HTML and removes dangerous content
+function sanitizeInput(input: string): string {
+    if (!input || typeof input !== 'string') {
+        return '';
+    }
+    // First escape HTML entities
+    const escaped = escapeHtml(input);
+    // Then use xss library for additional sanitization
+    return xss(escaped, {
+        whiteList: {}, // No HTML tags allowed
+        stripIgnoreTag: true,
+        stripIgnoreTagBody: ['script']
+    });
+}
 
 export async function POST(request: NextRequest) {
     try {
@@ -22,6 +50,21 @@ export async function POST(request: NextRequest) {
         if (!emailRegex.test(email)) {
             return NextResponse.json(
                 { error: 'Invalid email format' },
+                { status: 400 }
+            );
+        }
+
+        // Sanitize all user inputs to prevent XSS attacks
+        const sanitizedName = sanitizeInput(name);
+        const sanitizedEmail = sanitizeInput(email);
+        const sanitizedCompany = company ? sanitizeInput(company) : '';
+        const sanitizedSubject = sanitizeInput(subject);
+        const sanitizedMessage = sanitizeInput(message);
+
+        // Validate that sanitized inputs are not empty (after sanitization)
+        if (!sanitizedName || !sanitizedEmail || !sanitizedSubject || !sanitizedMessage) {
+            return NextResponse.json(
+                { error: 'Invalid input detected' },
                 { status: 400 }
             );
         }
@@ -56,21 +99,21 @@ export async function POST(request: NextRequest) {
         <div class="field">
             <span class="label">From:</span>
             <div class="value">
-                <strong>${name}</strong>
+                <strong>${sanitizedName}</strong>
                 <br>
-                <a href="mailto:${email}" style="color: #3b82f6; text-decoration: none;">${email}</a>
-                ${company ? `<div class="badge">${company}</div>` : ''}
+                <a href="mailto:${sanitizedEmail}" style="color: #3b82f6; text-decoration: none;">${sanitizedEmail}</a>
+                ${sanitizedCompany ? `<div class="badge">${sanitizedCompany}</div>` : ''}
             </div>
         </div>
 
         <div class="field">
             <span class="label">Subject:</span>
-            <div class="value">${subject}</div>
+            <div class="value">${sanitizedSubject}</div>
         </div>
 
         <div class="field">
             <span class="label">Message:</span>
-            <div class="message-box">${message}</div>
+            <div class="message-box">${sanitizedMessage}</div>
         </div>
     </div>
 
@@ -96,8 +139,8 @@ export async function POST(request: NextRequest) {
                 const { data, error } = await resend.emails.send({
                     from: 'Portfolio Contact <noreply@nathanreardon.com>',
                     to: ['info@nathanreardon.com'],
-                    replyTo: email,
-                    subject: `Portfolio Contact: ${subject}`,
+                    replyTo: sanitizedEmail,
+                    subject: `Portfolio Contact: ${sanitizedSubject}`,
                     html: emailContent,
                 });
 
@@ -118,16 +161,16 @@ export async function POST(request: NextRequest) {
 
         // Fallback: Return mailto link if Resend fails or isn't configured
         const emailBody = `
-Name: ${name}
-Email: ${email}
-Company: ${company || 'Not specified'}
-Subject: ${subject}
+Name: ${sanitizedName}
+Email: ${sanitizedEmail}
+Company: ${sanitizedCompany || 'Not specified'}
+Subject: ${sanitizedSubject}
 
 Message:
-${message}
+${sanitizedMessage}
         `.trim();
 
-        const mailtoLink = `mailto:nathan@membershipauto.com?subject=${encodeURIComponent(`Portfolio Contact: ${subject}`)}&body=${encodeURIComponent(emailBody)}`;
+        const mailtoLink = `mailto:nathan@membershipauto.com?subject=${encodeURIComponent(`Portfolio Contact: ${sanitizedSubject}`)}&body=${encodeURIComponent(emailBody)}`;
 
         return NextResponse.json({ 
             success: true, 

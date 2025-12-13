@@ -19,12 +19,10 @@ import AnimatedStars from "@/components/AnimatedStars";
 type Patent = {
     id: number;
     title: string;
-    status: string;
     category: string;
     image: string;
     description: string;
     applications: string[];
-    patentNumber: string;
     website: string;
 };
 
@@ -55,7 +53,6 @@ export default function PatentsPage() {
         {
             id: 1,
             title: "Apex Air™ with Swarm",
-            status: "Pending",
             category: "Defense Technology",
             image: "/patents/apex-air.png",
             description:
@@ -66,25 +63,21 @@ export default function PatentsPage() {
                 "Critical infrastructure protection",
                 "Law enforcement",
             ],
-            patentNumber: "Patent Pending",
             website: "https://apexair.com",
         },
         {
             id: 2,
             title: "Apex Alert™",
-            status: "Pending",
             category: "Security Technology",
             image: "/patents/apex-alert.png",
             description:
                 "AI-Powered Threat Detection and Early Warning system integrating advanced sensors and artificial intelligence to identify weapons, contraband, or suspicious behavior before danger escalates.",
             applications: ["Schools", "Airports", "Correctional facilities", "Public venues"],
-            patentNumber: "Patent Pending",
-            website: "https://apexalert.com",
+            website: "https://theapexalert.com",
         },
         {
             id: 3,
             title: "Apex Drone & Garage™",
-            status: "Pending",
             category: "Security Technology",
             image: "/patents/apex-defender.png",
             description:
@@ -95,236 +88,242 @@ export default function PatentsPage() {
                 "Threat assessment",
                 "Non-lethal policing",
             ],
-            patentNumber: "Patent Pending",
-            website: "https://apexdrone.com",
+            website: "https://theapexdrone.com",
         },
         {
             id: 4,
             title: "AutophaShield™",
-            status: "Pending",
             category: "Health Technology",
             image: "/patents/auto-phashield.png",
             description:
                 "Unlocking the Body's Repair Switch - safely triggers autophagy without fasting, mimicking the body's repair process on demand with potential to combat cancer, neurodegeneration, and metabolic disease.",
             applications: ["Anti-aging therapy", "Cancer treatment", "Neurodegeneration", "Metabolic health"],
-            patentNumber: "Patent Pending",
             website: "https://autophashield.com",
         },
         {
             id: 5,
             title: "Core Volt™",
-            status: "Pending",
             category: "Energy Technology",
             image: "/patents/core-volt.png",
             description:
                 "Infinite, Clean, Earth-Powered Energy system that taps directly into near-magma heat, producing limitless clean electricity without solar farms or wind turbines.",
             applications: ["Clean energy generation", "Grid independence", "Industrial power", "Climate solutions"],
-            patentNumber: "Patent Pending",
-            website: "https://corevolt.com",
+            website: "https://corevoltglobal.com",
         },
         {
             id: 6,
             title: "Invisi Glass™",
-            status: "Pending",
             category: "Automotive Technology",
             image: "/patents/invisi-shield.png",
             description:
                 "Perfect Visibility, Zero Bugs or Rain Distortion system that prevents water distortion and keeps bugs from sticking to windshields and windows.",
             applications: ["Automotive safety", "Aviation", "Marine vessels", "Building windows"],
-            patentNumber: "Patent Pending",
-            website: "https://invisiglass.com",
+            website: "https://invisishieldplus.com",
         },
         {
             id: 7,
             title: "Invisi Shield™",
-            status: "Pending",
             category: "Defense Technology",
             image: "/patents/invisi.png",
             description:
                 "Affordable Vehicle & Building Armoring system offering retrofit bulletproof glass and doors for under $5,000 with minimal added weight.",
             applications: ["Police vehicles", "Civilian protection", "School security", "Emergency services"],
-            patentNumber: "Patent Pending",
-            website: "https://invisishield.com",
+            website: "https://invisishieldfilm.com",
         },
         {
             id: 8,
             title: "Kirk Collar™",
-            status: "Pending",
             category: "Medical Technology",
             image: "/patents/kirk-collar.png",
             description:
                 "Instant Trauma Response for Neck Injuries designed to slow or stop catastrophic bleeding from neck wounds in seconds using rapid, targeted compression.",
             applications: ["Military medicine", "Emergency response", "Trauma care", "First aid"],
-            patentNumber: "Patent Pending",
             website: "https://kirkcollar.com",
         },
         {
             id: 9,
             title: "Never Forget™",
-            status: "Pending",
             category: "Safety Technology",
             image: "/patents/never-forget.png",
             description:
                 "Ending Child & Pet Car Deaths Forever using seat sensors, smartphone alerts, and escalation to emergency services to ensure no child is ever left behind.",
             applications: ["Child safety", "Pet protection", "Vehicle safety", "Emergency alert systems"],
-            patentNumber: "Patent Pending",
-            website: "https://neverforget.com",
+            website: "https://neverforgetbaby.com",
         },
         {
             id: 10,
             title: "No Sweat™",
-            status: "Pending",
             category: "Consumer Technology",
             image: "/patents/no-sweat.png",
             description:
                 "Ending Condensation Forever - a clear coating that prevents fogging and dripping on cups, pipes, windows, and vehicles.",
             applications: ["Food service", "HVAC systems", "Automotive", "Building materials"],
-            patentNumber: "Patent Pending",
-            website: "https://nosweat.com",
+            website: "https://nosweatsealer.com",
         },
         {
             id: 11,
             title: "Patch Worx™",
-            status: "Pending",
             category: "Infrastructure",
             image: "/patents/patch-worx.png",
             description:
                 "Pavement That Lasts 3× Longer using next-generation materials that repair potholes permanently and extend new pavement life by 3×.",
             applications: ["Road maintenance", "Infrastructure repair", "Municipal services", "Highway construction"],
-            patentNumber: "Patent Pending",
-            website: "https://patchworx.com",
+            website: "https://patchworxpavement.com",
         },
         {
             id: 12,
             title: "Poo Gone™",
-            status: "Pending",
             category: "Sanitation Technology",
             image: "/patents/poo-gone.png",
             description:
                 "Revolutionizing Waste Handling by chemically breaking down human and animal waste on contact, without hauling, odor, or traditional infrastructure.",
             applications: ["Disaster relief", "Developing nations", "Parks & recreation", "Agricultural waste"],
-            patentNumber: "Patent Pending",
-            website: "https://poogone.com",
+            website: "https://poogone.net",
         },
         {
             id: 13,
             title: "No Dry Starts® Oil Pump",
-            status: "Pending",
             category: "Automotive Technology",
             image: "/patents/no-dry-starts.jpeg",
             description:
                 "Engines That Last Half a Million Miles by priming the engine with oil before ignition, preventing most engine wear that happens in the first seconds after startup.",
             applications: ["Automotive engines", "Fleet vehicles", "Marine engines", "Industrial machinery"],
-            patentNumber: "Patent Pending",
             website: "https://nodrystarts.com",
         },
         {
             id: 14,
             title: "Quantus™",
-            status: "Pending",
             category: "Physics Technology",
             image: "/patents/quantus.png",
             description:
                 "A New Law of Physics for Propulsion and Shielding representing what may be a fifth, undiscovered law of physics—an asymmetric thrust and shielding effect with no modern parallel.",
             applications: ["Aerospace", "Defense systems", "Space exploration", "Planetary protection"],
-            patentNumber: "Patent Pending",
             website: "https://quantus.com",
         },
         {
             id: 15,
             title: "Radiamel™",
-            status: "Pending",
             category: "Medical Technology",
             image: "/patents/radia-mel.png",
             description:
                 "The First True Radiation Eater - the world's only solution that can metabolically neutralize radiation before it damages the body.",
             applications: ["Cancer treatment", "Nuclear cleanup", "Medical imaging", "Space travel"],
-            patentNumber: "Patent Pending",
             website: "https://radiamel.com",
         },
         {
             id: 16,
             title: "Sani Spray™",
-            status: "Pending",
             category: "Health Technology",
             image: "/patents/sani-spray.png",
             description:
                 "Self-Sanitizing Surfaces Everywhere - automatically disinfects knobs and handles after each use, reducing spread of infections in hospitals, schools, transit hubs, and offices.",
             applications: ["Healthcare facilities", "Public transportation", "Schools", "Office buildings"],
-            patentNumber: "Patent Pending",
-            website: "https://sanispray.com",
+            website: "https://sanisprayauto.com",
         },
         {
             id: 17,
             title: "Scentinel™",
-            status: "Pending",
             category: "Fire Safety",
             image: "/patents/scentinel.png",
             description:
                 "Fires Stopped Before They Start - 'smells' hot wires and gases before combustion, preventing disasters with truly preventative fire detection.",
             applications: ["Aviation safety", "Data centers", "Residential homes", "Industrial facilities"],
-            patentNumber: "Patent Pending",
-            website: "https://scentinel.com",
+            website: "https://scentinelsmoke.com",
         },
         {
             id: 18,
             title: "Solin™",
-            status: "Pending",
             category: "Medical Technology",
             image: "/patents/solin.png",
             description:
                 "Shelf-Stable Sublingual Insulin - for the first time, insulin can be taken like a breath strip under the tongue, no refrigeration needed, with a shelf life of 18+ months.",
             applications: ["Diabetes treatment", "Developing nations", "Emergency medicine", "Patient convenience"],
-            patentNumber: "Patent Pending",
-            website: "https://solin.com",
+            website: "https://solinstrips.com",
         },
         {
             id: 19,
             title: "Storm Defender™",
-            status: "Pending",
             category: "Weather Technology",
             image: "/patents/storm-defender.png",
             description:
                 "Stopping Hurricanes & Tornadoes by redistributing airflow and heat on a macro-scale to diffuse catastrophic storms before they destroy lives.",
             applications: ["Disaster prevention", "Climate protection", "Insurance", "Emergency management"],
-            patentNumber: "Patent Pending",
-            website: "https://stormdefender.com",
+            website: "https://storm-defender.com",
         },
         {
             id: 20,
             title: "The Reardon Cancer Protocol™",
-            status: "Pending",
             category: "Medical Protocol",
             image: "/patents/reardon-cancer-protocol.png",
             description:
                 "A Body Where Cancer Cannot Survive - combines immune modulation, natural compounds, and metabolic rebalancing to create an internal environment where cancer cannot thrive.",
             applications: ["Cancer treatment", "Immune therapy", "Preventive medicine", "Metabolic health"],
-            patentNumber: "Patent Pending",
-            website: "https://reardoncancerprotocol.com",
+            website: "https://reardonprotocol.com",
         },
         {
             id: 21,
             title: "The Reardon Diabetes Protocol™",
-            status: "Pending",
             category: "Medical Protocol",
             image: "/patents/the-reardon-protocol.png",
             description:
                 "The first credible path to a functional cure for both Type 2 and potentially Type 1 diabetes by restoring pancreatic and metabolic function.",
             applications: ["Type 1 diabetes", "Type 2 diabetes", "Metabolic restoration", "Chronic disease management"],
-            patentNumber: "Patent Pending",
-            website: "https://reardondiabetesprotocol.com",
+            website: "https://reardonprotocol.com",
         },
         {
             id: 22,
             title: "Vita Choice™",
-            status: "Pending",
             category: "Health Technology",
             image: "/patents/vita-choice.png",
             description:
                 "The World's First Customizable Liquid Multivitamin delivering a liquid base with 1,100 customizable nutrients. Every bottle can be built for the individual's exact needs.",
             applications: ["Personalized nutrition", "Health supplements", "Medical nutrition", "Wellness optimization"],
-            patentNumber: "Patent Pending",
             website: "https://thevitachoice.com",
+        },
+        {
+            id: 23,
+            title: "Membership Auto™",
+            category: "Automotive Technology",
+            image: "/patents/membership-auto.jpeg",
+            description:
+                "Never Pay for Car Repairs Again. Join the world's first subscription-based vehicle service & repair club. One low monthly fee. Zero surprise bills.",
+            applications: [
+                "Vehicle maintenance",
+                "Repair services",
+                "Subscription services",
+                "Automotive industry",
+            ],
+            website: "https://membershipauto.com",
+        },
+        {
+            id: 24,
+            title: "Liberty Social™",
+            category: "Social Media Technology",
+            image: "/patents/liberty-social.jpeg",
+            description:
+                "A revolutionary social media platform designed to empower users with true freedom of expression and community engagement.",
+            applications: [
+                "Social networking",
+                "Community building",
+                "Content sharing",
+                "Digital communication",
+            ],
+            website: "https://mylibertysocial.com",
+        },
+        {
+            id: 25,
+            title: "Freedom Teck™",
+            category: "Correctional Technology",
+            image: "/patents/freedomTek.png",
+            description:
+                "Innovative technology solutions for correctional facilities and prisoner services, facilitating communication and improving facility operations.",
+            applications: [
+                "Correctional facilities",
+                "Prisoner services",
+                "Facility management",
+                "Communication systems",
+            ],
+            website: "https://freedomteck.com",
         },
     ];
 
@@ -380,7 +379,7 @@ export default function PatentsPage() {
                         Patent Portfolio
                     </h1>
                     <p className="text-base md:text-lg lg:text-xl max-w-3xl mx-auto mb-3">
-                        22 Revolutionary Patents Spanning Multiple Industries
+                        25 Filed Patents Spanning Multiple Industries
                     </p>
                     <p className="text-sm md:text-base max-w-2xl mx-auto text-gray-200">
                         From world-changing defense systems to life-saving medical breakthroughs, explore a comprehensive collection
@@ -388,7 +387,7 @@ export default function PatentsPage() {
                     </p>
 
                     <div className="flex justify-center gap-6 mt-6">
-                        <Stat label="Patents Pending" value="22" color="text-red-400" />
+                        <Stat label="Patents Filed" value="25" color="text-red-400" />
                         <Stat label="Categories" value={categories.length - 1} color="text-blue-400" />
                         <Stat label="Years Experience" value="26+" color="text-white" />
                     </div>
@@ -506,10 +505,6 @@ export default function PatentsPage() {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                 
-                                {/* Status badge in modal */}
-                                <div className="absolute top-4 left-4 bg-green-500/90 text-white px-3 py-2 rounded-full text-sm font-medium">
-                                    {selectedPatent.status}
-                                </div>
                                 <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-blue-400 px-3 py-2 rounded-full text-sm">
                                     {selectedPatent.category}
                                 </div>
@@ -520,11 +515,6 @@ export default function PatentsPage() {
                                 <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent">
                                     {selectedPatent.title}
                                 </h2>
-                                
-                                <div className="flex items-center text-gray-400 text-sm mb-6">
-                                    <FileText className="w-4 h-4 mr-2" />
-                                    <span>{selectedPatent.patentNumber}</span>
-                                </div>
 
                                 <p className="text-gray-300 leading-relaxed text-lg mb-6">
                                     {selectedPatent.description}
@@ -601,9 +591,6 @@ function PatentCard({ patent, onImageClick }: { patent: Patent; onImageClick: (p
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute top-3 left-3 bg-green-500/90 text-white px-2 py-1 rounded-full text-xs font-medium">
-                    {patent.status}
-                </div>
                 <div className="absolute bottom-3 left-3 bg-black/70 backdrop-blur-sm text-blue-400 px-2 py-1 rounded-full text-xs">
                     {patent.category}
                 </div>
@@ -623,11 +610,6 @@ function PatentCard({ patent, onImageClick }: { patent: Patent; onImageClick: (p
                 </h3>
 
                 <p className="text-gray-300 text-xs mb-3 line-clamp-3">{patent.description}</p>
-
-                <div className="flex items-center text-gray-400 text-xs mb-4">
-                    <FileText className="w-3 h-3 mr-1" />
-                    <span className="truncate">{patent.patentNumber}</span>
-                </div>
 
                 {/* Applications */}
                 <div className="space-y-2 mb-4">

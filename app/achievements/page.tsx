@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { GRADIENTS } from '@/constants/styles';
 import AnimatedStars from '@/components/AnimatedStars';
-import { Car, Award, Wrench, Settings, Package, BarChart3, Zap } from 'lucide-react';
+import { Car, Award, Wrench, Settings, Package, BarChart3, Zap, ExternalLink } from 'lucide-react';
 
 export default function AchievementsPage() {
     const awards = [
@@ -111,6 +111,7 @@ export default function AchievementsPage() {
             year: "2001",
             level: "Top 0.007%",
             description: "One of the most certified mechanics in the world - holds 31 ASE credentials",
+            aseProofLink: "/ASE.jpeg",
             icon: (
                 <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
@@ -473,6 +474,7 @@ export default function AchievementsPage() {
             id: 1,
             title: "ASE Certifications",
             description: "Holds 31 ASE credentials - one of the most certified mechanics in the world",
+            aseProofLink: "/ASE.jpeg",
             metric: "31",
             unit: "ASE Credentials",
             icon: (
@@ -484,8 +486,8 @@ export default function AchievementsPage() {
         {
             id: 2,
             title: "Patents in Development",
-            description: "Working on over 40 patents in automotive and other industries",
-            metric: "40+",
+            description: "Working on over 120 patents in development across automotive and other industries",
+            metric: "120+",
             unit: "Patents",
             icon: (
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -496,8 +498,8 @@ export default function AchievementsPage() {
         {
             id: 3,
             title: "Years of Experience",
-            description: "Over 17 years running and managing vehicle repair centers with extensive industry leadership",
-            metric: "17+",
+            description: "Over 26 years running and managing vehicle repair centers with extensive industry leadership",
+            metric: "26+",
             unit: "Years",
             icon: (
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -551,7 +553,7 @@ export default function AchievementsPage() {
                     </h1>
                     <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
                         A comprehensive overview of Nathan Reardon's professional achievements, certifications, and milestones 
-                        spanning over 17 years of automotive innovation and excellence.
+                        spanning over 26 years of automotive innovation and excellence.
                     </p>
                 </div>
 
@@ -568,7 +570,14 @@ export default function AchievementsPage() {
                             </div>
                             <div className="text-white text-sm mb-3">{achievement.unit}</div>
                             <h3 className="text-white font-semibold mb-2">{achievement.title}</h3>
-                            <p className="text-white text-sm">{achievement.description}</p>
+                            <p className="text-white text-sm">
+                                {achievement.description}
+                                {achievement.aseProofLink && (
+                                    <a href={achievement.aseProofLink} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline inline-flex items-center gap-1 ml-1">
+                                        <ExternalLink className="w-3 h-3" />
+                                    </a>
+                                )}
+                            </p>
                         </div>
                     ))}
                 </div>
@@ -627,7 +636,14 @@ export default function AchievementsPage() {
                                 </div>
                                 <h3 className="text-white font-bold text-xl mb-2">{cert.title}</h3>
                                 <p className="text-blue-400 font-medium text-sm mb-2">{cert.organization}</p>
-                                <p className="text-white text-sm mb-4">{cert.description}</p>
+                                <p className="text-white text-sm mb-4">
+                                    {cert.description}
+                                    {cert.aseProofLink && (
+                                        <a href={cert.aseProofLink} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline inline-flex items-center gap-1 ml-1">
+                                            <ExternalLink className="w-3 h-3" />
+                                        </a>
+                                    )}
+                                </p>
                                 <div className="flex justify-between items-center">
                                     <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs">
                                         {cert.level}
@@ -763,7 +779,7 @@ export default function AchievementsPage() {
                 >
                     <h3 className="text-2xl font-bold text-white mb-4">Interested in Collaboration?</h3>
                     <p className="text-white mb-6 max-w-2xl mx-auto">
-                        With 31 ASE certifications, over 40 patents in development, and 17+ years of automotive industry leadership, 
+                        With 31 ASE certifications <a href="/ASE.jpeg" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline inline-flex items-center gap-1"><ExternalLink className="w-3 h-3" /></a>, over 120 patents in development, and 26+ years of automotive industry leadership, 
                         Nathan is always open to discussing new opportunities and partnerships.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">

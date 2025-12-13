@@ -88,7 +88,7 @@ export default function About() {
 
                             <div className="bg-gray-800/30 border-l-4 border-white pl-6 py-4 rounded-r-lg">
                                 <p className="text-white leading-relaxed">
-                                    As an <span className="text-red-400 font-medium">ASE Triple Master and 2nd Degree Black Belt</span>, he brings the same discipline to business that he does to life—turning bold ideas into lasting impact.
+                                    As an <span className="text-red-400 font-medium">ASE Triple Master</span> <a href="/ASE.jpeg" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline inline-flex items-center gap-1"><svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a> and 2nd Degree Black Belt, he brings the same discipline to business that he does to life—turning bold ideas into lasting impact.
                                 </p>
                             </div>
                         </div>
@@ -128,7 +128,7 @@ export default function About() {
                             
                             <div className="flex justify-center space-x-4">
                                 <div className="px-4 py-2 bg-red-500/20 rounded-full">
-                                    <span className="text-red-400 font-medium">22 Patents</span>
+                                    <span className="text-red-400 font-medium">25 Patents Filed</span>
                                 </div>
                                 <div className="px-4 py-2 bg-blue-500/20 rounded-full">
                                     <span className="text-blue-400 font-medium">26+ Years in Business</span>

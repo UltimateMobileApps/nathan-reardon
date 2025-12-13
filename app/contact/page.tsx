@@ -206,7 +206,7 @@ export default function ContactPage() {
                                 </div>
                             </div>
                             <p className="text-white-400 leading-relaxed text-sm md:text-base">
-                                With 26 years of experience in automotive innovation and 22 patents across multiple industries, 
+                                With 26 years of experience in automotive innovation and 25 patents filed across multiple industries, 
                                 I'm passionate about creating solutions that make a real difference in people's lives.
                             </p>
                         </div>
