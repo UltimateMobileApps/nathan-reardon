@@ -118,7 +118,7 @@ export default function PatentsPage() {
             description:
                 "Perfect Visibility, Zero Bugs or Rain Distortion system that prevents water distortion and keeps bugs from sticking to windshields and windows.",
             applications: ["Automotive safety", "Aviation", "Marine vessels", "Building windows"],
-            website: "https://invisishieldplus.com",
+            website: "https://invisishieldfilm.com",
         },
         {
             id: 7,
@@ -128,7 +128,7 @@ export default function PatentsPage() {
             description:
                 "Affordable Vehicle & Building Armoring system offering retrofit bulletproof glass and doors for under $5,000 with minimal added weight.",
             applications: ["Police vehicles", "Civilian protection", "School security", "Emergency services"],
-            website: "https://invisishieldfilm.com",
+            website: "https://invisishieldplus.com",
         },
         {
             id: 8,
@@ -198,7 +198,7 @@ export default function PatentsPage() {
             description:
                 "A New Law of Physics for Propulsion and Shielding representing what may be a fifth, undiscovered law of physics—an asymmetric thrust and shielding effect with no modern parallel.",
             applications: ["Aerospace", "Defense systems", "Space exploration", "Planetary protection"],
-            website: "https://quantus.com",
+            website: "https://quantusaerospace.com",
         },
         {
             id: 15,
@@ -248,7 +248,7 @@ export default function PatentsPage() {
             description:
                 "Stopping Hurricanes & Tornadoes by redistributing airflow and heat on a macro-scale to diffuse catastrophic storms before they destroy lives.",
             applications: ["Disaster prevention", "Climate protection", "Insurance", "Emergency management"],
-            website: "https://storm-defender.com",
+            website: "https://mystormdefender.com",
         },
         {
             id: 20,
@@ -329,31 +329,31 @@ export default function PatentsPage() {
             id: 26,
             title: "Genesis Chamber™",
             category: "Advanced Technology",
-            image: "/patents/genesis-chamber.jpg",
+            image: "/patents/genesis-chamber.png",
             description:
                 "Revolutionary technology for advanced applications and development across multiple industries.",
             applications: ["Research", "Development", "Industrial applications", "Innovation"],
-            website: "https://genesischamber.nathanreardon.com",
+            website: "https://mygenesischamber.com",
         },
         {
             id: 27,
             title: "Aurum Flux™",
             category: "Energy Technology",
-            image: "/patents/aurum-flux.jpg",
+            image: "/patents/aurum-flux.png",
             description:
                 "Next-generation energy solutions for sustainable power systems and applications.",
             applications: ["Energy generation", "Power systems", "Sustainability", "Industrial power"],
-            website: "https://aurumflux.nathanreardon.com",
+            website: "https://aurumfluxocean.com",
         },
         {
             id: 28,
             title: "Lacto Clear™",
             category: "Health Technology",
-            image: "/patents/lacto-clear.jpg",
+            image: "/patents/lacto-clear.png",
             description:
                 "Advanced solution for lactose intolerance and digestive health management.",
             applications: ["Digestive health", "Lactose intolerance", "Wellness", "Medical nutrition"],
-            website: "https://lactoclear.nathanreardon.com",
+            website: "https://mylactoclear.com",
         },
         {
             id: 29,
@@ -363,7 +363,7 @@ export default function PatentsPage() {
             description:
                 "Breakthrough solution for cravings management and nutritional balance.",
             applications: ["Appetite control", "Weight management", "Nutrition", "Wellness"],
-            website: "https://cravex.nathanreardon.com",
+            website: "https://cravex.net",
         },
         {
             id: 30,
@@ -373,7 +373,7 @@ export default function PatentsPage() {
             description:
                 "Advanced piping system for thermal and industrial applications.",
             applications: ["HVAC systems", "Industrial piping", "Thermal management", "Infrastructure"],
-            website: "https://pyrapipe.nathanreardon.com",
+            website: "https://pyrapipe.com",
         },
         {
             id: 31,
@@ -393,7 +393,7 @@ export default function PatentsPage() {
             description:
                 "Innovative road surface technology preventing ice formation and improving winter safety.",
             applications: ["Road safety", "Winter maintenance", "Highway infrastructure", "Climate adaptation"],
-            website: "https://iceshieldroads.nathanreardon.com",
+            website: "https://iceshieldsolution.com",
         },
         {
             id: 33,
@@ -403,7 +403,7 @@ export default function PatentsPage() {
             description:
                 "Advanced sleep optimization and recovery enhancement technology.",
             applications: ["Sleep health", "Recovery", "Health optimization", "Wellness"],
-            website: "https://dormigen.nathanreardon.com",
+            website: "https://dormigen.com",
         },
         {
             id: 34,
@@ -413,7 +413,7 @@ export default function PatentsPage() {
             description:
                 "Innovative board technology with wide-ranging applications and breakthrough performance.",
             applications: ["Electronics", "Computing", "Industrial applications", "Advanced systems"],
-            website: "https://rboard.nathanreardon.com",
+            website: "https://r-boards.com",
         },
     ];
 
