@@ -5,6 +5,7 @@ import Books from "@/components/Books";
 import Patents from "@/components/Patents";
 import GalleryPreview from "@/components/GalleryPreview";
 import MajorGoals from "@/components/MajorGoals";
+import ASEStatement from "@/components/ASEStatement";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,8 @@ export default function HomePage() {
       <Patents />
       <Books />
       <GalleryPreview />
+      {/* ASE Statement Section */}
+      <ASEStatement />
     </main>
   );
 }

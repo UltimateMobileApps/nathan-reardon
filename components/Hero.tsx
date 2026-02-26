@@ -20,6 +20,21 @@ export default function Hero() {
                 <AnimatedStars count={200} />
             </div>
 
+            {/* Mobile Image - Visible only on small screens */}
+            <div className="z-10 flex md:hidden justify-center mb-2">
+                <div className="relative w-64 h-64 rounded-2xl overflow-hidden backdrop-blur-sm border border-red-700/20 shadow-2xl shadow-red-900/30">
+                    <Image
+                        src="/new-nathan.png"
+                        alt="Nathan Reardon - Automotive Industry Leader & Innovator"
+                        fill
+                        className="object-contain brightness-110 contrast-105"
+                        priority
+                    />
+                    {/* Subtle overlay glow */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 via-transparent to-red-900/5 pointer-events-none"></div>
+                </div>
+            </div>
+
             {/* Left Content */}
             <div className="z-10 w-full md:flex-1 text-center md:text-left space-y-6">
                 {/* Global/Innovation Logo */}
