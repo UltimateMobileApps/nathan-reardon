@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, Twitter, Linkedin, Instagram, MapPin, Mail } from "lucide-react";
+import { Facebook, X, Linkedin, Instagram, MapPin, Mail } from "lucide-react";
 import { GRADIENTS, STYLES, ANIMATIONS } from "@/constants/styles";
 
 export default function Footer() {
@@ -9,7 +9,7 @@ export default function Footer() {
 
     const socialLinks = [
         { icon: Facebook, href: "https://www.facebook.com/share/1D1W2i79M6/?mibextid=wwXIfr", label: "Facebook" },
-        { icon: Twitter, href: "https://x.com/nathanreardon", label: "Twitter" },
+        { icon: X, href: "https://x.com/nathanreardon", label: "X" },
         { icon: Linkedin, href: "https://www.linkedin.com/in/nathanreardon/", label: "LinkedIn" },
         { icon: Instagram, href: "https://www.instagram.com/thenathanreardon?igsh=MXBjZm44MWdhYmtsMw==&utm_source=ig_contact_invite", label: "Instagram" },
     ];

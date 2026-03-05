@@ -1,0 +1,695 @@
+[
+  {
+    "id": 1,
+    "title": "Apex Air™ with Swarm",
+    "category": "Defense Technology",
+    "image": "/patents/apex-air.png",
+    "description": "Autonomous Aerial Security Grid deploying fleets of coordinated drones operating as an intelligent swarm. These drones provide 360° surveillance, real-time threat analysis, and rapid response in urban, battlefield, or event settings.",
+    "applications": ["Crowd safety", "Border defense", "Critical infrastructure protection", "Law enforcement"],
+    "website": "https://apexair.com"
+  },
+  {
+    "id": 2,
+    "title": "Apex Alert™",
+    "category": "Security Technology",
+    "image": "/patents/apex-alert.png",
+    "description": "AI-Powered Threat Detection and Early Warning system integrating advanced sensors and artificial intelligence to identify weapons, contraband, or suspicious behavior before danger escalates.",
+    "applications": ["Schools", "Airports", "Correctional facilities", "Public venues"],
+    "website": "https://theapexalert.com"
+  },
+  {
+    "id": 3,
+    "title": "Apex Drone & Garage™",
+    "category": "Security Technology",
+    "image": "/patents/apex-defender.png",
+    "description": "Autonomous Aerial Policing and Support System equipped with full-spectrum vision systems capable of seeing through tinted glass, detecting concealed weapons, and scanning for drugs or threats.",
+    "applications": ["Urban law enforcement", "Officer safety", "Threat assessment", "Non-lethal policing"],
+    "website": "https://theapexdrone.com"
+  },
+  {
+    "id": 4,
+    "title": "AutophaShield™",
+    "category": "Health Technology",
+    "image": "/patents/auto-phashield.png",
+    "description": "Unlocking the Body's Repair Switch - safely triggers autophagy without fasting, mimicking the body's repair process on demand with potential to combat cancer, neurodegeneration, and metabolic disease.",
+    "applications": ["Anti-aging therapy", "Cancer treatment", "Neurodegeneration", "Metabolic health"],
+    "website": "https://autophashield.com"
+  },
+  {
+    "id": 5,
+    "title": "Core Volt™",
+    "category": "Energy Technology",
+    "image": "/patents/core-volt.png",
+    "description": "Infinite, Clean, Earth-Powered Energy system that taps directly into near-magma heat, producing limitless clean electricity without solar farms or wind turbines.",
+    "applications": ["Clean energy generation", "Grid independence", "Industrial power", "Climate solutions"],
+    "website": "https://corevoltglobal.com"
+  },
+  {
+    "id": 6,
+    "title": "Invisi Glass™",
+    "category": "Automotive Technology",
+    "image": "/patents/invisi-shield.png",
+    "description": "Perfect Visibility, Zero Bugs or Rain Distortion system that prevents water distortion and keeps bugs from sticking to windshields and windows.",
+    "applications": ["Automotive safety", "Aviation", "Marine vessels", "Building windows"],
+    "website": "https://invisishieldfilm.com"
+  },
+  {
+    "id": 7,
+    "title": "Invisi Shield™",
+    "category": "Defense Technology",
+    "image": "/patents/invisi.png",
+    "description": "Affordable Vehicle & Building Armoring system offering retrofit bulletproof glass and doors for under $5,000 with minimal added weight.",
+    "applications": ["Police vehicles", "Civilian protection", "School security", "Emergency services"],
+    "website": "https://invisishieldplus.com"
+  },
+  {
+    "id": 8,
+    "title": "Kirk Collar™",
+    "category": "Medical Technology",
+    "image": "/patents/kirk-collar.png",
+    "description": "Instant Trauma Response for Neck Injuries designed to slow or stop catastrophic bleeding from neck wounds in seconds using rapid, targeted compression.",
+    "applications": ["Military medicine", "Emergency response", "Trauma care", "First aid"],
+    "website": "https://kirkcollar.com"
+  },
+  {
+    "id": 9,
+    "title": "Never Forget™",
+    "category": "Safety Technology",
+    "image": "/patents/never-forget.png",
+    "description": "Ending Child & Pet Car Deaths Forever using seat sensors, smartphone alerts, and escalation to emergency services to ensure no child is ever left behind.",
+    "applications": ["Child safety", "Pet protection", "Vehicle safety", "Emergency alert systems"],
+    "website": "https://neverforgetbaby.com"
+  },
+  {
+    "id": 10,
+    "title": "No Sweat™",
+    "category": "Consumer Technology",
+    "image": "/patents/no-sweat.png",
+    "description": "Ending Condensation Forever - a clear coating that prevents fogging and dripping on cups, pipes, windows, and vehicles.",
+    "applications": ["Food service", "HVAC systems", "Automotive", "Building materials"],
+    "website": "https://nosweatsealer.com"
+  },
+  {
+    "id": 11,
+    "title": "Patch Worx™",
+    "category": "Infrastructure",
+    "image": "/patents/patch-worx.png",
+    "description": "Pavement That Lasts 3× Longer using next-generation materials that repair potholes permanently and extend new pavement life by 3×.",
+    "applications": ["Road maintenance", "Infrastructure repair", "Municipal services", "Highway construction"],
+    "website": "https://patchworxpavement.com"
+  },
+  {
+    "id": 12,
+    "title": "Poo Gone™",
+    "category": "Sanitation Technology",
+    "image": "/patents/poo-gone.png",
+    "description": "Revolutionizing Waste Handling by chemically breaking down human and animal waste on contact, without hauling, odor, or traditional infrastructure.",
+    "applications": ["Disaster relief", "Developing nations", "Parks & recreation", "Agricultural waste"],
+    "website": "https://poogone.net"
+  },
+  {
+    "id": 13,
+    "title": "No Dry Starts® Oil Pump",
+    "category": "Automotive Technology",
+    "image": "/patents/no-dry-starts.jpeg",
+    "description": "Engines That Last Half a Million Miles by priming the engine with oil before ignition, preventing most engine wear that happens in the first seconds after startup.",
+    "applications": ["Automotive engines", "Fleet vehicles", "Marine engines", "Industrial machinery"],
+    "website": "https://nodrystarts.com"
+  },
+  {
+    "id": 14,
+    "title": "Quantus™",
+    "category": "Physics Technology",
+    "image": "/patents/quantus.png",
+    "description": "A New Law of Physics for Propulsion and Shielding representing what may be a fifth, undiscovered law of physics—an asymmetric thrust and shielding effect with no modern parallel.",
+    "applications": ["Aerospace", "Defense systems", "Space exploration", "Planetary protection"],
+    "website": "https://quantusaerospace.com"
+  },
+  {
+    "id": 15,
+    "title": "Radiamel™",
+    "category": "Medical Technology",
+    "image": "/patents/radia-mel.png",
+    "description": "The First True Radiation Eater - the world's only solution that can metabolically neutralize radiation before it damages the body.",
+    "applications": ["Cancer treatment", "Nuclear cleanup", "Medical imaging", "Space travel"],
+    "website": "https://radiamel.com"
+  },
+  {
+    "id": 16,
+    "title": "Sani Spray™",
+    "category": "Health Technology",
+    "image": "/patents/sani-spray.png",
+    "description": "Self-Sanitizing Surfaces Everywhere - automatically disinfects knobs and handles after each use, reducing spread of infections in hospitals, schools, transit hubs, and offices.",
+    "applications": ["Healthcare facilities", "Public transportation", "Schools", "Office buildings"],
+    "website": "https://sanisprayauto.com"
+  },
+  {
+    "id": 17,
+    "title": "Scentinel™",
+    "category": "Fire Safety",
+    "image": "/patents/scentinel.png",
+    "description": "Fires Stopped Before They Start - 'smells' hot wires and gases before combustion, preventing disasters with truly preventative fire detection.",
+    "applications": ["Aviation safety", "Data centers", "Residential homes", "Industrial facilities"],
+    "website": "https://scentinelsmoke.com"
+  },
+  {
+    "id": 18,
+    "title": "Solin™",
+    "category": "Medical Technology",
+    "image": "/patents/solin.png",
+    "description": "Shelf-Stable Sublingual Insulin - for the first time, insulin can be taken like a breath strip under the tongue, no refrigeration needed, with a shelf life of 18+ months.",
+    "applications": ["Diabetes treatment", "Developing nations", "Emergency medicine", "Patient convenience"],
+    "website": "https://solinstrips.com"
+  },
+  {
+    "id": 19,
+    "title": "Storm Defender™",
+    "category": "Weather Technology",
+    "image": "/patents/storm-defender.png",
+    "description": "Stopping Hurricanes & Tornadoes by redistributing airflow and heat on a macro-scale to diffuse catastrophic storms before they destroy lives.",
+    "applications": ["Disaster prevention", "Climate protection", "Insurance", "Emergency management"],
+    "website": "https://mystormdefender.com"
+  },
+  {
+    "id": 20,
+    "title": "The Reardon Cancer Protocol™",
+    "category": "Medical Protocol",
+    "image": "/patents/reardon-cancer-protocol.png",
+    "description": "A Body Where Cancer Cannot Survive - combines immune modulation, natural compounds, and metabolic rebalancing to create an internal environment where cancer cannot thrive.",
+    "applications": ["Cancer treatment", "Immune therapy", "Preventive medicine", "Metabolic health"],
+    "website": "https://reardonprotocol.com"
+  },
+  {
+    "id": 21,
+    "title": "The Reardon Diabetes Protocol™",
+    "category": "Medical Protocol",
+    "image": "/patents/the-reardon-protocol.png",
+    "description": "The first credible path to a functional cure for both Type 2 and potentially Type 1 diabetes by restoring pancreatic and metabolic function.",
+    "applications": ["Type 1 diabetes", "Type 2 diabetes", "Metabolic restoration", "Chronic disease management"],
+    "website": "https://reardonprotocol.com"
+  },
+  {
+    "id": 22,
+    "title": "Vita Choice™",
+    "category": "Health Technology",
+    "image": "/patents/vita-choice.png",
+    "description": "The World's First Customizable Liquid Multivitamin delivering a liquid base with 1,100 customizable nutrients. Every bottle can be built for the individual's exact needs.",
+    "applications": ["Personalized nutrition", "Health supplements", "Medical nutrition", "Wellness optimization"],
+    "website": "https://thevitachoice.com"
+  },
+  {
+    "id": 23,
+    "title": "Membership Auto™",
+    "category": "Automotive Technology",
+    "image": "/patents/membership-auto.png",
+    "description": "Never Pay for Car Repairs Again. Join the world's first subscription-based vehicle service & repair club. One low monthly fee. Zero surprise bills.",
+    "applications": ["Vehicle maintenance", "Repair services", "Subscription services", "Automotive industry"],
+    "website": "https://membershipauto.com"
+  },
+  {
+    "id": 24,
+    "title": "Liberty Social™",
+    "category": "Social Media Technology",
+    "image": "/patents/liberty-social.jpeg",
+    "description": "A revolutionary social media platform designed to empower users with true freedom of expression and community engagement.",
+    "applications": ["Social networking", "Community building", "Content sharing", "Digital communication"],
+    "website": "https://mylibertysocial.com"
+  },
+  {
+    "id": 25,
+    "title": "Freedom Teck™",
+    "category": "Correctional Technology",
+    "image": "/patents/freedomTek.png",
+    "description": "Innovative technology solutions for correctional facilities and prisoner services, facilitating communication and improving facility operations.",
+    "applications": ["Correctional facilities", "Prisoner services", "Facility management", "Communication systems"],
+    "website": "https://freedomteck.com"
+  },
+  {
+    "id": 26,
+    "title": "Genesis Chamber™",
+    "category": "Advanced Technology",
+    "image": "/patents/genesis-chamber.png",
+    "description": "Revolutionary technology for advanced applications and development across multiple industries.",
+    "applications": ["Research", "Development", "Industrial applications", "Innovation"],
+    "website": "https://mygenesischamber.com"
+  },
+  {
+    "id": 27,
+    "title": "Aurum Flux™",
+    "category": "Energy Technology",
+    "image": "/patents/aurum-flux.png",
+    "description": "Next-generation energy solutions for sustainable power systems and applications.",
+    "applications": ["Energy generation", "Power systems", "Sustainability", "Industrial power"],
+    "website": "https://aurumfluxocean.com"
+  },
+  {
+    "id": 28,
+    "title": "Lacto Clear™",
+    "category": "Health Technology",
+    "image": "/patents/lacto-clear.png",
+    "description": "Advanced solution for lactose intolerance and digestive health management.",
+    "applications": ["Digestive health", "Lactose intolerance", "Wellness", "Medical nutrition"],
+    "website": "https://mylactoclear.com"
+  },
+  {
+    "id": 29,
+    "title": "Cravex™",
+    "category": "Health Technology",
+    "image": "/patents/cravex.png",
+    "description": "Breakthrough solution for cravings management and nutritional balance.",
+    "applications": ["Appetite control", "Weight management", "Nutrition", "Wellness"],
+    "website": "https://cravex.net"
+  },
+  {
+    "id": 30,
+    "title": "Pyra Pipe™",
+    "category": "Infrastructure Technology",
+    "image": "/patents/pyra-pipe.png",
+    "description": "Advanced piping system for thermal and industrial applications.",
+    "applications": ["HVAC systems", "Industrial piping", "Thermal management", "Infrastructure"],
+    "website": "https://pyrapipe.com"
+  },
+  {
+    "id": 31,
+    "title": "Magma Bit™",
+    "category": "Drilling Technology",
+    "image": "/patents/magma-bit.png",
+    "description": "Revolutionary drilling technology for deep earth applications and geothermal exploration.",
+    "applications": ["Geothermal drilling", "Mining", "Oil & gas", "Deep earth exploration"],
+    "website": "https://magmabit.nathanreardon.com"
+  },
+  {
+    "id": 32,
+    "title": "Ice Shield Roads™",
+    "category": "Infrastructure",
+    "image": "/patents/ice-shield-roads.png",
+    "description": "Innovative road surface technology preventing ice formation and improving winter safety.",
+    "applications": ["Road safety", "Winter maintenance", "Highway infrastructure", "Climate adaptation"],
+    "website": "https://iceshieldsolution.com"
+  },
+  {
+    "id": 33,
+    "title": "Dormigen™",
+    "category": "Health Technology",
+    "image": "/patents/dormigen.png",
+    "description": "Advanced sleep optimization and recovery enhancement technology.",
+    "applications": ["Sleep health", "Recovery", "Health optimization", "Wellness"],
+    "website": "https://dormigen.com"
+  },
+  {
+    "id": 34,
+    "title": "R-Board™",
+    "category": "Technology",
+    "image": "/patents/r-board.png",
+    "description": "Innovative board technology with wide-ranging applications and breakthrough performance.",
+    "applications": ["Electronics", "Computing", "Industrial applications", "Advanced systems"],
+    "website": "https://r-boards.com"
+  },
+  {
+    "id": 35,
+    "title": "FutureTech™",
+    "category": "Technology",
+    "image": "/patents/futuretech.jpg",
+    "description": "Advanced technology solutions for tomorrow's challenges.",
+    "applications": ["Innovation", "Technology", "Future solutions"],
+    "website": "https://futuretech.nathanreardon.com"
+  },
+  {
+    "id": 36,
+    "title": "Autonomous AI-Based Automotive Service Writer System™",
+    "category": "Automotive Technology",
+    "image": "/patents/autonomous-service-writer.png",
+    "description": "AI-powered system that automatically generates service reports and diagnostics for vehicles.",
+    "applications": ["Vehicle service", "Diagnostics", "Automotive repair", "Fleet management"],
+    "website": "https://auto-service-writer.nathanreardon.com"
+  },
+  {
+    "id": 37,
+    "title": "Aurum Micro Plastics™",
+    "category": "Environmental Technology",
+    "image": "/patents/aurum-micro-plastics.png",
+    "description": "Solution addressing microplastics contamination in water and soil.",
+    "applications": ["Environmental cleanup", "Water treatment", "Soil remediation", "Sustainability"],
+    "website": "https://aurummicroplastics.com"
+  },
+  {
+    "id": 38,
+    "title": "Aurum Mercury™",
+    "category": "Environmental Technology",
+    "image": "/patents/aurum-mercury.png",
+    "description": "Advanced mercury remediation and neutralization technology.",
+    "applications": ["Environmental cleanup", "Industrial safety", "Hazmat removal", "Contamination control"],
+    "website": "https://aurummercury.com"
+  },
+  {
+    "id": 39,
+    "title": "Scene Aware™",
+    "category": "AI Technology",
+    "image": "/patents/scene-aware.png",
+    "description": "Computer vision system that understands and responds to its environment.",
+    "applications": ["Security systems", "Robotics", "Autonomous vehicles", "Surveillance"],
+    "website": "https://sceneaware.nathanreardon.com"
+  },
+  {
+    "id": 40,
+    "title": "Frost Mat™",
+    "category": "Infrastructure Technology",
+    "image": "/patents/frost-mat.png",
+    "description": "Innovative mat technology preventing frost heave and ground damage.",
+    "applications": ["Road construction", "Foundation protection", "Winter maintenance", "Infrastructure"],
+    "website": "https://frostmat.nathanreardon.com"
+  },
+  {
+    "id": 41,
+    "title": "Hydra Sense™",
+    "category": "Water Technology",
+    "image": "/patents/hydra-sense.png",
+    "description": "Advanced water quality monitoring and detection system.",
+    "applications": ["Water treatment", "Environmental monitoring", "Public health", "Industrial water"],
+    "website": "https://hydrasense.nathanreardon.com"
+  },
+  {
+    "id": 42,
+    "title": "Keto Sense™",
+    "category": "Health Technology",
+    "image": "/patents/keto-sense.png",
+    "description": "Metabolic health tracking for ketogenic diet optimization.",
+    "applications": ["Diet management", "Metabolic health", "Wellness tracking", "Health optimization"],
+    "website": "https://ketosense.nathanreardon.com"
+  },
+  {
+    "id": 43,
+    "title": "Drug Guard™",
+    "category": "Security Technology",
+    "image": "/patents/drug-guard.png",
+    "description": "Detection system for identifying illegal substances and contraband.",
+    "applications": ["Border security", "Law enforcement", "Correctional facilities", "Customs"],
+    "website": "https://drugguard.nathanreardon.com"
+  },
+  {
+    "id": 44,
+    "title": "Blue Voice™",
+    "category": "Communication Technology",
+    "image": "/patents/blue-voice.png",
+    "description": "Secure voice communication and encryption system.",
+    "applications": ["Military communication", "Emergency services", "Secure operations", "Confidential communication"],
+    "website": "https://bluevoice.nathanreardon.com"
+  },
+  {
+    "id": 45,
+    "title": "Anti Freeze Flow System™",
+    "category": "Industrial Technology",
+    "image": "/patents/anti-freeze-flow.png",
+    "description": "Prevents freezing in fluid systems and pipelines.",
+    "applications": ["HVAC systems", "Industrial piping", "Agricultural systems", "Marine applications"],
+    "website": "https://antifreeze.nathanreardon.com"
+  },
+  {
+    "id": 46,
+    "title": "Zero Freeze Fire Hose System™",
+    "category": "Fire Safety Technology",
+    "image": "/patents/zero-freeze-fire-hose.png",
+    "description": "Fire hose system that operates in extreme cold without freezing.",
+    "applications": ["Fire safety", "Cold climate protection", "Emergency response", "Arctic operations"],
+    "website": "https://zerofreeze.nathanreardon.com"
+  },
+  {
+    "id": 47,
+    "title": "EZ Post™",
+    "category": "Construction Technology",
+    "image": "/patents/ez-post.png",
+    "description": "Simplified fence or utility post installation system.",
+    "applications": ["Construction", "Fencing", "Utilities", "Infrastructure installation"],
+    "website": "https://ezpost.nathanreardon.com"
+  },
+  {
+    "id": 48,
+    "title": "Rust Blok System™",
+    "category": "Materials Technology",
+    "image": "/patents/rust-blok.png",
+    "description": "Advanced rust prevention and protection coating system.",
+    "applications": ["Metal protection", "Automotive", "Marine", "Industrial equipment"],
+    "website": "https://rustblok.nathanreardon.com"
+  },
+  {
+    "id": 49,
+    "title": "Oxalate Guard™",
+    "category": "Health Technology",
+    "image": "/patents/oxalate-guard.png",
+    "description": "Dietary supplement reducing oxalate levels and kidney stone risk.",
+    "applications": ["Kidney health", "Stone prevention", "Dietary wellness", "Medical nutrition"],
+    "website": "https://oxalateguard.nathanreardon.com"
+  },
+  {
+    "id": 50,
+    "title": "Pet Savers™",
+    "category": "Pet Safety Technology",
+    "image": "/patents/pet-savers.jpg",
+    "description": "Emergency alert system for pet safety and location tracking.",
+    "applications": ["Pet safety", "Emergency response", "GPS tracking", "Pet protection"],
+    "website": "https://petsavers.nathanreardon.com"
+  },
+  {
+    "id": 51,
+    "title": "Identifi™",
+    "category": "Security Technology",
+    "image": "/patents/identifi.png",
+    "description": "Advanced biometric and identity verification system.",
+    "applications": ["Biometric security", "Access control", "Identity verification", "Law enforcement"],
+    "website": "https://identifi.nathanreardon.com"
+  },
+  {
+    "id": 52,
+    "title": "Safe T Plast™",
+    "category": "Materials Technology",
+    "image": "/patents/safe-t-plast.png",
+    "description": "Safe, durable plastic material for construction and applications.",
+    "applications": ["Construction materials", "Safety equipment", "Consumer products", "Industrial use"],
+    "website": "https://safetplast.nathanreardon.com"
+  },
+  {
+    "id": 53,
+    "title": "Cancer Collapse™",
+    "category": "Medical Technology",
+    "image": "/patents/cancer-collapse.png",
+    "description": "Revolutionary approach to collapsing cancer cell structures.",
+    "applications": ["Cancer treatment", "Oncology", "Medical research", "Immune therapy"],
+    "website": "https://cancercollapse.nathanreardon.com"
+  },
+  {
+    "id": 54,
+    "title": "Cop Stop™",
+    "category": "Law Enforcement Technology",
+    "image": "/patents/cop-stop.png",
+    "description": "Law enforcement technology for stopping vehicles safely.",
+    "applications": ["Traffic control", "Law enforcement", "Emergency response", "Public safety"],
+    "website": "https://copstop.nathanreardon.com"
+  },
+  {
+    "id": 55,
+    "title": "Pulse Stop™",
+    "category": "Medical Technology",
+    "image": "/patents/pulse-stop.png",
+    "description": "Emergency medical device for controlling heart rhythm disturbances.",
+    "applications": ["Emergency medicine", "Cardiac care", "First aid", "Medical devices"],
+    "website": "https://pulsestop.nathanreardon.com"
+  },
+  {
+    "id": 56,
+    "title": "Rail Scout™",
+    "category": "Transportation Technology",
+    "image": "/patents/rail-scout.png",
+    "description": "Autonomous inspection and monitoring system for rail infrastructure.",
+    "applications": ["Railway maintenance", "Infrastructure inspection", "Safety monitoring", "Transportation"],
+    "website": "https://railscout.nathanreardon.com"
+  },
+  {
+    "id": 57,
+    "title": "Smognet™",
+    "category": "Environmental Technology",
+    "image": "/patents/smognet.png",
+    "description": "Air quality monitoring and pollution control network.",
+    "applications": ["Air quality", "Environmental monitoring", "Pollution control", "Urban planning"],
+    "website": "https://smognet.nathanreardon.com"
+  },
+  {
+    "id": 58,
+    "title": "Seal Guard™",
+    "category": "Materials Technology",
+    "image": "/patents/seal-guard.png",
+    "description": "Advanced sealing technology for preventing contamination and leaks.",
+    "applications": ["Industrial sealing", "Water protection", "Environmental protection", "Quality control"],
+    "website": "https://sealguard.nathanreardon.com"
+  },
+  {
+    "id": 59,
+    "title": "Kid Block™",
+    "category": "Child Safety Technology",
+    "image": "/patents/kid-block.png",
+    "description": "Parental control and child safety monitoring system.",
+    "applications": ["Child safety", "Parental controls", "Screen time management", "Digital safety"],
+    "website": "https://kidblock.nathanreardon.com"
+  },
+  {
+    "id": 60,
+    "title": "Antiven Pen™",
+    "category": "Medical Technology",
+    "image": "/patents/antiven-pen.png",
+    "description": "Emergency anti-venom delivery system for snake and insect bites.",
+    "applications": ["Emergency medicine", "Snake bite treatment", "Venom neutralization", "First aid"],
+    "website": "https://antivenpen.nathanreardon.com"
+  },
+  {
+    "id": 61,
+    "title": "Insta Heat™",
+    "category": "Consumer Technology",
+    "image": "/patents/insta-heat.png",
+    "description": "Instant heating technology for instant warmth applications.",
+    "applications": ["Consumer heating", "Emergency warmth", "Medical applications", "Outdoor gear"],
+    "website": "https://instaheat.nathanreardon.com"
+  },
+  {
+    "id": 62,
+    "title": "Shorelock™",
+    "category": "Environmental Technology",
+    "image": "/patents/shorelock.png",
+    "description": "Coastal erosion prevention and shoreline protection system.",
+    "applications": ["Coastal protection", "Erosion control", "Environmental protection", "Infrastructure"],
+    "website": "https://shorelock.nathanreardon.com"
+  },
+  {
+    "id": 63,
+    "title": "Nervana™",
+    "category": "Medical Technology",
+    "image": "/patents/nervana.png",
+    "description": "Non-opioid pain relief and nerve stimulation system.",
+    "applications": ["Pain management", "Medical therapy", "Neurological treatment", "Wellness"],
+    "website": "https://nervana.nathanreardon.com"
+  },
+  {
+    "id": 64,
+    "title": "Kidney Glide™",
+    "category": "Medical Technology",
+    "image": "/patents/kidney-glide.png",
+    "description": "Kidney function optimization and dialysis enhancement technology.",
+    "applications": ["Kidney health", "Dialysis treatment", "Renal care", "Medical devices"],
+    "website": "https://kidneyglide.nathanreardon.com"
+  },
+  {
+    "id": 65,
+    "title": "Fire Guard GT™",
+    "category": "Fire Safety Technology",
+    "image": "/patents/fire-guard-gt.png",
+    "description": "Advanced fire detection and suppression system for vehicles.",
+    "applications": ["Fire prevention", "Vehicle safety", "Emergency response", "Industrial safety"],
+    "website": "https://fireguardgt.nathanreardon.com"
+  },
+  {
+    "id": 66,
+    "title": "Pest Fence™",
+    "category": "Agricultural Technology",
+    "image": "/patents/pest-fence.png",
+    "description": "Non-toxic pest prevention barrier and detection system.",
+    "applications": ["Agriculture", "Pest control", "Animal husbandry", "Crop protection"],
+    "website": "https://pestfence.nathanreardon.com"
+  },
+  {
+    "id": 67,
+    "title": "Bio Clock Kernel™",
+    "category": "Biotechnology",
+    "image": "/patents/bio-clock-kernel.png",
+    "description": "Biological clock synchronization technology for circadian rhythm optimization.",
+    "applications": ["Sleep optimization", "Health optimization", "Circadian rhythm", "Wellness"],
+    "website": "https://bioclockkernel.nathanreardon.com"
+  },
+  {
+    "id": 68,
+    "title": "Silent Guard™",
+    "category": "Security Technology",
+    "image": "/patents/silent-guard.png",
+    "description": "Silent alarm and discrete security monitoring system.",
+    "applications": ["Security systems", "Loss prevention", "Property protection", "Surveillance"],
+    "website": "https://silentguard.nathanreardon.com"
+  },
+  {
+    "id": 69,
+    "title": "Soft Alert™",
+    "category": "Safety Technology",
+    "image": "/patents/soft-alert.png",
+    "description": "Gentle notification system for important alerts and reminders.",
+    "applications": ["Healthcare", "Safety notifications", "Reminder systems", "Wellness alerts"],
+    "website": "https://softalert.nathanreardon.com"
+  },
+  {
+    "id": 70,
+    "title": "Flood Hose™",
+    "category": "Infrastructure Technology",
+    "image": "/patents/flood-hose.png",
+    "description": "Emergency flooding control and water management system.",
+    "applications": ["Flood prevention", "Water management", "Emergency response", "Infrastructure"],
+    "website": "https://floodhose.nathanreardon.com"
+  },
+  {
+    "id": 71,
+    "title": "Terra Guard™",
+    "category": "Environmental Technology",
+    "image": "/patents/terra-guard.png",
+    "description": "Soil protection and land conservation technology.",
+    "applications": ["Environmental protection", "Soil conservation", "Land management", "Agriculture"],
+    "website": "https://terraguard.nathanreardon.com"
+  },
+  {
+    "id": 72,
+    "title": "Apex Veil™",
+    "category": "Security Technology",
+    "image": "/patents/apex-veil.png",
+    "description": "Advanced concealment and privacy protection system.",
+    "applications": ["Privacy protection", "Security systems", "Surveillance prevention", "Confidentiality"],
+    "website": "https://apexveil.nathanreardon.com"
+  },
+  {
+    "id": 73,
+    "title": "No Limit Flix™",
+    "category": "Entertainment Technology",
+    "image": "/patents/no-limit-flix.png",
+    "description": "Unlimited streaming and content delivery platform.",
+    "applications": ["Entertainment", "Streaming services", "Content delivery", "Media technology"],
+    "website": "https://nolimitflix.nathanreardon.com"
+  },
+  {
+    "id": 74,
+    "title": "Freedom Tek™",
+    "category": "Communication Technology",
+    "image": "/patents/freedomTek.png",
+    "description": "Freedom-focused communication and technology platform.",
+    "applications": ["Communication", "Technology solutions", "Digital freedom", "Connectivity"],
+    "website": "https://freedomtek.nathanreardon.com"
+  },
+  {
+    "id": 75,
+    "title": "Justice Pay™",
+    "category": "Financial Technology",
+    "image": "/patents/justice-pay.png",
+    "description": "Fair payment system for legal and justice services.",
+    "applications": ["Legal services", "Payment processing", "Financial technology", "Justice system"],
+    "website": "https://justicepay.nathanreardon.com"
+  },
+  {
+    "id": 76,
+    "title": "Guardian Angel AI™",
+    "category": "AI Technology",
+    "image": "/patents/guardian-angel-ai.png",
+    "description": "AI-powered personal safety and emergency response system.",
+    "applications": ["Personal safety", "Emergency response", "AI assistance", "Protection services"],
+    "website": "https://guardianangel-ai.nathanreardon.com"
+  },
+  {
+    "id": 77,
+    "title": "OneKey™",
+    "category": "Security Technology",
+    "image": "/patents/onekey.png",
+    "description": "Universal single-key access and authentication system.",
+    "applications": ["Access control", "Authentication", "Security systems", "Smart locks"],
+    "website": "https://onekey.nathanreardon.com"
+  }
+]

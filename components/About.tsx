@@ -1,6 +1,6 @@
 "use client";
 
-import { Users, Award, Target, Zap, Heart, Globe } from "lucide-react";
+import { Users, Award, Target, Zap, Heart, Globe, X } from "lucide-react";
 import { GRADIENTS } from "@/constants/styles";
 import Image from "next/image";
 
@@ -128,7 +128,7 @@ export default function About() {
                             
                             <div className="flex justify-center space-x-4">
                                 <div className="px-4 py-2 bg-red-500/20 rounded-full">
-                                    <span className="text-red-400 font-medium">25 Patents Filed</span>
+                                        <span className="text-red-400 font-medium">77+ Patents Filed</span>
                                 </div>
                                 <div className="px-4 py-2 bg-blue-500/20 rounded-full">
                                     <span className="text-blue-400 font-medium">26+ Years in Business</span>
@@ -138,32 +138,49 @@ export default function About() {
                     </div>
                 </div>
 
-                {/* Industry Expertise Grid */}
-                <div className="mb-12">
-                    <h3 className="text-3xl font-bold text-center text-white mb-12">
-                        Multi-Industry Innovation
-                    </h3>
+                {/* Philosophy Section & Industry Expertise - 2 Column on Desktop */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-12">
                     
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {expertise.map((item, index) => (
-                            <div
-                                key={index}
-                                className="group relative overflow-hidden"
-                            >
-                                <div className="bg-gray-800/40 backdrop-blur-sm border border-gray-700 rounded-xl p-6 h-full hover:border-blue-500/50 transition-all duration-300">
-                                    <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-red-500/10 to-transparent rounded-bl-full"></div>
-                                    
-                                    <h4 className="text-lg font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors">
-                                        {item.area}
-                                    </h4>
-                                    <p className="text-white text-sm group-hover:text-white transition-colors">
-                                        {item.impact}
-                                    </p>
-                                    
-                                    <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                    {/* Left: Self Made Poster */}
+                    <div className="order-2 md:order-1">
+                        <div className="relative rounded-2xl overflow-hidden border border-gray-700 shadow-2xl">
+                            <Image
+                                src="/poster-image-self-made.png"
+                                alt="There's no such thing as self made - you need God and others"
+                                width={800}
+                                height={600}
+                                className="w-full h-auto object-cover"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Right: Industry Expertise */}
+                    <div className="order-1 md:order-2">
+                        <h3 className="text-3xl font-bold text-white mb-6">
+                            Multi-Industry Innovation
+                        </h3>
+                        
+                        <div className="grid grid-cols-2 gap-4">
+                            {expertise.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="group relative overflow-hidden"
+                                >
+                                    <div className="bg-gray-800/40 backdrop-blur-sm border border-gray-700 rounded-xl p-6 h-full hover:border-blue-500/50 transition-all duration-300">
+                                        <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-red-500/10 to-transparent rounded-bl-full"></div>
+                                        
+                                        <h4 className="text-lg font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                                            {item.area}
+                                        </h4>
+                                        <p className="text-white text-sm group-hover:text-white transition-colors">
+                                            {item.impact}
+                                        </p>
+                                        
+                                        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
 

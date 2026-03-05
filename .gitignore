@@ -44,3 +44,5 @@ next-env.d.ts
 /html/
 
 nathan_achievements.txt
+public/patents/All Logos
+public/patents/*.zip
