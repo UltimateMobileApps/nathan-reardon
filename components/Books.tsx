@@ -44,6 +44,7 @@ export default function Books() {
     };
 
     const books = [
+        { title: "There Is No Such Thing As Self-Made", year: 2025, cover: "/books/there-is-no-such-thing-as-self-made.png" },
         { title: "The Risk of Success", year: 2019, cover: "/books/success-risk.png" },
         { title: "Both Sides of POOR and RICH", year: 2024, cover: "/books/both-sides.jpeg" },
         { title: "How To Get A Job And Keep It", year: 2023, cover: "/books/get-a-job.jpeg" },
@@ -145,6 +146,17 @@ export default function Books() {
                 {/* Enhanced gradient fade edges */}
                 <div className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-gray-950 via-gray-950/80 to-transparent pointer-events-none z-10" />
                 <div className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-gray-950 via-gray-950/80 to-transparent pointer-events-none z-10" />
+            </div>
+
+            {/* CTA Button */}
+            <div className="mt-16 text-center">
+                <a
+                    href="/books"
+                    className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-red-500 to-blue-600 text-white rounded-lg font-bold hover:shadow-lg hover:shadow-blue-500/20 transform hover:-translate-y-1 transition-all duration-300 group"
+                >
+                    Browse All Books
+                    <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </a>
             </div>
 
             {/* Modal for full-size book covers */}

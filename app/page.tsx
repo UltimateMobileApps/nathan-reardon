@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Stats from "@/components/Stats";
+import Companies from "@/components/Companies";
 import Books from "@/components/Books";
 import Patents from "@/components/Patents";
 import GalleryPreview from "@/components/GalleryPreview";
@@ -14,6 +15,7 @@ export default function HomePage() {
       <About />
       <MajorGoals />
       <Stats />
+      <Companies />
       <Patents />
       <Books />
       <GalleryPreview />

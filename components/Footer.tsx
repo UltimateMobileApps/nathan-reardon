@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, X, Linkedin, Instagram, MapPin, Mail } from "lucide-react";
+import { Facebook, X, Linkedin, Instagram, MapPin, Mail, Youtube } from "lucide-react";
 import { GRADIENTS, STYLES, ANIMATIONS } from "@/constants/styles";
 
 export default function Footer() {
@@ -12,6 +12,8 @@ export default function Footer() {
         { icon: X, href: "https://x.com/nathanreardon", label: "X" },
         { icon: Linkedin, href: "https://www.linkedin.com/in/nathanreardon/", label: "LinkedIn" },
         { icon: Instagram, href: "https://www.instagram.com/thenathanreardon?igsh=MXBjZm44MWdhYmtsMw==&utm_source=ig_contact_invite", label: "Instagram" },
+        { icon: Youtube, href: "https://youtube.com/@nathan.reardon?si=rn5YC7deGGAQXeZ0", label: "YouTube" },
+        { image: "/liberty-social-icon.png", href: "https://www.mylibertysocial.com/app/users/nathan-reardon", label: "Liberty Social" },
     ];
 
   const siteLinks = [
@@ -76,6 +78,10 @@ export default function Footer() {
                                 <Mail size={16} className="text-red-500 flex-shrink-0" />
                                 <span className="text-sm">Info@nathanreardon.com</span>
                             </div>
+                            <div className="flex items-center space-x-3 text-gray-400">
+                                <span className="text-sm font-bold text-blue-400">Office Phone:</span>
+                                <a href="tel:207-947-1999" className="text-sm hover:text-white transition-colors underline decoration-blue-500/30">207-947-1999</a>
+                            </div>
                         </div>
 
                         {/* Profile Image */}
@@ -95,7 +101,20 @@ export default function Footer() {
                 <div className="mt-8 pt-8 border-t border-gray-800">
                     <div className="flex justify-center space-x-6">
                         {socialLinks.map((social) => {
+                            if (social.image) {
+                                return (
+                                    <a
+                                        key={social.label}
+                                        href={social.href}
+                                        className="p-2 text-gray-400 hover:text-white hover:bg-red-500 rounded-full transition-all duration-300 transform hover:scale-110"
+                                        aria-label={social.label}
+                                    >
+                                        <img src={social.image} alt={social.label} className="w-5 h-5" />
+                                    </a>
+                                );
+                            }
                             const Icon = social.icon;
+                            if (!Icon) return null;
                             return (
                                 <a
                                     key={social.label}

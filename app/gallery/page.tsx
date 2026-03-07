@@ -27,25 +27,23 @@ export default function GalleryPage() {
         { src: "/gallery/ken-blanchard.jpeg", name: "Ken Blanchard" },
         { src: "/gallery/michael-reagan.jpeg", name: "Michael Reagan" },
         { src: "/gallery/michelle-bachman.jpeg", name: "Michelle Bachman" },
-        { src: "/gallery/rick-perry.jpeg", name: "Rick Perry" }
+        { src: "/gallery/rick-perry.jpeg", name: "Rick Perry" },
+        { src: "/gallery/nathan-at-walmart-home-office.jpeg", name: "Nathan at Walmart Home Office" }
     ];
 
-    // Family gallery
+    // Family & Pets gallery
     const familyImages = [
-        { src: "/family/family1.jpg", name: "" },
-        { src: "/family/family2.jpg", name: "" },
-        { src: "/family/family3.jpg", name: "" }
-    ];
-
-    // Cars gallery
-    const carImages = [
-        { src: "/cars/ford-mustang-shelbygt500.jpeg", name: "Ford Mustang Shelby GT500" },
-        { src: "/cars/mclarenf1.jpeg", name: "McLaren F1" }
+        { src: "/family/me-and-my-father-mike.jpg", name: "Nathan and his father, Mike" },
+        { src: "/family/my-mother-and-her-mother.jpg", name: "Nathan's mother and her mother" },
+        { src: "/family/grandmother-in-greece-Ekaterina.jpg", name: "Grandmother in Greece, Ekaterina" },
+        { src: "/pets/nathans-5-amazing-children.jpeg", name: "Nathan's 5 Amazing Children" },
+        { src: "/pets/ryker-and-athena.jpeg", name: "Ryker and Athena" },
+        { src: "/pets/diesel.jpg", name: "Diesel" }
     ];
 
     const [selectedImage, setSelectedImage] = useState<number | null>(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [activeGallery, setActiveGallery] = useState<'celebrities' | 'family' | 'cars'>('celebrities');
+    const [activeGallery, setActiveGallery] = useState<'celebrities' | 'family'>('celebrities');
 
     const openModal = (index: number) => {
         setSelectedImage(index);
@@ -65,8 +63,6 @@ export default function GalleryPage() {
             galleryLength = galleryImages.length;
         } else if (activeGallery === 'family') {
             galleryLength = familyImages.length;
-        } else if (activeGallery === 'cars') {
-            galleryLength = carImages.length;
         }
         
         if (direction === 'prev') {
@@ -79,7 +75,6 @@ export default function GalleryPage() {
     const getCurrentGallery = () => {
         if (activeGallery === 'celebrities') return galleryImages;
         if (activeGallery === 'family') return familyImages;
-        if (activeGallery === 'cars') return carImages;
         return galleryImages;
     };
 
@@ -149,21 +144,7 @@ export default function GalleryPage() {
                                     : 'bg-gray-800/50 border border-gray-700/50 text-white hover:border-gray-500/50'
                             }`}
                         >
-                            Family
-                        </button>
-                        <button
-                            onClick={() => {
-                                setActiveGallery('cars');
-                                setSelectedImage(null);
-                                setIsModalOpen(false);
-                            }}
-                            className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
-                                activeGallery === 'cars'
-                                    ? `bg-gradient-to-r ${GRADIENTS.heroText} text-white shadow-lg`
-                                    : 'bg-gray-800/50 border border-gray-700/50 text-white hover:border-gray-500/50'
-                            }`}
-                        >
-                            Cars
+                            Family & Pets
                         </button>
                     </div>
                 </div>
@@ -203,10 +184,10 @@ export default function GalleryPage() {
                                     </div>
                                 )}
 
-                                {activeGallery === 'cars' && (
+                                {activeGallery === 'family' && (
                                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-4 pt-8">
                                         <div className="text-center">
-                                            <p className="text-white font-semibold text-sm">
+                                            <p className="text-white font-semibold text-xs italic opacity-80">
                                                 {image.name}
                                             </p>
                                         </div>
@@ -276,9 +257,9 @@ export default function GalleryPage() {
                             </div>
                         )}
 
-                        {/* Name overlay for cars */}
-                        {activeGallery === 'cars' && (
-                            <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 bg-black/70 backdrop-blur-sm text-white px-6 py-3 rounded-full text-lg font-semibold">
+                        {/* Name overlay for family */}
+                        {activeGallery === 'family' && (
+                            <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 bg-black/70 backdrop-blur-sm text-white px-6 py-3 rounded-full text-lg font-semibold italic">
                                 {getCurrentGallery()[selectedImage].name}
                             </div>
                         )}

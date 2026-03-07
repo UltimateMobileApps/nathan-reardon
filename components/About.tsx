@@ -138,48 +138,76 @@ export default function About() {
                     </div>
                 </div>
 
-                {/* Philosophy Section & Industry Expertise - 2 Column on Desktop */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-12">
+                {/* Industry Expertise Section */}
+                <div className="mb-12">
+                    <h3 className="text-3xl font-bold text-white mb-8 text-center">
+                        Multi-Industry Innovation
+                    </h3>
                     
-                    {/* Left: Self Made Poster */}
-                    <div className="order-2 md:order-1">
-                        <div className="relative rounded-2xl overflow-hidden border border-gray-700 shadow-2xl">
-                            <Image
-                                src="/poster-image-self-made.png"
-                                alt="There's no such thing as self made - you need God and others"
-                                width={800}
-                                height={600}
-                                className="w-full h-auto object-cover"
-                            />
-                        </div>
-                    </div>
-
-                    {/* Right: Industry Expertise */}
-                    <div className="order-1 md:order-2">
-                        <h3 className="text-3xl font-bold text-white mb-6">
-                            Multi-Industry Innovation
-                        </h3>
-                        
-                        <div className="grid grid-cols-2 gap-4">
-                            {expertise.map((item, index) => (
-                                <div
-                                    key={index}
-                                    className="group relative overflow-hidden"
-                                >
-                                    <div className="bg-gray-800/40 backdrop-blur-sm border border-gray-700 rounded-xl p-6 h-full hover:border-blue-500/50 transition-all duration-300">
-                                        <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-red-500/10 to-transparent rounded-bl-full"></div>
-                                        
-                                        <h4 className="text-lg font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors">
-                                            {item.area}
-                                        </h4>
-                                        <p className="text-white text-sm group-hover:text-white transition-colors">
-                                            {item.impact}
-                                        </p>
-                                        
-                                        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-                                    </div>
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                        {expertise.map((item, index) => (
+                            <div
+                                key={index}
+                                className="group relative overflow-hidden"
+                            >
+                                <div className="bg-gray-800/40 backdrop-blur-sm border border-gray-700 rounded-xl p-6 h-full hover:border-blue-500/50 transition-all duration-300">
+                                    <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-red-500/10 to-transparent rounded-bl-full"></div>
+                                    
+                                    <h4 className="text-lg font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors text-center">
+                                        {item.area}
+                                    </h4>
+                                    <p className="text-white text-sm group-hover:text-white transition-colors text-center">
+                                        {item.impact}
+                                    </p>
+                                    
+                                    <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                                 </div>
-                            ))}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Passion for Engineering - Car Images Integration */}
+                <div className="mt-24">
+                    <div className="text-center mb-12">
+                        <h3 className="text-3xl font-bold text-white mb-4">A Passion for Engineering</h3>
+                        <p className="text-gray-400 max-w-2xl mx-auto">
+                            Nathan has always had a deep appreciation for high-performance engineering. 
+                            These cars are just something that Nathan likes and hopes to have one day.
+                        </p>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div className="group relative overflow-hidden rounded-2xl border border-gray-700 shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+                            <div className="relative aspect-video">
+                                <Image
+                                    src="/cars/ford-mustang-shelbygt500.jpeg"
+                                    alt="Ford Mustang Shelby GT500 - Engineering Benchmark"
+                                    fill
+                                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                                <div className="absolute bottom-6 left-6">
+                                    <h4 className="text-xl font-bold text-white tracking-wide">Mustang Shelby GT500</h4>
+                                    <p className="text-blue-400 text-sm font-medium">Engineering Inspiration</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="group relative overflow-hidden rounded-2xl border border-gray-700 shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+                            <div className="relative aspect-video">
+                                <Image
+                                    src="/cars/mclarenf1.jpeg"
+                                    alt="McLaren F1 - Pursuit of Perfection"
+                                    fill
+                                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                                <div className="absolute bottom-6 left-6">
+                                    <h4 className="text-xl font-bold text-white tracking-wide">McLaren F1</h4>
+                                    <p className="text-red-400 text-sm font-medium">Pursuit of Perfection</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

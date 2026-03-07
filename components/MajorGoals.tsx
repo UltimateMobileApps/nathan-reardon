@@ -76,6 +76,17 @@ export default function MajorGoals() {
                             Beyond innovation and invention, I'm committed to solving humanity's greatest challenges. 
                             These are the missions that drive my passion for creating meaningful change in the world.
                         </p>
+
+                        {/* Inspirational Image */}
+                        <div className="mt-8 max-w-md mx-auto rounded-2xl overflow-hidden border border-gray-700/50 shadow-xl transform hover:scale-[1.02] transition-all duration-500">
+                            <Image
+                                src="/he-gave-his-life-for-us.png"
+                                alt="He gave his life for us"
+                                width={400}
+                                height={300}
+                                className="w-full h-auto object-cover"
+                            />
+                        </div>
                     </div>
 
                     {/* Goals Grid */}
