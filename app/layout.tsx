@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://nathanreardon.com'),
   alternates: {
-    canonical: '/',
+    canonical: 'https://nathanreardon.com',
   },
   openGraph: {
     title: "Nathan Reardon | Inventor, Entrepreneur & Innovator | 77+ Patents",

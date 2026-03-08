@@ -201,7 +201,7 @@
     "id": 23,
     "title": "Membership Auto™",
     "category": "Automotive Technology",
-    "image": "/patents/membership-auto.png",
+    "image": "/patents/membership-auto.jpeg",
     "description": "Never Pay for Car Repairs Again. Join the world's first subscription-based vehicle service & repair club. One low monthly fee. Zero surprise bills.",
     "applications": ["Vehicle maintenance", "Repair services", "Subscription services", "Automotive industry"],
     "website": "https://membershipauto.com"
@@ -654,7 +654,7 @@
     "image": "/patents/no-limit-flix.png",
     "description": "Unlimited streaming and content delivery platform.",
     "applications": ["Entertainment", "Streaming services", "Content delivery", "Media technology"],
-    "website": ""
+    "website": "https://www.nolimitflix.com"
   },
   {
     "id": 74,
@@ -681,7 +681,7 @@
     "image": "/patents/guardian-angel-ai.png",
     "description": "AI-powered personal safety and emergency response system.",
     "applications": ["Personal safety", "Emergency response", "AI assistance", "Protection services"],
-    "website": ""
+    "website": "https://guardianangeldevice.com"
   },
   {
     "id": 77,

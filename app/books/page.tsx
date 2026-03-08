@@ -5,8 +5,6 @@ import { useState } from "react";
 import { ArrowLeft, ShoppingCart, Check } from "lucide-react";
 import { GRADIENTS } from "@/constants/styles";
 import AnimatedStars from "@/components/AnimatedStars";
-import CardSizeToggle from "@/components/CardSizeToggle";
-import { useCardSize } from "@/hooks/useCardSize";
 
 interface BookItem {
   id: number;
@@ -21,8 +19,6 @@ interface BookItem {
 export default function BooksPage() {
   // Base URL for book purchases - set this when ready
   const booksBaseUrl = ""; // Leave empty to hide Order Now buttons
-
-  const { size, updateSize } = useCardSize();
 
   // Selected items state
   const [selectedItems, setSelectedItems] = useState<Set<number>>(new Set());
@@ -42,15 +38,6 @@ export default function BooksPage() {
 
   // Book items - based on actual images in public/books
   const bookItems: BookItem[] = [
-    {
-      id: 0,
-      name: "There Is No Such Thing As Self-Made",
-      category: "Books",
-      image: "/books/there-is-no-such-thing-as-self-made.png",
-      description: "A profound look into why we need God and others—challenging the 'self-made' myth.",
-      price: "",
-      url: "self-made",
-    },
     {
       id: 1,
       name: "Both Sides",
@@ -145,24 +132,13 @@ export default function BooksPage() {
 
             {/* Decorative line */}
             <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-blue-500 mx-auto mt-8 rounded-full"></div>
-            
-            {/* View Toggle */}
-            <div className="mt-8 flex justify-center">
-              <CardSizeToggle currentSize={size} onSizeChange={updateSize} />
-            </div>
           </div>
         </div>
       </div>
 
       {/* Books Grid */}
       <div className="relative max-w-7xl mx-auto px-6 pb-24">
-        <div className={`grid gap-4 md:gap-6 ${
-          size === 'small' 
-            ? "grid-cols-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5" 
-            : size === 'standard'
-            ? "grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-            : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-        }`}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {bookItems.map((item) => {
             const isSelected = selectedItems.has(item.id);
             return (
@@ -195,20 +171,16 @@ export default function BooksPage() {
                 </div>
 
                 {/* Content */}
-                <div className={`${size === 'small' ? 'p-2 sm:p-3' : 'p-5'}`}>
-                  <div className={`${size === 'small' ? 'mb-1' : 'mb-3'}`}>
-                    <span className={`inline-block px-2 py-0.5 border rounded-full font-semibold transition-all duration-300 ${
-                      size === 'small' ? 'text-[8px] mb-1' : 'text-xs mb-2'
-                    } ${
+                <div className="p-5">
+                  <div className="mb-3">
+                    <span className={`inline-block px-3 py-1 border rounded-full text-xs font-semibold mb-2 ${
                       isSelected
                         ? "bg-blue-500/20 border-blue-500/30 text-blue-400"
                         : "bg-red-500/20 border-red-500/30 text-red-400"
                     }`}>
                       {item.category}
                     </span>
-                    <h3 className={`font-semibold transition-all duration-300 line-clamp-1 ${
-                      size === 'small' ? 'text-xs sm:text-sm' : 'text-lg'
-                    } ${
+                    <h3 className={`text-lg font-semibold transition-colors duration-300 ${
                       isSelected
                         ? "text-blue-400"
                         : "text-white group-hover:text-blue-400"
@@ -217,28 +189,24 @@ export default function BooksPage() {
                     </h3>
                   </div>
 
-                  {size !== 'small' && (
-                    <p className="text-gray-400 text-sm mb-4 line-clamp-2">
-                      {item.description}
-                    </p>
-                  )}
+                  <p className="text-gray-400 text-sm mb-4 line-clamp-2">
+                    {item.description}
+                  </p>
 
                   {/* Price and CTA */}
-                  <div className="flex justify-between items-center mt-auto">
+                  <div className="flex justify-between items-center">
                     {item.price && item.price !== "" && item.price !== "0" && (
-                      <span className={`font-bold text-blue-400 ${size === 'small' ? 'text-xs' : 'text-lg'}`}>
+                      <span className="text-lg font-bold text-blue-400">
                         {item.price}
                       </span>
                     )}
                     {booksBaseUrl && (
                       <a
                         href={`${booksBaseUrl}${item.url}`}
-                        className={`inline-flex items-center gap-2 bg-gradient-to-r from-red-500 to-blue-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 ${
-                          size === 'small' ? 'px-2 py-1 text-[10px]' : 'px-4 py-2'
-                        }`}
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-red-500 to-blue-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
                       >
-                        {size !== 'small' ? 'Order Now' : ''}
-                        <ShoppingCart className={size === 'small' ? 'w-3 h-3' : 'w-4 h-4'} />
+                        Order Now
+                        <ShoppingCart className="w-4 h-4" />
                       </a>
                     )}
                   </div>
