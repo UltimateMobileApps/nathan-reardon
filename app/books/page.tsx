@@ -40,7 +40,7 @@ export default function BooksPage() {
   const bookItems: BookItem[] = [
     {
       id: 1,
-      name: "Both Sides",
+      name: "Both Sides of Poor and Rich",
       category: "Books",
       image: "/books/both-sides.jpeg",
       description: "Exploring perspectives from both sides of life's challenges and opportunities.",
@@ -49,7 +49,7 @@ export default function BooksPage() {
     },
     {
       id: 2,
-      name: "Get a Job",
+      name: "How to Get a Job and Keep It",
       category: "Books",
       image: "/books/get-a-job.jpeg",
       description: "Practical guide to career development and professional success.",
@@ -58,7 +58,7 @@ export default function BooksPage() {
     },
     {
       id: 3,
-      name: "Liberty",
+      name: "Why Liberty Is So Important",
       category: "Books",
       image: "/books/liberty.jpeg",
       description: "A comprehensive exploration of freedom, rights, and personal liberty.",
@@ -67,7 +67,7 @@ export default function BooksPage() {
     },
     {
       id: 4,
-      name: "Never Saw It",
+      name: "They Never Saw It Coming",
       category: "Books",
       image: "/books/never-saw-it.png",
       description: "Uncovering hidden truths and perspectives you never saw coming.",
@@ -85,7 +85,7 @@ export default function BooksPage() {
     },
     {
       id: 6,
-      name: "Success Risk",
+      name: "The Risk of Success",
       category: "Books",
       image: "/books/success-risk.png",
       description: "Understanding the risks and rewards on the path to success.",

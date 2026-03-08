@@ -20,7 +20,8 @@ type Patent = {
     website: string;
 };
 
-const allPatents: Patent[] = patentsData;
+// keep sorted for potential list usages or consistent lookups
+const allPatents: Patent[] = [...patentsData].sort((a, b) => a.title.localeCompare(b.title));
 
 export default function ComingSoonPage() {
     const params = useParams();

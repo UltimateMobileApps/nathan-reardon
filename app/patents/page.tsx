@@ -50,7 +50,8 @@ const getPatentLink = (patent: Patent) => {
 };
 
 export default function PatentsPage() {
-    const allPatents: Patent[] = patentsData;
+    // always present patents sorted alphabetically by title so new entries auto-position correctly
+    const allPatents: Patent[] = [...patentsData].sort((a, b) => a.title.localeCompare(b.title));
 
     const [selectedCategory, setSelectedCategory] = useState("All");
     const [searchTerm, setSearchTerm] = useState("");

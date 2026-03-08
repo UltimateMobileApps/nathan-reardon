@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, X, Linkedin, Instagram, MapPin, Mail, Youtube, LucideIcon } from "lucide-react";
+import { Facebook, X, Linkedin, Instagram, MapPin, Mail, Phone, Youtube, LucideIcon } from "lucide-react";
 import { GRADIENTS, STYLES, ANIMATIONS } from "@/constants/styles";
 
 export default function Footer() {
@@ -75,13 +75,26 @@ export default function Footer() {
                         <div className="space-y-3">
                             <div className="flex items-center space-x-3 text-gray-400">
                                 <MapPin size={16} className="text-red-500 flex-shrink-0" />
-                                <span className="text-sm">PO Box 52
-                                    Detroit, Me. 04929
-                                </span>
+                                <a
+                                    href="https://www.google.com/maps/search/?api=1&query=PO+Box+52+Detroit,+Me.+04929"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-sm hover:underline"
+                                >
+                                    PO Box 52, Detroit, Me. 04929
+                                </a>
                             </div>
                             <div className="flex items-center space-x-3 text-gray-400">
                                 <Mail size={16} className="text-red-500 flex-shrink-0" />
-                                <span className="text-sm">Info@nathanreardon.com</span>
+                                <a href="mailto:Info@nathanreardon.com" className="text-sm hover:underline">
+                                    Info@nathanreardon.com
+                                </a>
+                            </div>
+                            <div className="flex items-center space-x-3 text-gray-400">
+                                <Phone size={16} className="text-red-500 flex-shrink-0" />
+                                <a href="tel:207-947-1999" className="text-sm hover:underline">
+                                    207-947-1999
+                                </a>
                             </div>
                         </div>
 

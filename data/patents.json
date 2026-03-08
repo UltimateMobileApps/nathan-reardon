@@ -48,7 +48,7 @@
     "id": 6,
     "title": "Invisi Glass™",
     "category": "Automotive Technology",
-    "image": "/patents/invisi-shield.png",
+    "image": "/patents/invisi.png",
     "description": "Perfect Visibility, Zero Bugs or Rain Distortion system that prevents water distortion and keeps bugs from sticking to windshields and windows.",
     "applications": ["Automotive safety", "Aviation", "Marine vessels", "Building windows"],
     "website": "https://invisishieldfilm.com"
@@ -57,7 +57,7 @@
     "id": 7,
     "title": "Invisi Shield™",
     "category": "Defense Technology",
-    "image": "/patents/invisi.png",
+    "image": "/patents/invisi-shield.png",
     "description": "Affordable Vehicle & Building Armoring system offering retrofit bulletproof glass and doors for under $5,000 with minimal added weight.",
     "applications": ["Police vehicles", "Civilian protection", "School security", "Emergency services"],
     "website": "https://invisishieldplus.com"
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "title": "Never Forget™",
+    "title": "Never Forget Baby™",
     "category": "Safety Technology",
     "image": "/patents/never-forget.png",
     "description": "Ending Child & Pet Car Deaths Forever using seat sensors, smartphone alerts, and escalation to emergency services to ensure no child is ever left behind.",
@@ -217,7 +217,7 @@
   },
   {
     "id": 25,
-    "title": "Freedom Teck™",
+    "title": "Freedom Tek™",
     "category": "Correctional Technology",
     "image": "/patents/freedomTek.png",
     "description": "Innovative technology solutions for correctional facilities and prisoner services, facilitating communication and improving facility operations.",
@@ -348,7 +348,7 @@
     "image": "/patents/scene-aware.png",
     "description": "Computer vision system that understands and responds to its environment.",
     "applications": ["Security systems", "Robotics", "Autonomous vehicles", "Surveillance"],
-    "website": ""
+    "website": "https://www.nolimitflix.com"
   },
   {
     "id": 40,
@@ -420,7 +420,7 @@
     "image": "/patents/ez-post.png",
     "description": "Simplified fence or utility post installation system.",
     "applications": ["Construction", "Fencing", "Utilities", "Infrastructure installation"],
-    "website": ""
+    "website": "https://www.ez-postage.com"
   },
   {
     "id": 48,
@@ -663,7 +663,7 @@
     "image": "/patents/freedomTek.png",
     "description": "Freedom-focused communication and technology platform.",
     "applications": ["Communication", "Technology solutions", "Digital freedom", "Connectivity"],
-    "website": ""
+    "website": "https://freedomteck.com"
   },
   {
     "id": 75,
@@ -672,7 +672,7 @@
     "image": "/patents/justice-pay.png",
     "description": "Fair payment system for legal and justice services.",
     "applications": ["Legal services", "Payment processing", "Financial technology", "Justice system"],
-    "website": ""
+    "website": "https://freedomteck.com"
   },
   {
     "id": 76,
