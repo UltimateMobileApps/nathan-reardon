@@ -27,14 +27,14 @@ type Patent = {
     website: string;
 };
 
-// Helper function to check if patent has live website
-const hasLiveWebsite = (patent: Patent): boolean => {
-    return patent.title === "Vita Choice™" || patent.title === "Radiamel™";
+// Helper function to check if patent has a valid website
+const hasValidWebsite = (patent: Patent): boolean => {
+    return typeof patent.website === 'string' && patent.website.trim() !== "";
 };
 
 // Helper function to get the appropriate link and button text
 const getPatentLink = (patent: Patent) => {
-    if (hasLiveWebsite(patent)) {
+    if (hasValidWebsite(patent)) {
         return {
             href: patent.website,
             isExternal: true,
@@ -260,8 +260,8 @@ export default function PatentsPage() {
                                     </div>
                                 </div>
 
-                                {/* CTA Button */}
-                                {selectedPatent && (
+                                {/* CTA Button - Only show if patent has a website */}
+                                {selectedPatent && hasValidWebsite(selectedPatent) && (
                                     <a
                                         href={getPatentLink(selectedPatent).href}
                                         {...(getPatentLink(selectedPatent).isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
@@ -352,15 +352,17 @@ function PatentCard({ patent, onImageClick }: { patent: Patent; onImageClick: (p
                     </div>
                 </div>
 
-                {/* CTA (preserves gradient button design) */}
-                <a
-                    href={href}
-                    {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300 transform hover:scale-105"
-                >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    {buttonText}
-                </a>
+                {/* CTA - Only show if patent has a website */}
+                {hasValidWebsite(patent) && (
+                    <a
+                        href={href}
+                        {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                        className="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300 transform hover:scale-105"
+                    >
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        {buttonText}
+                    </a>
+                )}
             </div>
         </div>
     );

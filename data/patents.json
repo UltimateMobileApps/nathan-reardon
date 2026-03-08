@@ -276,7 +276,7 @@
     "image": "/patents/magma-bit.png",
     "description": "Revolutionary drilling technology for deep earth applications and geothermal exploration.",
     "applications": ["Geothermal drilling", "Mining", "Oil & gas", "Deep earth exploration"],
-    "website": "https://magmabit.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 32,
@@ -312,7 +312,7 @@
     "image": "/patents/futuretech.jpg",
     "description": "Advanced technology solutions for tomorrow's challenges.",
     "applications": ["Innovation", "Technology", "Future solutions"],
-    "website": "https://futuretech.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 36,
@@ -321,7 +321,7 @@
     "image": "/patents/autonomous-service-writer.png",
     "description": "AI-powered system that automatically generates service reports and diagnostics for vehicles.",
     "applications": ["Vehicle service", "Diagnostics", "Automotive repair", "Fleet management"],
-    "website": "https://auto-service-writer.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 37,
@@ -348,7 +348,7 @@
     "image": "/patents/scene-aware.png",
     "description": "Computer vision system that understands and responds to its environment.",
     "applications": ["Security systems", "Robotics", "Autonomous vehicles", "Surveillance"],
-    "website": "https://sceneaware.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 40,
@@ -357,7 +357,7 @@
     "image": "/patents/frost-mat.png",
     "description": "Innovative mat technology preventing frost heave and ground damage.",
     "applications": ["Road construction", "Foundation protection", "Winter maintenance", "Infrastructure"],
-    "website": "https://frostmat.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 41,
@@ -366,7 +366,7 @@
     "image": "/patents/hydra-sense.png",
     "description": "Advanced water quality monitoring and detection system.",
     "applications": ["Water treatment", "Environmental monitoring", "Public health", "Industrial water"],
-    "website": "https://hydrasense.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 42,
@@ -375,7 +375,7 @@
     "image": "/patents/keto-sense.png",
     "description": "Metabolic health tracking for ketogenic diet optimization.",
     "applications": ["Diet management", "Metabolic health", "Wellness tracking", "Health optimization"],
-    "website": "https://ketosense.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 43,
@@ -384,7 +384,7 @@
     "image": "/patents/drug-guard.png",
     "description": "Detection system for identifying illegal substances and contraband.",
     "applications": ["Border security", "Law enforcement", "Correctional facilities", "Customs"],
-    "website": "https://drugguard.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 44,
@@ -393,7 +393,7 @@
     "image": "/patents/blue-voice.png",
     "description": "Secure voice communication and encryption system.",
     "applications": ["Military communication", "Emergency services", "Secure operations", "Confidential communication"],
-    "website": "https://bluevoice.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 45,
@@ -402,16 +402,16 @@
     "image": "/patents/anti-freeze-flow.png",
     "description": "Prevents freezing in fluid systems and pipelines.",
     "applications": ["HVAC systems", "Industrial piping", "Agricultural systems", "Marine applications"],
-    "website": "https://antifreeze.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 46,
     "title": "Zero Freeze Fire Hose System™",
     "category": "Fire Safety Technology",
-    "image": "/patents/zero-freeze-fire-hose.png",
+    "image": "/patents/zero-freeze-fire-ops.png",
     "description": "Fire hose system that operates in extreme cold without freezing.",
     "applications": ["Fire safety", "Cold climate protection", "Emergency response", "Arctic operations"],
-    "website": "https://zerofreeze.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 47,
@@ -420,7 +420,7 @@
     "image": "/patents/ez-post.png",
     "description": "Simplified fence or utility post installation system.",
     "applications": ["Construction", "Fencing", "Utilities", "Infrastructure installation"],
-    "website": "https://ezpost.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 48,
@@ -429,7 +429,7 @@
     "image": "/patents/rust-blok.png",
     "description": "Advanced rust prevention and protection coating system.",
     "applications": ["Metal protection", "Automotive", "Marine", "Industrial equipment"],
-    "website": "https://rustblok.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 49,
@@ -438,7 +438,7 @@
     "image": "/patents/oxalate-guard.png",
     "description": "Dietary supplement reducing oxalate levels and kidney stone risk.",
     "applications": ["Kidney health", "Stone prevention", "Dietary wellness", "Medical nutrition"],
-    "website": "https://oxalateguard.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 50,
@@ -447,7 +447,7 @@
     "image": "/patents/pet-savers.jpg",
     "description": "Emergency alert system for pet safety and location tracking.",
     "applications": ["Pet safety", "Emergency response", "GPS tracking", "Pet protection"],
-    "website": "https://petsavers.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 51,
@@ -456,7 +456,7 @@
     "image": "/patents/identifi.png",
     "description": "Advanced biometric and identity verification system.",
     "applications": ["Biometric security", "Access control", "Identity verification", "Law enforcement"],
-    "website": "https://identifi.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 52,
@@ -465,7 +465,7 @@
     "image": "/patents/safe-t-plast.png",
     "description": "Safe, durable plastic material for construction and applications.",
     "applications": ["Construction materials", "Safety equipment", "Consumer products", "Industrial use"],
-    "website": "https://safetplast.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 53,
@@ -474,7 +474,7 @@
     "image": "/patents/cancer-collapse.png",
     "description": "Revolutionary approach to collapsing cancer cell structures.",
     "applications": ["Cancer treatment", "Oncology", "Medical research", "Immune therapy"],
-    "website": "https://cancercollapse.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 54,
@@ -483,7 +483,7 @@
     "image": "/patents/cop-stop.png",
     "description": "Law enforcement technology for stopping vehicles safely.",
     "applications": ["Traffic control", "Law enforcement", "Emergency response", "Public safety"],
-    "website": "https://copstop.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 55,
@@ -492,7 +492,7 @@
     "image": "/patents/pulse-stop.png",
     "description": "Emergency medical device for controlling heart rhythm disturbances.",
     "applications": ["Emergency medicine", "Cardiac care", "First aid", "Medical devices"],
-    "website": "https://pulsestop.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 56,
@@ -501,7 +501,7 @@
     "image": "/patents/rail-scout.png",
     "description": "Autonomous inspection and monitoring system for rail infrastructure.",
     "applications": ["Railway maintenance", "Infrastructure inspection", "Safety monitoring", "Transportation"],
-    "website": "https://railscout.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 57,
@@ -510,7 +510,7 @@
     "image": "/patents/smognet.png",
     "description": "Air quality monitoring and pollution control network.",
     "applications": ["Air quality", "Environmental monitoring", "Pollution control", "Urban planning"],
-    "website": "https://smognet.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 58,
@@ -519,7 +519,7 @@
     "image": "/patents/seal-guard.png",
     "description": "Advanced sealing technology for preventing contamination and leaks.",
     "applications": ["Industrial sealing", "Water protection", "Environmental protection", "Quality control"],
-    "website": "https://sealguard.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 59,
@@ -528,7 +528,7 @@
     "image": "/patents/kid-block.png",
     "description": "Parental control and child safety monitoring system.",
     "applications": ["Child safety", "Parental controls", "Screen time management", "Digital safety"],
-    "website": "https://kidblock.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 60,
@@ -537,7 +537,7 @@
     "image": "/patents/antiven-pen.png",
     "description": "Emergency anti-venom delivery system for snake and insect bites.",
     "applications": ["Emergency medicine", "Snake bite treatment", "Venom neutralization", "First aid"],
-    "website": "https://antivenpen.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 61,
@@ -546,7 +546,7 @@
     "image": "/patents/insta-heat.png",
     "description": "Instant heating technology for instant warmth applications.",
     "applications": ["Consumer heating", "Emergency warmth", "Medical applications", "Outdoor gear"],
-    "website": "https://instaheat.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 62,
@@ -555,7 +555,7 @@
     "image": "/patents/shorelock.png",
     "description": "Coastal erosion prevention and shoreline protection system.",
     "applications": ["Coastal protection", "Erosion control", "Environmental protection", "Infrastructure"],
-    "website": "https://shorelock.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 63,
@@ -564,7 +564,7 @@
     "image": "/patents/nervana.png",
     "description": "Non-opioid pain relief and nerve stimulation system.",
     "applications": ["Pain management", "Medical therapy", "Neurological treatment", "Wellness"],
-    "website": "https://nervana.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 64,
@@ -573,7 +573,7 @@
     "image": "/patents/kidney-glide.png",
     "description": "Kidney function optimization and dialysis enhancement technology.",
     "applications": ["Kidney health", "Dialysis treatment", "Renal care", "Medical devices"],
-    "website": "https://kidneyglide.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 65,
@@ -582,7 +582,7 @@
     "image": "/patents/fire-guard-gt.png",
     "description": "Advanced fire detection and suppression system for vehicles.",
     "applications": ["Fire prevention", "Vehicle safety", "Emergency response", "Industrial safety"],
-    "website": "https://fireguardgt.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 66,
@@ -591,7 +591,7 @@
     "image": "/patents/pest-fence.png",
     "description": "Non-toxic pest prevention barrier and detection system.",
     "applications": ["Agriculture", "Pest control", "Animal husbandry", "Crop protection"],
-    "website": "https://pestfence.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 67,
@@ -600,7 +600,7 @@
     "image": "/patents/bio-clock-kernel.png",
     "description": "Biological clock synchronization technology for circadian rhythm optimization.",
     "applications": ["Sleep optimization", "Health optimization", "Circadian rhythm", "Wellness"],
-    "website": "https://bioclockkernel.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 68,
@@ -609,7 +609,7 @@
     "image": "/patents/silent-guard.png",
     "description": "Silent alarm and discrete security monitoring system.",
     "applications": ["Security systems", "Loss prevention", "Property protection", "Surveillance"],
-    "website": "https://silentguard.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 69,
@@ -618,7 +618,7 @@
     "image": "/patents/soft-alert.png",
     "description": "Gentle notification system for important alerts and reminders.",
     "applications": ["Healthcare", "Safety notifications", "Reminder systems", "Wellness alerts"],
-    "website": "https://softalert.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 70,
@@ -627,7 +627,7 @@
     "image": "/patents/flood-hose.png",
     "description": "Emergency flooding control and water management system.",
     "applications": ["Flood prevention", "Water management", "Emergency response", "Infrastructure"],
-    "website": "https://floodhose.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 71,
@@ -636,7 +636,7 @@
     "image": "/patents/terra-guard.png",
     "description": "Soil protection and land conservation technology.",
     "applications": ["Environmental protection", "Soil conservation", "Land management", "Agriculture"],
-    "website": "https://terraguard.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 72,
@@ -645,7 +645,7 @@
     "image": "/patents/apex-veil.png",
     "description": "Advanced concealment and privacy protection system.",
     "applications": ["Privacy protection", "Security systems", "Surveillance prevention", "Confidentiality"],
-    "website": "https://apexveil.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 73,
@@ -654,7 +654,7 @@
     "image": "/patents/no-limit-flix.png",
     "description": "Unlimited streaming and content delivery platform.",
     "applications": ["Entertainment", "Streaming services", "Content delivery", "Media technology"],
-    "website": "https://nolimitflix.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 74,
@@ -663,7 +663,7 @@
     "image": "/patents/freedomTek.png",
     "description": "Freedom-focused communication and technology platform.",
     "applications": ["Communication", "Technology solutions", "Digital freedom", "Connectivity"],
-    "website": "https://freedomtek.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 75,
@@ -672,7 +672,7 @@
     "image": "/patents/justice-pay.png",
     "description": "Fair payment system for legal and justice services.",
     "applications": ["Legal services", "Payment processing", "Financial technology", "Justice system"],
-    "website": "https://justicepay.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 76,
@@ -681,7 +681,7 @@
     "image": "/patents/guardian-angel-ai.png",
     "description": "AI-powered personal safety and emergency response system.",
     "applications": ["Personal safety", "Emergency response", "AI assistance", "Protection services"],
-    "website": "https://guardianangel-ai.nathanreardon.com"
+    "website": ""
   },
   {
     "id": 77,
@@ -690,6 +690,6 @@
     "image": "/patents/onekey.png",
     "description": "Universal single-key access and authentication system.",
     "applications": ["Access control", "Authentication", "Security systems", "Smart locks"],
-    "website": "https://onekey.nathanreardon.com"
+    "website": ""
   }
 ]
