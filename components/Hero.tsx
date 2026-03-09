@@ -140,7 +140,7 @@ export default function Hero() {
                     {/* Main Image Container */}
                     <div className="relative w-80 h-80 md:w-[24rem] md:h-[24rem] rounded-2xl overflow-hidden backdrop-blur-sm border border-red-700/20 shadow-2xl shadow-red-900/30">
                         <Image
-                            src="/nathan-img.png"
+                            src="/new-nathan.png"
                             alt="Nathan Reardon - Automotive Industry Leader & Innovator"
                             fill
                             className="object-contain brightness-110 contrast-105"

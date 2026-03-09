@@ -102,7 +102,7 @@ export default function Footer() {
                         <div className="flex justify-center md:justify-start">
                             <div className="w-32 h-32 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <img
-                                    src="/nathan-img.png"
+                                    src="/new-nathan.png"
                                     alt="Nathan Reardon"
                                     className="w-full h-full object-contain"
                                 />

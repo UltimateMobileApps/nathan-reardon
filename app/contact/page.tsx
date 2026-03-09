@@ -192,7 +192,7 @@ export default function ContactPage() {
                             <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 mb-6">
                                 <div className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-blue-500/50 flex-shrink-0">
                                     <Image
-                                        src="/nathan-img.png"
+                                        src="/new-nathan.png"
                                         alt="Nathan Reardon"
                                         fill
                                         className="object-contain"

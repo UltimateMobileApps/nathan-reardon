@@ -19,18 +19,16 @@ export default function ASEStatement() {
     <section className="flex flex-col gap-8 py-16 px-4 bg-gray-900 rounded-2xl my-12 max-w-6xl mx-auto shadow-lg">
       {/* PDF and ASE Logo */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-        <div className="w-full md:w-1/2 flex justify-center">
-          <div className="w-full h-[500px] max-w-xl rounded-lg overflow-hidden border border-gray-700 shadow-md bg-white">
-            <iframe
-              src="/Status%20Letter.pdf"
-              title="ASE Statement Letter"
-              width="100%"
-              height="100%"
-              className="w-full h-full"
-              style={{ minHeight: 500, border: "none" }}
-              allowFullScreen
-            ></iframe>
-          </div>
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
+          <a
+            href="/Status%20Letter.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-md"
+          >
+            View Status Letter
+          </a>
+          <p className="text-gray-400 text-sm mt-2">Click to view the ASE Statement Letter</p>
         </div>
         <div className="w-full md:w-1/3 flex justify-center">
           <Image
