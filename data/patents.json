@@ -19,10 +19,10 @@
   },
   {
     "id": 3,
-    "title": "Apex Drone & Garage™",
+    "title": "Apex Defender",
     "category": "Security Technology",
     "image": "/patents/apex-defender.png",
-    "description": "Autonomous Aerial Policing and Support System equipped with full-spectrum vision systems capable of seeing through tinted glass, detecting concealed weapons, and scanning for drugs or threats.",
+    "description": "Apex Defender® is an advanced intrusion-detection system designed to protect you before you enter your home or vehicle. Using precision radar and intelligent presence-detection technology, the system scans interior spaces to identify whether a person is hiding inside your house, garage, or car when you return. \n Think of it as a professional security sweep—automated. Apex Defender acts like a trained guard dog silently checking the space ahead of you, alerting you to potential intruders so you never walk into a dangerous situation unknowingly.",
     "applications": ["Urban law enforcement", "Officer safety", "Threat assessment", "Non-lethal policing"],
     "website": "https://theapexdrone.com"
   },
@@ -236,9 +236,9 @@
   {
     "id": 27,
     "title": "Aurum Flux™",
-    "category": "Energy Technology",
+    "category": "Materials Technology",
     "image": "/patents/aurum-flux.png",
-    "description": "Next-generation energy solutions for sustainable power systems and applications.",
+    "description": "Aurum flux is the world's first gold harvesting tool for the ocean.",
     "applications": ["Energy generation", "Power systems", "Sustainability", "Industrial power"],
     "website": "https://aurumfluxocean.com"
   },
@@ -444,7 +444,7 @@
     "id": 50,
     "title": "Pet Savers™",
     "category": "Pet Safety Technology",
-    "image": "/patents/pet-savers.jpg",
+    "image": "/patents/pet-savers.png",
     "description": "Emergency alert system for pet safety and location tracking.",
     "applications": ["Pet safety", "Emergency response", "GPS tracking", "Pet protection"],
     "website": ""
@@ -643,7 +643,7 @@
     "title": "Apex Veil™",
     "category": "Security Technology",
     "image": "/patents/apex-veil.png",
-    "description": "Advanced concealment and privacy protection system.",
+    "description": "Apex Veil® is a law-enforcement drone designed to safely stop fleeing vehicles without dangerous high-speed pursuits. The drone deploys a specialized adhesive onto the windshield, immediately blocking visibility and forcing the driver to slow and stop.",
     "applications": ["Privacy protection", "Security systems", "Surveillance prevention", "Confidentiality"],
     "website": ""
   },
@@ -658,15 +658,6 @@
   },
   {
     "id": 74,
-    "title": "Freedom Tek™",
-    "category": "Communication Technology",
-    "image": "/patents/freedomTek.png",
-    "description": "Freedom-focused communication and technology platform.",
-    "applications": ["Communication", "Technology solutions", "Digital freedom", "Connectivity"],
-    "website": "https://freedomteck.com"
-  },
-  {
-    "id": 75,
     "title": "Justice Pay™",
     "category": "Financial Technology",
     "image": "/patents/justice-pay.png",
@@ -675,7 +666,7 @@
     "website": "https://freedomteck.com"
   },
   {
-    "id": 76,
+    "id": 75,
     "title": "Guardian Angel AI™",
     "category": "AI Technology",
     "image": "/patents/guardian-angel-ai.png",
@@ -684,7 +675,7 @@
     "website": "https://guardianangeldevice.com"
   },
   {
-    "id": 77,
+    "id": 76,
     "title": "OneKey™",
     "category": "Security Technology",
     "image": "/patents/onekey.png",
