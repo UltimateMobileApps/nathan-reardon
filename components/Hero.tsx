@@ -35,11 +35,24 @@ export default function Hero() {
                 </div>
             </div>
 
+            {/* Additional mobile-only image inserted below the main portrait */}
+            <div className="z-10 flex md:hidden justify-center mb-2">
+                <div className="relative w-64 h-20 rounded-2xl overflow-hidden backdrop-blur-sm border border-red-700/20 shadow-2xl shadow-red-900/30">
+                    <Image
+                        src="/moving-with-sense-of-urgency.png"
+                        alt="Moving With Sense Of Urgency"
+                        fill
+                        className="object-contain"
+                    />
+                </div>
+            </div>
+
             {/* Left Content */}
-            <div className="z-10 w-full md:flex-1 text-center md:text-left space-y-6">
+            <div className="z-10 w-full md:flex-1 text-center md:text-left space-y-4 md:space-y-6">
                 {/* Global/Innovation Logo */}
                 <div className="flex justify-center md:justify-start hero-fade-in-up-delay-2">
-                    <div className="h-32" />
+                    {/* reserve space for logo only on desktop; remove on mobile to keep content tight */}
+                    <div className="h-0 md:h-32" />
                 </div>
 
                 <h1 className="text-4xl md:text-6xl font-bold leading-tight hero-fade-in-up-delay-1">
@@ -53,7 +66,7 @@ export default function Hero() {
 
                 <p className="text-white text-lg max-w-xl mx-auto md:mx-0 leading-relaxed hero-fade-in-up-delay-3">
                    Nathan Reardon is a prolific American inventor, entrepreneur,
-                   and strategist with 77+ patents filed and over 120 patents in development spanning 14 industries including technology, healthcare, automotive, energy, aerospace, real estate, manufacturing, and consumer products.
+                   and strategist with 80+ patents filed and over 200 patents in development spanning 14 industries including technology, healthcare, automotive, energy, aerospace, real estate, manufacturing, and consumer products.
                 </p>
 
                 {/* Video Section */}
@@ -149,6 +162,16 @@ export default function Hero() {
 
                         {/* Subtle overlay glow */}
                         <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 via-transparent to-red-900/5 pointer-events-none"></div>
+                    </div>
+
+                    {/* Desktop-only secondary image below main portrait */}
+                    <div className="mt-6 hidden md:block relative w-80 h-20 md:w-[24rem] md:h-[6rem] rounded-2xl overflow-hidden backdrop-blur-sm border border-red-700/20 shadow-2xl shadow-red-900/30">
+                        <Image
+                            src="/moving-with-sense-of-urgency.png"
+                            alt="Moving With Sense Of Urgency"
+                            fill
+                            className="object-contain"
+                        />
                     </div>
                 </div>
             </div>
