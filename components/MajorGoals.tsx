@@ -77,15 +77,26 @@ export default function MajorGoals() {
                             These are the missions that drive my passion for creating meaningful change in the world.
                         </p>
 
-                        {/* Inspirational Image */}
-                        <div className="mt-8 max-w-md mx-auto rounded-2xl overflow-hidden border border-gray-700/50 shadow-xl transform hover:scale-[1.02] transition-all duration-500">
-                            <Image
-                                src="/he-gave-his-life-for-us.png"
-                                alt="He gave his life for us"
-                                width={400}
-                                height={300}
-                                className="w-full h-auto object-cover"
-                            />
+                        {/* Inspirational Images */}
+                        <div className="mt-12 flex flex-col md:flex-row gap-8 justify-center items-center max-w-5xl mx-auto">
+                            <div className="w-full md:w-1/2 max-w-md rounded-2xl overflow-hidden border border-gray-700/50 shadow-xl transform hover:scale-[1.02] transition-all duration-500">
+                                <Image
+                                    src="/he-gave-his-life-for-us.png"
+                                    alt="He gave his life for us"
+                                    width={400}
+                                    height={300}
+                                    className="w-full h-auto object-cover"
+                                />
+                            </div>
+                            <div className="w-full md:w-1/2 max-w-md rounded-2xl overflow-hidden border border-gray-700/50 shadow-xl transform hover:scale-[1.02] transition-all duration-500">
+                                <Image
+                                    src="/ministry.png"
+                                    alt="I was called to fund ministry - Nathan Reardon quote"
+                                    width={400}
+                                    height={600}
+                                    className="w-full h-auto object-cover"
+                                />
+                            </div>
                         </div>
                     </div>
 

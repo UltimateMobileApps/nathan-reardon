@@ -537,7 +537,7 @@
     "image": "/patents/antiven-pen.png",
     "description": "Emergency anti-venom delivery system for snake and insect bites.",
     "applications": ["Emergency medicine", "Snake bite treatment", "Venom neutralization", "First aid"],
-    "website": ""
+    "website": "https://www.antiven.com/"
   },
   {
     "id": 61,
@@ -645,7 +645,7 @@
     "image": "/patents/apex-veil.png",
     "description": "Apex Veil® is a law-enforcement drone designed to safely stop fleeing vehicles without dangerous high-speed pursuits. The drone deploys a specialized adhesive onto the windshield, immediately blocking visibility and forcing the driver to slow and stop.",
     "applications": ["Privacy protection", "Security systems", "Surveillance prevention", "Confidentiality"],
-    "website": ""
+    "website": "https://www.apexveil.com/"
   },
   {
     "id": 73,
