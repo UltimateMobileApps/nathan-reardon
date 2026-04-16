@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { ExternalLink, Building2, Newspaper } from "lucide-react";
-import { GRADIENTS } from "@/constants/styles";
 
 export default function Companies() {
   const companies = [
@@ -13,8 +12,8 @@ export default function Companies() {
       description: "A leading property management and real estate investment firm dedicated to quality holdings and strategic development.",
       url: "https://www.ultimatepropertyholdings.com",
       icon: Building2,
-      color: "from-blue-500/20 to-cyan-500/20",
-      borderColor: "border-blue-500/30"
+      color: "from-[#5aa9ff]/18 to-[#cfe2ff]/14",
+      borderColor: "border-[#5aa9ff]/30"
     },
     {
       name: "Maine News Now",
@@ -23,25 +22,25 @@ export default function Companies() {
       description: "Delivering timely, accurate, and impactful news from across the state of Maine, keeping the community informed and engaged.",
       url: "https://www.mainenewsnow.com",
       icon: Newspaper,
-      color: "from-red-500/20 to-blue-500/20",
-      borderColor: "border-red-500/30"
+      color: "from-[#c23652]/18 to-[#5aa9ff]/16",
+      borderColor: "border-[#c23652]/30"
     }
   ];
 
   return (
-    <section id="companies" className="relative py-24 bg-gray-950 overflow-hidden">
+    <section id="companies" className="relative py-24 theme-shell overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-red-500 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2"></div>
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#2f88ff] rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#c23652] rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className={`text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent mb-4`}>
+          <h2 className="text-4xl md:text-5xl font-bold theme-title mb-4">
             Business Ventures
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-[#a6b5cc] max-w-2xl mx-auto">
             Establishing and growing companies that drive value and serve communities.
           </p>
         </div>
@@ -52,14 +51,14 @@ export default function Companies() {
             return (
               <div
                 key={index}
-                className="group relative bg-gray-900/50 backdrop-blur-xl border border-gray-800 rounded-3xl p-8 transition-all duration-500 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/10"
+                className="group relative theme-panel backdrop-blur-xl rounded-3xl p-8 transition-all duration-500 hover:border-[#7cb8ff]/50 hover:shadow-2xl hover:shadow-[#2f88ff]/10"
               >
                 {/* Accent Background */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${company.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl`}></div>
                 
                 <div className="relative z-10 flex flex-col items-center text-center h-full">
                   {/* Logo Container */}
-                  <div className="relative w-full h-32 mb-8 flex items-center justify-center p-4 bg-white/5 rounded-2xl border border-white/10 group-hover:border-white/20 transition-colors">
+                  <div className="relative w-full h-32 mb-8 flex items-center justify-center p-4 bg-white/5 rounded-2xl border border-white/10 group-hover:border-[#dce9ff]/20 transition-colors">
                     <div className="relative w-full h-full">
                       <Image
                         src={company.logo}
@@ -73,17 +72,17 @@ export default function Companies() {
 
                   {/* Icon & Title */}
                   <div className="flex items-center gap-3 mb-2">
-                    <Icon className="w-5 h-5 text-blue-400" />
-                    <span className="text-blue-400 font-bold tracking-wider uppercase text-xs">
+                    <Icon className="w-5 h-5 text-[#8ec7ff]" />
+                    <span className="text-[#8ec7ff] font-bold tracking-wider uppercase text-xs">
                       {company.role}
                     </span>
                   </div>
                   
-                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors">
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#dce9ff] transition-colors">
                     {company.name}
                   </h3>
                   
-                  <p className="text-gray-400 leading-relaxed mb-8 flex-grow">
+                  <p className="text-[#a6b5cc] leading-relaxed mb-8 flex-grow">
                     {company.description}
                   </p>
 
@@ -92,10 +91,14 @@ export default function Companies() {
                     href={company.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-white font-semibold transition-all duration-300 transform hover:scale-105"
+                    className="hero-cta-nav home-cta home-cta-wide"
                   >
-                    Visit Website
-                    <ExternalLink className="w-4 h-4" />
+                    <span className="hero-cta-nav-inner">
+                      <span className="hero-cta-nav-label">Visit Website</span>
+                      <span className="home-cta-icon-badge">
+                        <ExternalLink className="w-3.5 h-3.5" />
+                      </span>
+                    </span>
                   </a>
                 </div>
 

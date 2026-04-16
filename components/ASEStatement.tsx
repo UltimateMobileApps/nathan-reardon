@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { ExternalLink } from "lucide-react";
 
 export default function ASEStatement() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -16,7 +17,7 @@ export default function ASEStatement() {
   ];
 
   return (
-    <section className="flex flex-col gap-8 py-16 px-4 bg-gray-900 rounded-2xl my-12 max-w-6xl mx-auto shadow-lg">
+    <section className="flex flex-col gap-8 py-16 px-4 theme-panel rounded-2xl my-12 max-w-6xl mx-auto">
       {/* PDF and ASE Logo */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
@@ -24,11 +25,16 @@ export default function ASEStatement() {
             href="/Status%20Letter.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-md"
+            className="hero-cta-nav home-cta home-cta-wide"
           >
-            View Status Letter
+            <span className="hero-cta-nav-inner">
+              <span className="hero-cta-nav-label">View Status Letter</span>
+              <span className="home-cta-icon-badge">
+                <ExternalLink className="w-3.5 h-3.5" />
+              </span>
+            </span>
           </a>
-          <p className="text-gray-400 text-sm mt-2">Click to view the ASE Statement Letter</p>
+          <p className="text-[#8c9ab2] text-sm mt-2">Click to view the ASE Statement Letter</p>
         </div>
         <div className="w-full md:w-1/3 flex justify-center">
           <Image
@@ -48,7 +54,7 @@ export default function ASEStatement() {
           {certImages.map((image, index) => (
             <div
               key={index}
-              className="relative h-64 rounded-lg overflow-hidden border border-gray-700 shadow-md cursor-pointer hover:scale-105 transition-transform duration-300 bg-gray-800"
+            className="relative h-64 rounded-lg overflow-hidden border border-[#31415e] shadow-md cursor-pointer hover:scale-105 transition-transform duration-300 bg-[#101a2e]"
               onClick={() => setSelectedImage(index)}
             >
               <Image
@@ -77,7 +83,7 @@ export default function ASEStatement() {
             />
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 bg-red-600 hover:bg-red-700 text-white rounded-full p-2 transition-colors"
+              className="absolute top-4 right-4 bg-[#8b223f] hover:bg-[#c23652] text-white rounded-full p-2 transition-colors"
             >
               ✕
             </button>

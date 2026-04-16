@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import { motion } from 'framer-motion';
 
 interface AnimatedStarsProps {
@@ -7,16 +8,26 @@ interface AnimatedStarsProps {
 }
 
 export default function AnimatedStars({ count = 300 }: AnimatedStarsProps) {
-    // Generate animated stars for galaxy background
-    const stars = Array.from({ length: count }, (_, i) => ({
-        id: i,
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-        size: Math.random() * 4 + 1,
-        color: ['red', 'white', 'blue'][Math.floor(Math.random() * 3)],
-        delay: Math.random() * 3,
-        duration: 2 + Math.random() * 3
-    }));
+    const stars = useMemo(
+        () =>
+            Array.from({ length: count }, (_, i) => {
+                const tintRoll = Math.random();
+                const color =
+                    tintRoll > 0.94 ? "red" : tintRoll > 0.85 ? "blue" : "white";
+
+                return {
+                    id: i,
+                    x: Math.random() * 100,
+                    y: Math.random() * 100,
+                    size: Math.random() * 1.8 + 0.6,
+                    color,
+                    delay: Math.random() * 3.5,
+                    duration: 2.8 + Math.random() * 4,
+                    baseOpacity: 0.18 + Math.random() * 0.45,
+                };
+            }),
+        [count]
+    );
 
     return (
         <>
@@ -24,8 +35,8 @@ export default function AnimatedStars({ count = 300 }: AnimatedStarsProps) {
                 <motion.div
                     key={star.id}
                     className={`absolute rounded-full ${
-                        star.color === 'red' ? 'bg-red-400' :
-                        star.color === 'blue' ? 'bg-blue-400' :
+                        star.color === 'red' ? 'bg-[#f18ea4]' :
+                        star.color === 'blue' ? 'bg-[#93c5fd]' :
                         'bg-white'
                     }`}
                     style={{
@@ -33,9 +44,16 @@ export default function AnimatedStars({ count = 300 }: AnimatedStarsProps) {
                         top: `${star.y}%`,
                         width: `${star.size}px`,
                         height: `${star.size}px`,
+                        opacity: star.baseOpacity,
+                        boxShadow:
+                            star.color === "white"
+                                ? "0 0 8px rgba(255,255,255,0.35)"
+                                : star.color === "blue"
+                                  ? "0 0 10px rgba(147,197,253,0.4)"
+                                  : "0 0 10px rgba(241,142,164,0.34)",
                     }}
                     animate={{
-                        opacity: [0.2, 1, 0.2],
+                        opacity: [star.baseOpacity * 0.55, star.baseOpacity, star.baseOpacity * 0.5],
                         scale: [1, 1.2, 1]
                     }}
                     transition={{

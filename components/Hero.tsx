@@ -1,177 +1,192 @@
-"use client";
-
 import Image from "next/image";
-import { COMPONENT_STYLES, GRADIENTS } from "@/constants/styles";
-import Link from 'next/link';
+import Link from "next/link";
+import { Heart, Users, Target } from "lucide-react";
 import AnimatedStars from "@/components/AnimatedStars";
 
 export default function Hero() {
+    const previewCards = [
+        {
+            icon: Heart,
+            iconClass: "hero-icon-blue",
+            title: "Father of Five",
+            body: "Family values drive every business decision.",
+        },
+        {
+            icon: Users,
+            iconClass: "hero-icon-purple",
+            title: "Global Network",
+            body: "Collaborations with world-class executives and operators.",
+        },
+        {
+            icon: Target,
+            iconClass: "hero-icon-red",
+            title: "Precision Focus",
+            body: "Every solution reflects purpose and disciplined execution.",
+        },
+    ];
+
     return (
-        <section className="min-h-[95vh] mb-0 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-6 py-20 relative overflow-hidden">
-            {/* Background Blobs - Static for better performance */}
-            <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 right-0 w-[30rem] h-[30rem] bg-red-600/10 rounded-full blur-3xl"></div>
-
-            {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent to-gray-950/30 pointer-events-none" />
-
-            {/* Animated Stars Background */}
-            <div className="absolute inset-0 opacity-10">
-                <AnimatedStars count={200} />
+        <section className="hero-cosmos relative min-h-[100svh] overflow-hidden pb-14 pt-24 md:pb-20 md:pt-28">
+            <div className="pointer-events-none absolute inset-0 opacity-70">
+                <AnimatedStars count={260} />
+            </div>
+            <div className="pointer-events-none absolute inset-x-0 top-[116px] px-6">
+                <div className="hero-frame-line mx-auto max-w-[1200px]" />
+            </div>
+            <div className="pointer-events-none absolute inset-x-0 top-[156px] hidden px-8 md:block">
+                <div className="hero-frame-line mx-auto max-w-[860px] opacity-75" />
             </div>
 
-            {/* Mobile Image - Visible only on small screens */}
-            <div className="z-10 flex md:hidden justify-center mb-2">
-                <div className="relative w-64 h-64 rounded-2xl overflow-hidden backdrop-blur-sm border border-red-700/20 shadow-2xl shadow-red-900/30">
-                    <Image
-                        src="/new-nathan.png"
-                        alt="Nathan Reardon - Automotive Industry Leader & Innovator"
-                        fill
-                        className="object-contain brightness-110 contrast-105"
-                        priority
-                    />
-                    {/* Subtle overlay glow */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 via-transparent to-red-900/5 pointer-events-none"></div>
-                </div>
-            </div>
-
-            {/* Additional mobile-only image inserted below the main portrait */}
-            <div className="z-10 flex md:hidden justify-center mb-2">
-                <div className="relative w-64 h-20 rounded-2xl overflow-hidden backdrop-blur-sm border border-red-700/20 shadow-2xl shadow-red-900/30">
-                    <Image
-                        src="/moving-with-sense-of-urgency.png"
-                        alt="Moving With Sense Of Urgency"
-                        fill
-                        className="object-contain"
-                    />
-                </div>
-            </div>
-
-            {/* Left Content */}
-            <div className="z-10 w-full md:flex-1 text-center md:text-left space-y-4 md:space-y-6">
-                {/* Global/Innovation Logo */}
-                <div className="flex justify-center md:justify-start hero-fade-in-up-delay-2">
-                    {/* reserve space for logo only on desktop; remove on mobile to keep content tight */}
-                    <div className="h-0 md:h-32" />
-                </div>
-
-                <h1 className="text-4xl md:text-6xl font-bold leading-tight hero-fade-in-up-delay-1">
-                    <span className={`text-transparent bg-clip-text ${GRADIENTS.heroText}`}>
-                        NATHAN REARDON</span>
-                </h1>
-
-                <p className="text-sm font-medium text-white tracking-widest hero-fade-in-up-delay-2">
-                    FATHER • ENTREPRENEUR • AUTHOR • INVENTOR
-                </p>
-
-                <p className="text-white text-lg max-w-xl mx-auto md:mx-0 leading-relaxed hero-fade-in-up-delay-3">
-                   Nathan Reardon is a prolific American inventor, entrepreneur,
-                   and strategist with 80+ patents filed and over 200 patents in development spanning 14 industries including technology, healthcare, automotive, energy, aerospace, real estate, manufacturing, and consumer products.
-                </p>
-
-                {/* Video Section */}
-                <div className="my-8 hero-fade-in-up-delay-4">
-                    <div className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-4 shadow-2xl max-w-2xl mx-auto">
-                        <div className="relative w-full aspect-[3/1] rounded-xl overflow-hidden bg-black">
-                            <iframe
-                                className="w-full h-full rounded-lg"
-                                src="https://streamable.com/e/3wwweq?muted=1&autoplay=1"
-                                title="Meet Nathan Reardon - Introduction Video"
-                                frameBorder="0"
-                                allow="autoplay; fullscreen"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-2 hero-fade-in-up-delay-5">
-                    <Link
-                        href="/patents"
-                        className={`${COMPONENT_STYLES.heroButton} efficient-hover`}>
-                        <span>Explore Patents</span>
-                    </Link>
-                    <Link
-                        href="/achievements"
-                        className="inline-block border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white efficient-hover font-semibold px-6 py-3 rounded-lg shadow-sm transition-colors duration-200 text-base md:text-lg bg-transparent"
-                    >
-                        <span>View Achievements</span>
-                    </Link>
-                </div>
-            </div>
-
-            {/* Right Image with Stars at Bottom */}
-            <div className="z-10 flex-1 justify-center mt-12 md:mt-0 hidden md:flex hero-image-enter">
-                <div className="relative hero-float">
-                    {/* Stars at the bottom of the image */}
-                    <div className="absolute bottom-0 left-0 right-0 translate-y-8 flex justify-center">
-                        {/* Central star cluster */}
-                        <div className="relative w-full max-w-sm">
-                            {/* Center star - White */}
-                            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-4 h-4 text-white star-pulse">
-                                <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full drop-shadow-lg">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                            </div>
-
-                            {/* Left side stars */}
-                            <div className="absolute bottom-2 left-1/3 w-3 h-3 text-red-400 star-pulse-2">
-                                <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full drop-shadow-md">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                            </div>
-                            <div className="absolute bottom-4 left-1/4 w-2.5 h-2.5 text-white/80 star-pulse-3">
-                                <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full drop-shadow-sm">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                            </div>
-                            <div className="absolute bottom-6 left-1/5 w-3 h-3 text-blue-400 star-pulse-4">
-                                <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full drop-shadow-md">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                            </div>
-
-                            {/* Right side stars */}
-                            <div className="absolute bottom-2 right-1/3 w-3 h-3 text-blue-500 star-pulse-5">
-                                <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full drop-shadow-md">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                            </div>
-                            <div className="absolute bottom-4 right-1/4 w-2.5 h-2.5 text-red-400 star-pulse-6">
-                                <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full drop-shadow-sm">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                            </div>
-                            <div className="absolute bottom-6 right-1/5 w-3 h-3 text-white star-pulse-7">
-                                <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full drop-shadow-md">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
+            <div className="relative z-10 mx-auto max-w-[1180px] px-4 md:px-8">
+                <div className="mx-auto mb-8 flex w-full max-w-[360px] flex-col items-center md:hidden">
+                    <div className="relative w-full">
+                        <div className="chrome-nameplate w-full overflow-hidden rounded-[22px] px-3 py-3">
+                            <div className="relative mx-auto h-[270px] w-full max-w-[278px]">
+                                <Image
+                                    src="/new-nathan.png"
+                                    alt="Nathan Reardon"
+                                    fill
+                                    priority
+                                    className="object-contain brightness-110 contrast-105"
+                                />
                             </div>
                         </div>
-                    </div>
-                    
-                    {/* Main Image Container */}
-                    <div className="relative w-80 h-80 md:w-[24rem] md:h-[24rem] rounded-2xl overflow-hidden backdrop-blur-sm border border-red-700/20 shadow-2xl shadow-red-900/30">
-                        <Image
-                            src="/new-nathan.png"
-                            alt="Nathan Reardon - Automotive Industry Leader & Innovator"
-                            fill
-                            className="object-contain brightness-110 contrast-105"
-                            priority
-                        />
 
-                        {/* Subtle overlay glow */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 via-transparent to-red-900/5 pointer-events-none"></div>
+                        <div className="pointer-events-none absolute -bottom-4 left-6 h-2.5 w-2.5 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
+                        <div className="pointer-events-none absolute bottom-1 left-14 h-3 w-3 rounded-full bg-[#8ec7ff] shadow-[0_0_14px_rgba(147,197,253,0.9)]" />
+                        <div className="pointer-events-none absolute -bottom-3 left-24 h-2 w-2 rounded-full bg-[#d7647c] shadow-[0_0_12px_rgba(215,100,124,0.8)]" />
+                        <div className="pointer-events-none absolute -bottom-5 right-10 h-3 w-3 rounded-full bg-white/95 shadow-[0_0_12px_rgba(255,255,255,0.75)]" />
+                        <div className="pointer-events-none absolute -bottom-1 right-20 h-2.5 w-2.5 rounded-full bg-[#5aa9ff] shadow-[0_0_12px_rgba(90,169,255,0.85)]" />
+                        <div className="pointer-events-none absolute top-8 -right-2 h-2 w-2 rounded-full bg-[#8ec7ff] shadow-[0_0_10px_rgba(147,197,253,0.8)]" />
                     </div>
 
-                    {/* Desktop-only secondary image below main portrait */}
-                    <div className="mt-6 hidden md:block relative w-80 h-20 md:w-[24rem] md:h-[6rem] rounded-2xl overflow-hidden backdrop-blur-sm border border-red-700/20 shadow-2xl shadow-red-900/30">
+                    <div className="relative -mt-1 h-[62px] w-full">
                         <Image
                             src="/moving-with-sense-of-urgency.png"
-                            alt="Moving With Sense Of Urgency"
+                            alt="Moving With A Sense Of Urgency"
                             fill
-                            className="object-contain"
+                            className="object-contain drop-shadow-[0_0_18px_rgba(147,197,253,0.18)]"
                         />
+                    </div>
+                </div>
+
+                <div className="pt-10 md:pt-14">
+                    <div className="chrome-nameplate nameplate-sweep mx-auto max-w-[980px] px-4 py-5 md:px-7 md:py-6">
+                        <div className="relative flex items-center justify-center gap-3 md:gap-5">
+                            <div className="chrome-emblem shrink-0">
+                                <span className="chrome-emblem-ring chrome-emblem-ring-1" />
+                                <span className="chrome-emblem-ring chrome-emblem-ring-2" />
+                                <span className="chrome-emblem-ring chrome-emblem-ring-3" />
+                                <span className="chrome-emblem-core" />
+                                <span className="chrome-emblem-axis chrome-emblem-axis-x" />
+                                <span className="chrome-emblem-axis chrome-emblem-axis-y" />
+                                <span className="chrome-emblem-spark chrome-emblem-spark-a" />
+                                <span className="chrome-emblem-spark chrome-emblem-spark-b" />
+                            </div>
+                            <h1 className="hero-name-text whitespace-nowrap text-[clamp(1.6rem,5vw,4.05rem)] leading-none">
+                                NATHAN REARDON
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mt-10 grid items-center gap-10 md:grid-cols-[minmax(0,1.08fr)_minmax(320px,0.92fr)] md:gap-14">
+                    <div className="space-y-6 text-center md:text-left">
+                        <p className="font-display text-[0.82rem] tracking-[0.32em] text-[#dce9ff] md:text-[0.92rem]">
+                            FATHER • ENTREPRENEUR • AUTHOR • INVENTOR
+                        </p>
+
+                        <p className="mx-auto max-w-[680px] text-base leading-8 text-[#d9e3f1] md:mx-0 md:text-[1.08rem]">
+                            Nathan Reardon is a prolific American inventor, entrepreneur,
+                            and strategist with 80+ patents filed and over 200 patents in development spanning 14 industries including technology, healthcare, automotive, energy, aerospace, real estate, manufacturing, and consumer products.
+                        </p>
+
+                        <div className="flex flex-wrap items-center justify-center gap-3 md:justify-start">
+                            <Link
+                                href="/patents"
+                                className="hero-cta-nav hero-cta-nav-active font-display inline-flex min-h-11 items-center justify-center rounded-[999px] px-6 text-white"
+                            >
+                                <span className="hero-cta-nav-inner">
+                                    <span className="hero-cta-nav-label">Explore Patents</span>
+                                </span>
+                            </Link>
+                            <Link
+                                href="/achievements"
+                                className="hero-cta-nav font-display inline-flex min-h-11 items-center justify-center rounded-[999px] px-6 text-white"
+                            >
+                                <span className="hero-cta-nav-inner">
+                                    <span className="hero-cta-nav-label">View Achievements</span>
+                                </span>
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div className="mx-auto hidden w-full max-w-[380px] flex-col items-center md:flex">
+                        <div className="relative w-full">
+                            <div className="chrome-nameplate w-full overflow-hidden rounded-[22px] px-4 py-4">
+                                <div className="relative mx-auto h-[300px] w-full max-w-[290px] md:h-[330px] md:max-w-[318px]">
+                                    <Image
+                                        src="/new-nathan.png"
+                                        alt="Nathan Reardon"
+                                        fill
+                                        priority
+                                        className="object-contain brightness-110 contrast-105"
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="pointer-events-none absolute -bottom-4 left-8 h-2.5 w-2.5 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
+                            <div className="pointer-events-none absolute bottom-0 left-16 h-3 w-3 rounded-full bg-[#8ec7ff] shadow-[0_0_14px_rgba(147,197,253,0.9)]" />
+                            <div className="pointer-events-none absolute -bottom-3 left-28 h-2 w-2 rounded-full bg-[#d7647c] shadow-[0_0_12px_rgba(215,100,124,0.8)]" />
+                            <div className="pointer-events-none absolute -bottom-5 right-12 h-3 w-3 rounded-full bg-white/95 shadow-[0_0_12px_rgba(255,255,255,0.75)]" />
+                            <div className="pointer-events-none absolute -bottom-1 right-24 h-2.5 w-2.5 rounded-full bg-[#5aa9ff] shadow-[0_0_12px_rgba(90,169,255,0.85)]" />
+                            <div className="pointer-events-none absolute bottom-3 right-5 h-2 w-2 rounded-full bg-[#d7647c] shadow-[0_0_10px_rgba(215,100,124,0.72)]" />
+                            <div className="pointer-events-none absolute top-10 -left-2 h-2 w-2 rounded-full bg-[#8ec7ff] shadow-[0_0_10px_rgba(147,197,253,0.8)]" />
+                        </div>
+
+                        <div className="relative -mt-1 h-[72px] w-full md:h-[78px]">
+                            <Image
+                                src="/moving-with-sense-of-urgency.png"
+                                alt="Moving With A Sense Of Urgency"
+                                fill
+                                className="object-contain drop-shadow-[0_0_18px_rgba(147,197,253,0.18)]"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mt-14 md:mt-16">
+                    <div className="text-center">
+                        <h2 className="theme-title text-[2.1rem] font-semibold leading-tight md:text-[3.35rem]">
+                            The Man Behind the Innovation
+                        </h2>
+                        <p className="mt-3 text-[0.96rem] text-white md:text-[1.08rem]">
+                            Where family values meet unrelenting innovation
+                        </p>
+                    </div>
+
+                    <div className="mt-8 grid gap-4 md:grid-cols-3">
+                        {previewCards.map((card) => {
+                            const Icon = card.icon;
+
+                            return (
+                                <div key={card.title} className="hero-preview-card px-5 py-5 md:px-6">
+                                    <div className="flex items-start gap-4">
+                                        <div className={`hero-icon-tile ${card.iconClass}`}>
+                                            <Icon className="h-[18px] w-[18px]" />
+                                        </div>
+                                        <div>
+                                            <h3 className="font-display text-[1rem] text-white md:text-[1.1rem]">
+                                                {card.title}
+                                            </h3>
+                                            <p className="mt-3 text-[0.82rem] leading-6 text-[#94a3b8] md:text-[0.88rem]">
+                                                {card.body}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </div>

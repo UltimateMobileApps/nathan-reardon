@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { COMPONENT_STYLES, GRADIENTS } from "@/constants/styles";
+import { GRADIENTS } from "@/constants/styles";
 
 export default function Patents() {
     const patents = [
@@ -37,23 +37,23 @@ export default function Patents() {
     ];
 
     return (
-        <section className="relative py-24 bg-black overflow-hidden">
+        <section className="relative py-24 bg-[#040814] overflow-hidden">
             {/* Dynamic background grid */}
-            <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
+            <div className="absolute inset-0 theme-grid"></div>
             
             {/* Floating orbs */}
-            <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-red-500/10 rounded-full blur-2xl animate-pulse"></div>
-            <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
+            <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#c23652]/10 rounded-full blur-2xl animate-pulse"></div>
+            <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#2f88ff]/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
             
             {/* Section border */}
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-red-500 to-blue-500 rounded-full"></div>
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-1 theme-divider rounded-full"></div>
             
             <div className="relative max-w-7xl mx-auto px-6 text-center">
                 <div>
                     <h2 className={`text-5xl font-bold ${GRADIENTS.heroText} bg-clip-text text-transparent mb-6`}>
                         Patents & Innovations
                     </h2>
-                    <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-red-500 mx-auto mb-16 rounded-full"></div>
+                    <div className="w-24 h-1 theme-divider mx-auto mb-16 rounded-full"></div>
                 </div>
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
@@ -63,10 +63,10 @@ export default function Patents() {
                             href={patent.website}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`group relative bg-gradient-to-br from-gray-900/80 to-gray-800/80 backdrop-blur-sm border border-gray-700 rounded-2xl overflow-hidden hover:border-red-500 transition-all duration-300 efficient-hover hero-fade-in-up-delay-${index + 1} cursor-pointer block`}
+                            className={`group relative theme-panel-soft backdrop-blur-sm rounded-2xl overflow-hidden hover:border-[#7cb8ff] transition-all duration-300 efficient-hover hero-fade-in-up-delay-${index + 1} cursor-pointer block`}
                         >
                             {/* Hover glow */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(194,54,82,0.12)_0%,rgba(90,169,255,0.18)_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             
                             <div className="relative w-full h-64 overflow-hidden">
                                 <Image
@@ -88,14 +88,14 @@ export default function Patents() {
                             </div>
                             
                             <div className="relative p-6">
-                                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-red-500 transition-all duration-300">
+                                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-[linear-gradient(90deg,#eef4ff_0%,#8ec7ff_58%,#d7647c_100%)] transition-all duration-300">
                                     {patent.title}
                                 </h3>
-                                <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-gray-600 to-transparent group-hover:via-red-500 transition-colors duration-300"></div>
+                                <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-[#365072] to-transparent group-hover:via-[#8ec7ff] transition-colors duration-300"></div>
                                 
                                 {/* Visit website text */}
                                 <div className="mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <span className="text-blue-400 text-sm font-medium">Visit Website →</span>
+                                    <span className="text-[#8ec7ff] text-sm font-medium">Visit Website →</span>
                                 </div>
                             </div>
                         </a>
@@ -105,10 +105,11 @@ export default function Patents() {
                 <div className="hero-fade-in-up-delay-4">
                     <Link
                         href="/patents"
-                        className={`${COMPONENT_STYLES.heroButton} efficient-hover`}
+                        className="hero-cta-nav home-cta home-cta-wide efficient-hover"
                     >
-                        <span className="relative z-10">View All Patents</span>
-                        <div className="absolute inset-0 bg-white/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <span className="hero-cta-nav-inner">
+                            <span className="hero-cta-nav-label">View All Patents</span>
+                        </span>
                     </Link>
                 </div>
             </div>

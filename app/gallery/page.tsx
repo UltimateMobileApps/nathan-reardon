@@ -4,7 +4,6 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, X, ChevronLeft, ChevronRight } from "lucide-react";
-import { GRADIENTS } from "@/constants/styles";
 import AnimatedStars from "@/components/AnimatedStars";
 
 export default function GalleryPage() {
@@ -79,44 +78,39 @@ export default function GalleryPage() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900">
-            {/* Background Elements */}
-            <div className="absolute inset-0 opacity-5">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.15),transparent_50%)]"></div>
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(239,68,68,0.15),transparent_50%)]"></div>
+        <div className="page-shell">
+            <div className="absolute inset-0 opacity-[0.2]">
+                <div className="absolute inset-0 theme-grid"></div>
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.14),transparent_40%)]"></div>
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(239,68,68,0.14),transparent_40%)]"></div>
                 <AnimatedStars count={300} />
             </div>
 
-            {/* Header */}
             <div className="relative pt-24 pb-16">
                 <div className="max-w-7xl mx-auto px-6">
-                    {/* Back Button */}
                     <Link
                         href="/"
-                        className="inline-flex items-center text-white hover:text-white mb-8 transition-colors duration-300 group"
+                        className="page-back-link mb-8"
                     >
-                        <ArrowLeft className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform duration-300" />
+                        <ArrowLeft className="w-5 h-5" />
                         Back to Home
                     </Link>
 
-                    {/* Page Title */}
                     <div className="text-center">
-                        <h1 className={`text-6xl font-bold ${GRADIENTS.heroText} bg-clip-text text-transparent mb-6`}>
+                        <h1 className="theme-title text-5xl font-bold mb-6 md:text-6xl">
                             Nathan at Work
                         </h1>
                         <p className="text-xl text-white max-w-3xl mx-auto mb-4">
                             Behind the scenes of innovation - where ideas become reality
                         </p>
-                        <p className="text-white max-w-2xl mx-auto">
+                        <p className="section-tech-subtitle max-w-2xl mx-auto">
                             From automotive systems to cutting-edge technology, witness the hands-on process 
                             of turning bold concepts into breakthrough solutions.
                         </p>
                         
-                        {/* Decorative line */}
-                        <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-blue-500 mx-auto mt-8 rounded-full"></div>
+                        <div className="section-tech-rule mt-8"></div>
                     </div>
 
-                    {/* Gallery Navigation Tabs */}
                     <div className="flex justify-center gap-4 mt-16">
                         <button
                             onClick={() => {
@@ -124,13 +118,15 @@ export default function GalleryPage() {
                                 setSelectedImage(null);
                                 setIsModalOpen(false);
                             }}
-                            className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
+                            className={`hero-cta-nav home-cta inline-flex px-8 ${
                                 activeGallery === 'celebrities'
-                                    ? `bg-gradient-to-r ${GRADIENTS.heroText} text-white shadow-lg`
-                                    : 'bg-gray-800/50 border border-gray-700/50 text-white hover:border-gray-500/50'
+                                    ? 'hero-cta-nav-active'
+                                    : ''
                             }`}
                         >
-                            With Celebrities
+                            <span className="hero-cta-nav-inner">
+                                <span className="hero-cta-nav-label">With Celebrities</span>
+                            </span>
                         </button>
                         <button
                             onClick={() => {
@@ -138,25 +134,26 @@ export default function GalleryPage() {
                                 setSelectedImage(null);
                                 setIsModalOpen(false);
                             }}
-                            className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
+                            className={`hero-cta-nav home-cta inline-flex px-8 ${
                                 activeGallery === 'family'
-                                    ? `bg-gradient-to-r ${GRADIENTS.heroText} text-white shadow-lg`
-                                    : 'bg-gray-800/50 border border-gray-700/50 text-white hover:border-gray-500/50'
+                                    ? 'hero-cta-nav-active'
+                                    : ''
                             }`}
                         >
-                            Family & Pets
+                            <span className="hero-cta-nav-inner">
+                                <span className="hero-cta-nav-label">Family & Pets</span>
+                            </span>
                         </button>
                     </div>
                 </div>
             </div>
 
-            {/* Gallery Grid */}
             <div className="relative max-w-7xl mx-auto px-6 pb-24">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {getCurrentGallery().map((image, index) => (
                         <div
                             key={index}
-                            className="group relative bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl overflow-hidden cursor-pointer transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-red-500/20 hover:border-red-500/50"
+                            className="group relative theme-panel-soft rounded-2xl overflow-hidden cursor-pointer transform transition-all duration-500 hover:scale-[1.03] hover:border-[#93c5fd]/34 hover:shadow-2xl hover:shadow-[#2f88ff]/10"
                             onClick={() => openModal(index)}
                         >
                             <div className="relative aspect-square">
@@ -196,49 +193,44 @@ export default function GalleryPage() {
                                 
                                 {/* Hover content - Search icon */}
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <div className="bg-white/10 backdrop-blur-sm rounded-full p-3 transform translate-y-[-20px]">
+                                    <div className="bg-white/10 backdrop-blur-sm rounded-full border border-white/10 p-3 transform translate-y-[-20px]">
                                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                         </svg>
                                     </div>
                                 </div>
 
-                                {/* Corner accent */}
-                                <div className="absolute top-3 right-3 w-2 h-2 bg-gradient-to-r from-red-500 to-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div className="absolute top-3 right-3 w-2 h-2 bg-gradient-to-r from-[#d7647c] to-[#93c5fd] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
 
-            {/* Modal for full-size images */}
             {isModalOpen && selectedImage !== null && (
                 <div className="fixed inset-0 bg-black/90 backdrop-blur-sm z-[70] flex items-center justify-center p-4">
-                    {/* Close button - Better positioning and higher z-index */}
                     <button
                         onClick={closeModal}
-                        className="absolute top-4 right-4 md:top-6 md:right-6 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-all duration-300 z-[80]"
+                        className="theme-modal-control absolute top-4 right-4 md:top-6 md:right-6 h-11 w-11 text-white z-[80]"
                     >
                         <X className="w-6 h-6" />
                     </button>
 
-                    {/* Navigation buttons */}
                     <button
                         onClick={() => navigateImage('prev')}
-                        className="absolute left-6 top-1/2 transform -translate-y-1/2 text-white hover:text-blue-400 transition-colors duration-300 z-[75]"
+                        className="theme-modal-control absolute left-6 top-1/2 transform -translate-y-1/2 h-14 w-14 text-white z-[75]"
                     >
                         <ChevronLeft className="w-10 h-10" />
                     </button>
                     
                     <button
                         onClick={() => navigateImage('next')}
-                        className="absolute right-6 top-1/2 transform -translate-y-1/2 text-white hover:text-blue-400 transition-colors duration-300 z-[75]"
+                        className="theme-modal-control absolute right-6 top-1/2 transform -translate-y-1/2 h-14 w-14 text-white z-[75]"
                     >
                         <ChevronRight className="w-10 h-10" />
                     </button>
 
-                    {/* Image container */}
-                    <div className="relative max-w-4xl max-h-[80vh] w-full h-full flex items-center justify-center">
+                    <div className="theme-modal-shell relative max-w-4xl max-h-[80vh] w-full h-full flex items-center justify-center p-4">
                         <Image
                             src={getCurrentGallery()[selectedImage].src}
                             alt={getCurrentGallery()[selectedImage].name || "Gallery image"}
@@ -252,21 +244,20 @@ export default function GalleryPage() {
                         
                         {/* Name overlay - Show for celebrities with specific names */}
                         {activeGallery === 'celebrities' && getCurrentGallery()[selectedImage].src !== "/gallery/photo5.jpeg" && (
-                            <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 bg-black/70 backdrop-blur-sm text-white px-6 py-3 rounded-full text-lg font-semibold">
+                            <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 bg-black/70 backdrop-blur-sm border border-white/10 text-white px-6 py-3 rounded-full text-lg font-semibold">
                                 Nathan with {getCurrentGallery()[selectedImage].name}
                             </div>
                         )}
 
                         {/* Name overlay for family */}
                         {activeGallery === 'family' && (
-                            <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 bg-black/70 backdrop-blur-sm text-white px-6 py-3 rounded-full text-lg font-semibold italic">
+                            <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 bg-black/70 backdrop-blur-sm border border-white/10 text-white px-6 py-3 rounded-full text-lg font-semibold italic">
                                 {getCurrentGallery()[selectedImage].name}
                             </div>
                         )}
                     </div>
 
-                    {/* Image counter */}
-                    <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-black/50 backdrop-blur-sm text-white px-4 py-2 rounded-full">
+                    <div className="theme-modal-control absolute bottom-6 left-1/2 transform -translate-x-1/2 px-4 py-2 text-white">
                         {selectedImage + 1} / {getCurrentGallery().length}
                     </div>
                 </div>

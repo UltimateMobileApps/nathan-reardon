@@ -1,29 +1,9 @@
 "use client";
 
-import { Users, Award, Target, Zap, Heart, Globe, X } from "lucide-react";
-import { GRADIENTS } from "@/constants/styles";
+import { Globe } from "lucide-react";
 import Image from "next/image";
 
 export default function About() {
-
-    const personalValues = [
-        {
-            icon: Heart,
-            title: "Father of Five",
-            description: "Family values drive every business decision"
-        },
-        {
-            icon: Users,
-            title: "Global Network",
-            description: "Collaborations with world-class executives"
-        },
-        {
-            icon: Target,
-            title: "Precision Focus",
-            description: "Every solution reflects purpose and execution"
-        }
-    ];
-
     const expertise = [
         { area: "Automotive Systems", impact: "Revolutionary efficiency" },
         { area: "Property Development", impact: "Advanced solutions" },
@@ -32,83 +12,44 @@ export default function About() {
     ];
 
     return (
-        <section className="relative py-24 bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-6 relative z-10">
-                
-                {/* Section Header */}
-                <div className="text-center mb-16">
-                    <h2 className={`text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent mb-4`}>
-                        The Man Behind the Innovation
-                    </h2>
-                    <p className="text-xl text-white max-w-2xl mx-auto">
-                        Where family values meet unrelenting innovation
-                    </p>
-                </div>
-
-                {/* Personal Values Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-                    {personalValues.map((value, index) => {
-                        const Icon = value.icon;
-                        return (
-                            <div
-                                key={index}
-                                className="group"
-                            >
-                                <div className="bg-gray-800/40 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-6 h-full hover:border-red-500/50 transition-all duration-300">
-                                    <div className="flex items-center space-x-4 mb-4">
-                                        <div className="p-3 bg-gradient-to-br from-red-500/20 to-blue-500/20 rounded-xl group-hover:from-red-500/30 group-hover:to-blue-500/30 transition-colors">
-                                            <Icon className="w-6 h-6 text-blue-400 group-hover:text-white transition-colors" />
-                                        </div>
-                                        <h3 className="text-xl font-semibold text-white">{value.title}</h3>
-                                    </div>
-                                    <p className="text-white leading-relaxed">{value.description}</p>
-                                </div>
-                            </div>
-                        );
-                    })}
-                </div>
-
-                {/* Main Story Section */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
-                    
-                    {/* Left: Story Content */}
+        <section className="relative overflow-hidden theme-shell pb-24 pt-10">
+            <div className="relative z-10 mx-auto max-w-7xl px-6">
+                <div className="mb-20 grid items-center gap-16 lg:grid-cols-2">
                     <div className="space-y-6">
                         <div className="space-y-4">
-                            <div className="bg-gray-800/30 border-l-4 border-blue-500 pl-6 py-4 rounded-r-lg">
-                                <p className="text-white leading-relaxed">
-                                    <span className="text-white font-semibold">A lifelong problem solver</span> who balances family values with an unrelenting drive for innovation.
+                            <div className="theme-callout rounded-r-[1.4rem] border-l-4 border-[#5aa9ff] bg-[linear-gradient(180deg,rgba(13,22,41,0.92)_0%,rgba(9,16,31,0.98)_100%)] py-5 pl-8 pr-6">
+                                <p className="text-[1.02rem] leading-relaxed text-white">
+                                    <span className="font-semibold text-white">A lifelong problem solver</span> who balances family values with an unrelenting drive for innovation.
                                 </p>
                             </div>
 
-                            <div className="bg-gray-800/30 border-l-4 border-red-500 pl-6 py-4 rounded-r-lg">
-                                <p className="text-white leading-relaxed">
-                                    His professional network includes <span className="text-blue-400 font-medium">collaborations and relationships with some of the world's top business executives and entrepreneurs</span>—alliances that have accelerated his ability to commercialize new technologies.
+                            <div className="theme-callout rounded-r-[1.4rem] border-l-4 border-[#c23652] bg-[linear-gradient(180deg,rgba(13,22,41,0.92)_0%,rgba(9,16,31,0.98)_100%)] py-5 pl-8 pr-6">
+                                <p className="text-[1.02rem] leading-relaxed text-white">
+                                    His professional network includes <span className="font-medium text-[#8ec7ff]">collaborations and relationships with some of the world's top business executives and entrepreneurs</span>—alliances that have accelerated his ability to commercialize new technologies.
                                 </p>
                             </div>
 
-                            <div className="bg-gray-800/30 border-l-4 border-white pl-6 py-4 rounded-r-lg">
-                                <p className="text-white leading-relaxed">
-                                    As an <span className="text-red-400 font-medium">ASE Triple Master</span> <a href="/ASE.jpeg" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline inline-flex items-center gap-1"><svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a> and 2nd Degree Black Belt, he brings the same discipline to business that he does to life—turning bold ideas into lasting impact.
+                            <div className="theme-callout rounded-r-[1.4rem] border-l-4 border-[#eef4ff] bg-[linear-gradient(180deg,rgba(13,22,41,0.92)_0%,rgba(9,16,31,0.98)_100%)] py-5 pl-8 pr-6">
+                                <p className="text-[1.02rem] leading-relaxed text-white">
+                                    As an <span className="font-medium text-[#f1c1cc]">ASE Triple Master</span> <a href="/ASE.jpeg" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-[#8ec7ff] underline hover:text-[#dce9ff]"><svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a> and 2nd Degree Black Belt, he brings the same discipline to business that he does to life—turning bold ideas into lasting impact.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    {/* Right: Global Reach, Personal Touch */}
                     <div className="space-y-6">
-                        <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8">
-                            <div className="flex items-center space-x-3 mb-6">
-                                <Globe className="w-8 h-8 text-blue-400" />
-                                <h3 className="text-2xl font-bold text-white">Global Reach, Personal Touch</h3>
+                        <div className="theme-panel rounded-[1.7rem] border-[#7cb8ff]/25 p-10">
+                            <div className="mb-7 flex items-center space-x-4">
+                                <Globe className="h-9 w-9 text-[#8ec7ff]" />
+                                <h3 className="text-[2rem] font-bold text-white">Global Reach, Personal Touch</h3>
                             </div>
-                            
-                            <p className="text-white mb-6">
+
+                            <p className="mb-7 text-[1.02rem] leading-relaxed text-white">
                                 From automotive systems to health solutions, every innovation reflects the same principle: turning bold ideas into lasting impact.
                             </p>
-                            
-                            {/* Flag Images */}
-                            <div className="grid grid-cols-2 gap-4 mb-6">
-                                <div className="relative aspect-video rounded-lg overflow-hidden border border-gray-600">
+
+                            <div className="mb-8 grid grid-cols-2 gap-4">
+                                <div className="relative aspect-video overflow-hidden rounded-[0.4rem]">
                                     <Image
                                         src="/flags/IMG-20251005-WA0017.jpg"
                                         alt="International recognition flag"
@@ -116,7 +57,7 @@ export default function About() {
                                         className="object-cover"
                                     />
                                 </div>
-                                <div className="relative aspect-video rounded-lg overflow-hidden border border-gray-600">
+                                <div className="relative aspect-video overflow-hidden rounded-[0.4rem]">
                                     <Image
                                         src="/flags/IMG-20251005-WA0018.jpg"
                                         alt="International recognition flag"
@@ -125,65 +66,54 @@ export default function About() {
                                     />
                                 </div>
                             </div>
-                            
-                            <div className="flex justify-center space-x-4">
-                                <div className="px-4 py-2 bg-red-500/20 rounded-full">
-                                        <span className="text-red-400 font-medium">77+ Patents Filed</span>
-                                </div>
-                                <div className="px-4 py-2 bg-blue-500/20 rounded-full">
-                                    <span className="text-blue-400 font-medium">26+ Years in Business</span>
-                                </div>
+
+                            <div className="flex flex-wrap justify-center gap-8 text-center">
+                                <div className="text-xl font-semibold text-[#f1c1cc]">77+ Patents Filed</div>
+                                <div className="text-xl font-semibold text-[#8ec7ff]">26+ Years in Business</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                {/* Philosophy Section & Industry Expertise - 2 Column on Desktop */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-12">
-                    
-                    {/* Left: Self Made Poster */}
+                <div className="mb-12 grid items-start gap-12 md:grid-cols-2">
                     <div className="order-2 md:order-1">
-                        <div className="relative rounded-2xl overflow-hidden border border-gray-700 shadow-2xl">
+                        <div className="theme-media-frame relative">
                             <Image
                                 src="/progress-is-being-made.png"
                                 alt="There's no such thing as self made - you need God and others"
                                 width={800}
                                 height={600}
-                                className="w-full h-auto object-cover"
+                                className="h-auto w-full object-cover"
                             />
                         </div>
                     </div>
 
-                    {/* Right: Industry Expertise */}
                     <div className="order-1 md:order-2">
-                        <h3 className="text-3xl font-bold text-white mb-6">
+                        <h3 className="theme-title mb-8 text-[2.65rem] font-bold leading-tight">
                             Multi-Industry Innovation
                         </h3>
-                        
+
                         <div className="grid grid-cols-2 gap-4">
                             {expertise.map((item, index) => (
                                 <div
                                     key={index}
                                     className="group relative overflow-hidden"
                                 >
-                                    <div className="bg-gray-800/40 backdrop-blur-sm border border-gray-700 rounded-xl p-6 h-full hover:border-blue-500/50 transition-all duration-300">
-                                        <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-red-500/10 to-transparent rounded-bl-full"></div>
-                                        
-                                        <h4 className="text-lg font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                                    <div className="theme-panel-soft h-full rounded-[1.15rem] border border-[#7cb8ff]/18 p-7 backdrop-blur-sm transition-all duration-300 hover:border-[#7cb8ff]/38">
+                                        <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-full bg-[linear-gradient(225deg,rgba(194,54,82,0.14)_0%,transparent_100%)]" />
+
+                                        <h4 className="mb-4 text-[1.05rem] font-semibold text-white transition-colors group-hover:text-[#eef4ff]">
                                             {item.area}
                                         </h4>
-                                        <p className="text-white text-sm group-hover:text-white transition-colors">
+                                        <p className="text-[0.98rem] text-[#e5eefb] transition-colors group-hover:text-white">
                                             {item.impact}
                                         </p>
-                                        
-                                        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     );

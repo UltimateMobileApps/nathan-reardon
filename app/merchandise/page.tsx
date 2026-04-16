@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import { ArrowLeft, ShoppingCart, ExternalLink, Check } from "lucide-react";
-import { GRADIENTS } from "@/constants/styles";
 import AnimatedStars from "@/components/AnimatedStars";
 
 interface MerchandiseItem {
@@ -157,52 +156,45 @@ export default function MerchandisePage() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900">
-      {/* Background Elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.15),transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(239,68,68,0.15),transparent_50%)]"></div>
+    <div className="page-shell">
+      <div className="absolute inset-0 opacity-[0.2]">
+        <div className="absolute inset-0 theme-grid"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.14),transparent_40%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(239,68,68,0.14),transparent_40%)]"></div>
         <AnimatedStars count={300} />
       </div>
 
-      {/* Header */}
       <div className="relative pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-6">
-          {/* Back Button */}
           <Link
             href="/"
-            className="inline-flex items-center text-white hover:text-white mb-8 transition-colors duration-300 group"
+            className="page-back-link mb-8"
           >
-            <ArrowLeft className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform duration-300" />
+            <ArrowLeft className="w-5 h-5" />
             Back to Home
           </Link>
 
-          {/* Page Title */}
           <div className="text-center">
-            <h1
-              className={`text-6xl font-bold ${GRADIENTS.heroText} bg-clip-text text-transparent mb-6`}
-            >
+            <h1 className="theme-title text-5xl md:text-6xl font-bold mb-6">
               Official Merchandise
             </h1>
             <p className="text-xl text-white max-w-3xl mx-auto mb-4">
               Celebrate innovation with exclusive Nathan Reardon branded products
             </p>
-            <p className="text-white max-w-2xl mx-auto">
+            <p className="section-tech-subtitle max-w-2xl mx-auto">
               From everyday essentials to collector's items, showcase your passion for
               entrepreneurship and breaking boundaries.
             </p>
 
-            {/* Decorative line */}
-            <div className="w-32 h-1 bg-gradient-to-r from-red-500 to-blue-500 mx-auto mt-8 rounded-full"></div>
+            <div className="section-tech-rule mt-8"></div>
           </div>
         </div>
       </div>
 
-      {/* Other Merchandise Section */}
       <div className="relative max-w-7xl mx-auto px-6 pb-16">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">Merchandise</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-blue-500 mx-auto rounded-full"></div>
+          <h2 className="theme-title text-4xl font-bold mb-4">Merchandise</h2>
+          <div className="section-tech-rule w-24"></div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -212,38 +204,34 @@ export default function MerchandisePage() {
               <div
                 key={item.id}
                 onClick={() => toggleItemSelection(item.id)}
-                className={`group relative bg-gray-800/50 backdrop-blur-sm border rounded-xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer ${
+                className={`group relative theme-panel-soft rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl cursor-pointer ${
                   isSelected
-                    ? "border-blue-500/70 shadow-2xl shadow-blue-500/30 bg-blue-900/20"
-                    : "border-gray-700/50 hover:shadow-red-500/20 hover:border-red-500/50"
+                    ? "border-[#93c5fd]/60 shadow-2xl shadow-[#2f88ff]/20 bg-[#12213b]/80"
+                    : "hover:shadow-[#2f88ff]/10 hover:border-[#93c5fd]/30"
                 }`}
               >
-                {/* Selection indicator */}
                 {isSelected && (
-                  <div className="absolute top-3 right-3 z-10 bg-blue-500 rounded-full p-1">
+                  <div className="absolute top-3 right-3 z-10 bg-[#3b82f6] rounded-full p-1 shadow-[0_0_16px_rgba(59,130,246,0.35)]">
                     <Check className="w-4 h-4 text-white" />
                   </div>
                 )}
 
-                {/* Image Container */}
-                <div className="relative aspect-square bg-gray-900 overflow-hidden">
+                <div className="relative aspect-square bg-[#07101f] overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
 
-                  {/* Hover overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
 
-                {/* Content */}
                 <div className="p-5">
                   <div className="mb-3">
-                    <span className={`inline-block px-3 py-1 border rounded-full text-xs font-semibold mb-2 ${
+                    <span className={`theme-chip inline-block px-3 py-1 rounded-full text-xs font-semibold mb-2 ${
                       isSelected
-                        ? "bg-blue-500/20 border-blue-500/30 text-blue-400"
-                        : "bg-red-500/20 border-red-500/30 text-red-400"
+                        ? "text-blue-300"
+                        : "text-red-300"
                     }`}>
                       {item.category}
                     </span>
@@ -256,11 +244,10 @@ export default function MerchandisePage() {
                     </h3>
                   </div>
 
-                  <p className="text-gray-400 text-sm mb-4 line-clamp-2">
+                  <p className="text-[#aebcd1] text-sm mb-4 line-clamp-2">
                     {item.description}
                   </p>
 
-                  {/* Price and CTA */}
                   <div className="flex justify-between items-center">
                     {item.price && item.price !== "" && item.price !== "0" && (
                       <span className="text-lg font-bold text-blue-400">
@@ -270,10 +257,14 @@ export default function MerchandisePage() {
                     {merchandiseBaseUrl && (
                       <a
                         href={`${merchandiseBaseUrl}${item.url}`}
-                        className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-red-500 to-blue-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                        className="hero-cta-nav inline-flex rounded-[999px] px-4 py-2 text-sm text-white"
                       >
-                        Shop
-                        <ExternalLink className="w-4 h-4" />
+                        <span className="hero-cta-nav-inner">
+                          <span className="hero-cta-nav-label">Shop</span>
+                          <span className="home-cta-icon-badge">
+                            <ExternalLink className="w-3.5 h-3.5" />
+                          </span>
+                        </span>
                       </a>
                     )}
                   </div>
@@ -284,11 +275,10 @@ export default function MerchandisePage() {
         </div>
       </div>
 
-      {/* Books Section */}
       <div className="relative max-w-7xl mx-auto px-6 pb-16">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">Books</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-blue-500 mx-auto rounded-full"></div>
+          <h2 className="theme-title text-4xl font-bold mb-4">Books</h2>
+          <div className="section-tech-rule w-24"></div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -298,38 +288,34 @@ export default function MerchandisePage() {
               <div
                 key={item.id}
                 onClick={() => toggleItemSelection(item.id)}
-                className={`group relative bg-gray-800/50 backdrop-blur-sm border rounded-xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer ${
+                className={`group relative theme-panel-soft rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl cursor-pointer ${
                   isSelected
-                    ? "border-blue-500/70 shadow-2xl shadow-blue-500/30 bg-blue-900/20"
-                    : "border-gray-700/50 hover:shadow-red-500/20 hover:border-red-500/50"
+                    ? "border-[#93c5fd]/60 shadow-2xl shadow-[#2f88ff]/20 bg-[#12213b]/80"
+                    : "hover:shadow-[#2f88ff]/10 hover:border-[#93c5fd]/30"
                 }`}
               >
-                {/* Selection indicator */}
                 {isSelected && (
-                  <div className="absolute top-3 right-3 z-10 bg-blue-500 rounded-full p-1">
+                  <div className="absolute top-3 right-3 z-10 bg-[#3b82f6] rounded-full p-1 shadow-[0_0_16px_rgba(59,130,246,0.35)]">
                     <Check className="w-4 h-4 text-white" />
                   </div>
                 )}
 
-                {/* Image Container */}
-                <div className="relative aspect-square bg-gray-900 overflow-hidden">
+                <div className="relative aspect-square bg-[#07101f] overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
 
-                  {/* Hover overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
 
-                {/* Content */}
                 <div className="p-5">
                   <div className="mb-3">
-                    <span className={`inline-block px-3 py-1 border rounded-full text-xs font-semibold mb-2 ${
+                    <span className={`theme-chip inline-block px-3 py-1 rounded-full text-xs font-semibold mb-2 ${
                       isSelected
-                        ? "bg-blue-500/20 border-blue-500/30 text-blue-400"
-                        : "bg-red-500/20 border-red-500/30 text-red-400"
+                        ? "text-blue-300"
+                        : "text-red-300"
                     }`}>
                       {item.category}
                     </span>
@@ -342,11 +328,10 @@ export default function MerchandisePage() {
                     </h3>
                   </div>
 
-                  <p className="text-gray-400 text-sm mb-4 line-clamp-2">
+                  <p className="text-[#aebcd1] text-sm mb-4 line-clamp-2">
                     {item.description}
                   </p>
 
-                  {/* Price and CTA */}
                   <div className="flex justify-between items-center">
                     {item.price && item.price !== "" && item.price !== "0" && (
                       <span className="text-lg font-bold text-blue-400">
@@ -356,10 +341,14 @@ export default function MerchandisePage() {
                     {merchandiseBaseUrl && (
                       <a
                         href={`${merchandiseBaseUrl}${item.url}`}
-                        className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-red-500 to-blue-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                        className="hero-cta-nav inline-flex rounded-[999px] px-4 py-2 text-sm text-white"
                       >
-                        Shop
-                        <ExternalLink className="w-4 h-4" />
+                        <span className="hero-cta-nav-inner">
+                          <span className="hero-cta-nav-label">Shop</span>
+                          <span className="home-cta-icon-badge">
+                            <ExternalLink className="w-3.5 h-3.5" />
+                          </span>
+                        </span>
                       </a>
                     )}
                   </div>
@@ -369,37 +358,41 @@ export default function MerchandisePage() {
           })}
         </div>
 
-        {/* Order Now Icon */}
         <div className="text-center mt-12">
           <button
             disabled={selectedItems.size === 0}
-            className={`inline-flex items-center gap-3 px-8 py-4 rounded-lg font-semibold transform transition-all duration-300 ${
+            className={`hero-cta-nav inline-flex rounded-[999px] px-8 py-4 text-white ${
               selectedItems.size === 0
-                ? "bg-gray-600 text-gray-400 cursor-not-allowed"
-                : "bg-gradient-to-r from-red-500 to-blue-600 text-white hover:shadow-lg hover:scale-105"
+                ? "opacity-50 cursor-not-allowed"
+                : ""
             }`}
           >
-            <ShoppingCart className="w-6 h-6" />
-            Order Now ({selectedItems.size})
+            <span className="hero-cta-nav-inner">
+              <span className="hero-cta-nav-label">Order Now ({selectedItems.size})</span>
+              <span className="home-cta-icon-badge">
+                <ShoppingCart className="w-4 h-4" />
+              </span>
+            </span>
           </button>
         </div>
       </div>
 
-        {/* Call to Action Section */}
-        <div className="mt-24 text-center">
-          <div className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 border border-gray-700/50 rounded-2xl p-12 backdrop-blur-sm">
+        <div className="mt-24 text-center px-6 pb-20">
+          <div className="theme-panel rounded-2xl p-12 backdrop-blur-sm max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-4">
               Custom Orders & Bulk Requests
             </h2>
-            <p className="text-gray-300 max-w-2xl mx-auto mb-8">
+            <p className="section-tech-subtitle max-w-2xl mx-auto mb-8">
               Looking for custom merchandise or bulk orders? We offer personalized
               options for corporate gifts and special events.
             </p>
             <Link
               href="/contact"
-              className={`inline-block px-8 py-4 bg-gradient-to-r ${GRADIENTS.heroText} text-white rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300`}
+              className="hero-cta-nav home-cta inline-flex"
             >
-              Get in Touch
+              <span className="hero-cta-nav-inner">
+                <span className="hero-cta-nav-label">Get in Touch</span>
+              </span>
             </Link>
           </div>
         </div>

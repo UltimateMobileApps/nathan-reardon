@@ -1,7 +1,6 @@
 "use client";
 
 import Link from 'next/link';
-import { GRADIENTS } from '@/constants/styles';
 import AnimatedStars from '@/components/AnimatedStars';
 import { Car, Award, Wrench, Settings, Package, BarChart3, Zap, ExternalLink } from 'lucide-react';
 
@@ -522,9 +521,9 @@ export default function AchievementsPage() {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 relative overflow-hidden">
-            {/* Background Elements */}
+        <div className="page-shell">
             <div className="absolute inset-0 opacity-30">
+                <div className="absolute inset-0 theme-grid opacity-[0.18]"></div>
                 <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-20 right-10 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[40rem] bg-white/5 rounded-full blur-3xl"></div>
@@ -533,39 +532,37 @@ export default function AchievementsPage() {
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-                {/* Back to Home Link */}
                 <div className="mb-8 hero-fade-in-up">
                     <Link 
                         href="/"
-                        className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-300"
+                        className="page-back-link"
                     >
-                        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                         </svg>
                         Back to Home
                     </Link>
                 </div>
 
-                {/* Header */}
                 <div className="text-center mb-16 hero-fade-in-up hero-fade-in-up-delay-1">
-                    <h1 className={`text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r ${GRADIENTS.heroText} bg-clip-text text-transparent`}>
+                    <h1 className="theme-title text-4xl md:text-6xl font-bold mb-6">
                         Professional Achievements
                     </h1>
                     <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
                         A comprehensive overview of Nathan Reardon's professional achievements, certifications, and milestones 
                         spanning over 26 years of automotive innovation and excellence.
                     </p>
+                    <div className="section-tech-rule mt-8"></div>
                 </div>
 
-                {/* Key Metrics */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
                     {achievements.map((achievement, index) => (
                         <div
                             key={achievement.id}
-                            className={`bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-6 text-center hover:border-red-500/50 transition-all duration-300 hero-fade-in-up hero-fade-in-up-delay-${2 + index}`}
+                            className={`theme-panel rounded-2xl p-6 text-center hover:border-[#93c5fd]/34 transition-all duration-300 hero-fade-in-up hero-fade-in-up-delay-${2 + index}`}
                         >
                             <div className="text-red-400 mb-4 flex justify-center">{achievement.icon}</div>
-                            <div className={`text-3xl font-bold mb-2 bg-gradient-to-r ${GRADIENTS.heroText} bg-clip-text text-transparent`}>
+                            <div className="theme-title text-3xl font-bold mb-2">
                                 {achievement.metric}
                             </div>
                             <div className="text-white text-sm mb-3">{achievement.unit}</div>
@@ -582,16 +579,15 @@ export default function AchievementsPage() {
                     ))}
                 </div>
 
-                {/* Professional Awards */}
                 <section className="mb-16 hero-fade-in-up hero-fade-in-up-delay-6">
-                    <h2 className={`text-3xl font-bold mb-8 bg-gradient-to-r ${GRADIENTS.heroText} bg-clip-text text-transparent`}>
+                    <h2 className="theme-title text-3xl font-bold mb-8">
                         Professional Achievements & Awards
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {awards.map((award, index) => (
                             <div
                                 key={award.id}
-                                className={`bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300 group hero-fade-in-up hero-fade-in-up-delay-${7 + index}`}
+                                className={`theme-panel-soft rounded-2xl p-6 hover:border-[#93c5fd]/34 transition-all duration-300 group hero-fade-in-up hero-fade-in-up-delay-${7 + index}`}
                             >
                                 <div className="flex items-start justify-between mb-4">
                                     <div className="text-blue-400">{award.icon}</div>
@@ -603,8 +599,8 @@ export default function AchievementsPage() {
                                     {award.title}
                                 </h3>
                                 <p className="text-blue-400 font-medium text-sm mb-2">{award.organization}</p>
-                                <p className="text-white text-sm mb-3">{award.description}</p>
-                                <span className="inline-block bg-gray-700/50 text-white px-3 py-1 rounded-full text-xs">
+                                <p className="text-[#d6e0ef] text-sm mb-3">{award.description}</p>
+                                <span className="theme-chip inline-block text-white px-3 py-1 rounded-full text-xs">
                                     {award.category}
                                 </span>
                             </div>
@@ -612,18 +608,15 @@ export default function AchievementsPage() {
                     </div>
                 </section>
 
-                {/* Certifications & Training */}
-                <section 
-                    className="mb-16"
-                >
-                    <h2 className={`text-3xl font-bold mb-8 bg-gradient-to-r ${GRADIENTS.heroText} bg-clip-text text-transparent`}>
+                <section className="mb-16">
+                    <h2 className="theme-title text-3xl font-bold mb-8">
                         Certifications & Professional Development
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {certifications.map((cert, index) => (
                             <div
                                 key={cert.id}
-                                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-green-500/50 transition-all duration-300"
+                                className="theme-panel rounded-2xl p-8 hover:border-[#93c5fd]/34 transition-all duration-300"
                             >
                                 <div className="flex items-start justify-between mb-6">
                                     <div className="text-green-400">{cert.icon}</div>
@@ -636,7 +629,7 @@ export default function AchievementsPage() {
                                 </div>
                                 <h3 className="text-white font-bold text-xl mb-2">{cert.title}</h3>
                                 <p className="text-blue-400 font-medium text-sm mb-2">{cert.organization}</p>
-                                <p className="text-white text-sm mb-4">
+                                <p className="text-[#d6e0ef] text-sm mb-4">
                                     {cert.description}
                                     {cert.aseProofLink && (
                                         <a href={cert.aseProofLink} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline inline-flex items-center gap-1 ml-1">
@@ -645,7 +638,7 @@ export default function AchievementsPage() {
                                     )}
                                 </p>
                                 <div className="flex justify-between items-center">
-                                    <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs">
+                                    <span className="theme-chip text-blue-300 px-3 py-1 rounded-full text-xs">
                                         {cert.level}
                                     </span>
                                 </div>
@@ -654,18 +647,15 @@ export default function AchievementsPage() {
                     </div>
                 </section>
 
-                {/* ASE Certifications */}
-                <section 
-                    className="mb-16"
-                >
-                    <h2 className={`text-3xl font-bold mb-8 bg-gradient-to-r ${GRADIENTS.heroText} bg-clip-text text-transparent`}>
+                <section className="mb-16">
+                    <h2 className="theme-title text-3xl font-bold mb-8">
                         ASE Certifications (11 Specialties)
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         {aseCertifications.map((cert, index) => (
                             <div
                                 key={cert.id}
-                                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl p-4 hover:border-red-500/50 transition-all duration-300"
+                                className="theme-panel-soft rounded-xl p-4 hover:border-[#93c5fd]/34 transition-all duration-300"
                             >
                                 <div className="flex items-start justify-between mb-3">
                                     <div className="text-red-400">{cert.icon}</div>
@@ -674,8 +664,8 @@ export default function AchievementsPage() {
                                     </span>
                                 </div>
                                 <h3 className="text-white font-semibold text-sm mb-1">{cert.title}</h3>
-                                <p className="text-gray-300 text-xs mb-2">{cert.description}</p>
-                                <span className="bg-blue-500/20 text-blue-300 px-2 py-1 rounded-full text-xs">
+                                <p className="text-[#c7d4e6] text-xs mb-2">{cert.description}</p>
+                                <span className="theme-chip text-blue-300 px-2 py-1 rounded-full text-xs">
                                     {cert.level}
                                 </span>
                             </div>
@@ -683,18 +673,15 @@ export default function AchievementsPage() {
                     </div>
                 </section>
 
-                {/* Technical Certifications */}
-                <section 
-                    className="mb-16"
-                >
-                    <h2 className={`text-3xl font-bold mb-8 bg-gradient-to-r ${GRADIENTS.heroText} bg-clip-text text-transparent`}>
+                <section className="mb-16">
+                    <h2 className="theme-title text-3xl font-bold mb-8">
                         Technical Certifications
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {technicalCertifications.map((cert, index) => (
                             <div
                                 key={cert.id}
-                                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300"
+                                className="theme-panel-soft rounded-2xl p-6 hover:border-[#93c5fd]/34 transition-all duration-300"
                             >
                                 <div className="flex items-start justify-between mb-4">
                                     <div className="text-blue-400">{cert.icon}</div>
@@ -704,8 +691,8 @@ export default function AchievementsPage() {
                                 </div>
                                 <h3 className="text-white font-bold text-lg mb-2">{cert.title}</h3>
                                 <p className="text-blue-400 font-medium text-sm mb-2">{cert.organization}</p>
-                                <p className="text-white text-sm mb-3">{cert.description}</p>
-                                <span className="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs">
+                                <p className="text-[#d6e0ef] text-sm mb-3">{cert.description}</p>
+                                <span className="theme-chip text-red-300 px-3 py-1 rounded-full text-xs">
                                     {cert.level}
                                 </span>
                             </div>
@@ -713,18 +700,15 @@ export default function AchievementsPage() {
                     </div>
                 </section>
 
-                {/* Professional Development */}
-                <section 
-                    className="mb-16"
-                >
-                    <h2 className={`text-3xl font-bold mb-8 bg-gradient-to-r ${GRADIENTS.heroText} bg-clip-text text-transparent`}>
+                <section className="mb-16">
+                    <h2 className="theme-title text-3xl font-bold mb-8">
                         Professional Development
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {professionalDevelopment.map((cert, index) => (
                             <div
                                 key={cert.id}
-                                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-6 hover:border-white/50 transition-all duration-300"
+                                className="theme-panel-soft rounded-2xl p-6 hover:border-[#93c5fd]/34 transition-all duration-300"
                             >
                                 <div className="flex items-start justify-between mb-4">
                                     <div className="text-white">{cert.icon}</div>
@@ -734,8 +718,8 @@ export default function AchievementsPage() {
                                 </div>
                                 <h3 className="text-white font-bold text-lg mb-2">{cert.title}</h3>
                                 <p className="text-blue-400 font-medium text-sm mb-2">{cert.organization}</p>
-                                <p className="text-white text-sm mb-3">{cert.description}</p>
-                                <span className="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs">
+                                <p className="text-[#d6e0ef] text-sm mb-3">{cert.description}</p>
+                                <span className="theme-chip text-red-300 px-3 py-1 rounded-full text-xs">
                                     {cert.level}
                                 </span>
                             </div>
@@ -743,18 +727,15 @@ export default function AchievementsPage() {
                     </div>
                 </section>
 
-                {/* Additional Skills */}
-                <section 
-                    className="mb-16"
-                >
-                    <h2 className={`text-3xl font-bold mb-8 bg-gradient-to-r ${GRADIENTS.heroText} bg-clip-text text-transparent`}>
+                <section className="mb-16">
+                    <h2 className="theme-title text-3xl font-bold mb-8">
                         Additional Skills & Experience
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {additionalSkills.map((skill, index) => (
                             <div
                                 key={skill.id}
-                                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-6 hover:border-yellow-500/50 transition-all duration-300"
+                                className="theme-panel-soft rounded-2xl p-6 hover:border-[#93c5fd]/34 transition-all duration-300"
                             >
                                 <div className="flex items-start justify-between mb-4">
                                     <div className="text-yellow-400">{skill.icon}</div>
@@ -764,8 +745,8 @@ export default function AchievementsPage() {
                                 </div>
                                 <h3 className="text-white font-bold text-lg mb-2">{skill.title}</h3>
                                 <p className="text-blue-400 font-medium text-sm mb-2">{skill.organization}</p>
-                                <p className="text-white text-sm mb-3">{skill.description}</p>
-                                <span className="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs">
+                                <p className="text-[#d6e0ef] text-sm mb-3">{skill.description}</p>
+                                <span className="theme-chip text-red-300 px-3 py-1 rounded-full text-xs">
                                     {skill.level}
                                 </span>
                             </div>
@@ -773,27 +754,30 @@ export default function AchievementsPage() {
                     </div>
                 </section>
 
-                {/* Call to Action */}
                 <div
-                    className="text-center bg-gradient-to-r from-blue-500/20 to-red-500/20 border border-blue-500/30 rounded-2xl p-8"
+                    className="text-center theme-panel rounded-2xl p-8"
                 >
                     <h3 className="text-2xl font-bold text-white mb-4">Interested in Collaboration?</h3>
-                    <p className="text-white mb-6 max-w-2xl mx-auto">
+                    <p className="section-tech-subtitle mb-6 max-w-2xl mx-auto">
                         With 31 ASE certifications <a href="/ASE.jpeg" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline inline-flex items-center gap-1"><ExternalLink className="w-3 h-3" /></a>, over 120 patents in development, and 26+ years of automotive industry leadership, 
                         Nathan is always open to discussing new opportunities and partnerships.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link 
                             href="/contact"
-                            className="bg-gradient-to-r from-red-500 to-blue-600 hover:from-red-600 hover:to-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:text-white"
+                            className="hero-cta-nav home-cta inline-flex"
                         >
-                            Get in Touch
+                            <span className="hero-cta-nav-inner">
+                                <span className="hero-cta-nav-label">Get in Touch</span>
+                            </span>
                         </Link>
                         <Link 
                             href="/patents"
-                            className="border border-red-500 text-red-400 hover:bg-red-500 hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300"
+                            className="hero-cta-nav home-cta inline-flex"
                         >
-                            View Patents
+                            <span className="hero-cta-nav-inner">
+                                <span className="hero-cta-nav-label">View Patents</span>
+                            </span>
                         </Link>
                     </div>
                 </div>

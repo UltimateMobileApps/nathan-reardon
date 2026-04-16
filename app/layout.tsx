@@ -1,13 +1,18 @@
 import "./globals.css";
 import "./performance.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Orbitron } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { personSchema, organizationSchema } from "@/app/structured-data";
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  variable: "--font-display",
+  weight: ["400", "500", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "Nathan Reardon | Inventor, Entrepreneur & Innovator | 77+ Patents",
@@ -112,7 +117,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.className} bg-[var(--color-bg)] text-[var(--color-text)] overflow-x-hidden`}
+        className={`${inter.variable} ${orbitron.variable} bg-[var(--color-bg)] text-[var(--color-text)] overflow-x-hidden`}
       >
         <div className="flex min-h-screen flex-col w-full max-w-[100vw]">
           <Header />

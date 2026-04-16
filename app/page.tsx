@@ -10,7 +10,7 @@ import ASEStatement from "@/components/ASEStatement";
 
 export default function HomePage() {
   return (
-    <main className="bg-gray-950 text-gray-100">
+    <main className="theme-shell text-gray-100">
       <Hero />
       <About />
       <MajorGoals />
