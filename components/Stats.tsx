@@ -35,9 +35,6 @@ export default function Stats() {
                         </h2>
                         <div className="section-tech-rule"></div>
                     </div>
-                    <p className="section-tech-subtitle mx-auto max-w-2xl text-base md:text-lg">
-                        The home page proof points now carry the same cinematic chrome treatment as the hero instead of feeling like a separate module.
-                    </p>
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
