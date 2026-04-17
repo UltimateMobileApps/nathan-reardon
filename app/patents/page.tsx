@@ -304,14 +304,14 @@ function PatentCard({ patent, onImageClick }: { patent: Patent; onImageClick: (p
     return (
         <div className="group relative theme-panel-soft rounded-2xl overflow-hidden hover:border-[#93c5fd]/34 transition-all duration-500 hover:scale-[1.02]">
             <div 
-                className="relative h-48 overflow-hidden cursor-pointer group/image"
+                className="relative h-48 overflow-hidden cursor-pointer group/image bg-[#050913]"
                 onClick={() => onImageClick(patent)}
             >
                 <Image
                     src={patent.image}
                     alt={patent.title}
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="object-contain p-3 group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-3 left-3 bg-black/70 backdrop-blur-sm text-blue-400 px-2 py-1 rounded-full text-xs">
