@@ -78,27 +78,6 @@ export default function MajorGoals() {
                             Beyond innovation and invention, I'm committed to solving humanity's greatest challenges. 
                             These are the missions that drive my passion for creating meaningful change in the world.
                         </p>
-
-                        <div className="mt-12 flex flex-col md:flex-row gap-8 justify-center items-center max-w-5xl mx-auto">
-                            <div className="theme-media-frame w-full md:w-1/2 max-w-md transform hover:scale-[1.02] transition-all duration-500">
-                                <Image
-                                    src="/he-gave-his-life-for-us.png"
-                                    alt="He gave his life for us"
-                                    width={400}
-                                    height={300}
-                                    className="w-full h-auto object-cover"
-                                />
-                            </div>
-                            <div className="theme-media-frame w-full md:w-1/2 max-w-md transform hover:scale-[1.02] transition-all duration-500">
-                                <Image
-                                    src="/ministry.png"
-                                    alt="I was called to fund ministry - Nathan Reardon quote"
-                                    width={400}
-                                    height={600}
-                                    className="w-full h-auto object-cover"
-                                />
-                            </div>
-                        </div>
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -155,6 +134,26 @@ export default function MajorGoals() {
                             </div>
                         ))}
                     </div>
+                    <div className="mt-12 flex flex-col md:flex-row gap-8 justify-center items-center max-w-5xl mx-auto">
+                            <div className="theme-media-frame w-full md:w-1/2 max-w-md transform hover:scale-[1.02] transition-all duration-500">
+                                <Image
+                                    src="/he-gave-his-life-for-us.png"
+                                    alt="He gave his life for us"
+                                    width={400}
+                                    height={300}
+                                    className="w-full h-auto object-cover"
+                                />
+                            </div>
+                            <div className="theme-media-frame w-full md:w-1/2 max-w-md transform hover:scale-[1.02] transition-all duration-500">
+                                <Image
+                                    src="/ministry.png"
+                                    alt="I was called to fund ministry - Nathan Reardon quote"
+                                    width={400}
+                                    height={600}
+                                    className="w-full h-auto object-cover"
+                                />
+                            </div>
+                        </div>
                 </div>
             </section>
 

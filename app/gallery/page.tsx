@@ -27,7 +27,7 @@ export default function GalleryPage() {
         { src: "/gallery/michael-reagan.jpeg", name: "Michael Reagan" },
         { src: "/gallery/michelle-bachman.jpeg", name: "Michelle Bachman" },
         { src: "/gallery/rick-perry.jpeg", name: "Rick Perry" },
-        { src: "/gallery/nathan-at-walmart-home-office.jpeg", name: "Nathan at Walmart Home Office" }
+        { src: "/gallery/nathan-at-walmart-home-office.jpeg", name: "his board of advisors at Walmart Home Office" }
     ];
 
     // Family & Pets gallery

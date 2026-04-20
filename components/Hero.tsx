@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Heart, Users, Target } from "lucide-react";
 import AnimatedStars from "@/components/AnimatedStars";
+import FallingMoney from "@/components/FallingMoney";
+
 
 export default function Hero() {
     const previewCards = [
@@ -29,6 +31,7 @@ export default function Hero() {
         <section className="hero-cosmos relative min-h-[100svh] overflow-hidden pb-14 pt-24 md:pb-20 md:pt-28">
             <div className="pointer-events-none absolute inset-0 opacity-70">
                 <AnimatedStars count={260} />
+                <FallingMoney count={12} />
             </div>
             <div className="pointer-events-none absolute inset-x-0 top-[116px] px-6">
                 <div className="hero-frame-line mx-auto max-w-[1200px]" />
