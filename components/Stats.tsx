@@ -1,10 +1,11 @@
 import Link from "next/link";
+import { booksData } from "@/data/books";
 
 export default function Stats() {
     const stats = [
         { label: "Years Innovating", value: "26+", href: "/gallery" },
         { label: "Patents Filed", value: "77+", href: "/patents" },
-        { label: "Books Authored", value: "6", href: "#books" },
+        { label: "Books Authored", value: booksData.length.toString(), href: "#books" },
         { label: "Awards Received", value: "9", href: "/achievements" },
     ];
 

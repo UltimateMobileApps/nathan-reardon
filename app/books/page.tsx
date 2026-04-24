@@ -4,16 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ArrowLeft, ShoppingCart, Check } from "lucide-react";
 import AnimatedStars from "@/components/AnimatedStars";
-
-interface BookItem {
-  id: number;
-  name: string;
-  category: string;
-  image: string;
-  description: string;
-  price?: string;
-  url?: string;
-}
+import { booksData } from "@/data/books";
 
 export default function BooksPage() {
   // Base URL for book purchases - set this when ready
@@ -35,63 +26,7 @@ export default function BooksPage() {
     });
   };
 
-  // Book items - based on actual images in public/books
-  const bookItems: BookItem[] = [
-    {
-      id: 1,
-      name: "Both Sides of Poor and Rich",
-      category: "Books",
-      image: "/books/both-sides.jpeg",
-      description: "Exploring perspectives from both sides of life's challenges and opportunities.",
-      price: "",
-      url: "both-sides",
-    },
-    {
-      id: 2,
-      name: "How to Get a Job and Keep It",
-      category: "Books",
-      image: "/books/get-a-job.jpeg",
-      description: "Practical guide to career development and professional success.",
-      price: "",
-      url: "get-a-job",
-    },
-    {
-      id: 3,
-      name: "Why Liberty Is So Important",
-      category: "Books",
-      image: "/books/liberty.jpeg",
-      description: "A comprehensive exploration of freedom, rights, and personal liberty.",
-      price: "",
-      url: "liberty",
-    },
-    {
-      id: 4,
-      name: "They Never Saw It Coming",
-      category: "Books",
-      image: "/books/never-saw-it.png",
-      description: "Uncovering hidden truths and perspectives you never saw coming.",
-      price: "",
-      url: "never-saw-it",
-    },
-    {
-      id: 5,
-      name: "Overwhelming Force",
-      category: "Books",
-      image: "/books/overwhelming-force.jpeg",
-      description: "Harnessing the power of overwhelming force for breakthrough results.",
-      price: "",
-      url: "overwhelming-force",
-    },
-    {
-      id: 6,
-      name: "The Risk of Success",
-      category: "Books",
-      image: "/books/success-risk.png",
-      description: "Understanding the risks and rewards on the path to success.",
-      price: "",
-      url: "success-risk",
-    },
-  ];
+  const bookItems = booksData;
 
   return (
     <div className="page-shell">
@@ -152,8 +87,8 @@ export default function BooksPage() {
                 <div className="relative aspect-square bg-[#07101f] overflow-hidden">
                   <img
                     src={item.image}
-                    alt={item.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    alt={item.title}
+                    className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-700"
                   />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -166,14 +101,14 @@ export default function BooksPage() {
                         ? "text-blue-300"
                         : "text-red-300"
                     }`}>
-                      {item.category}
+                      Books
                     </span>
                     <h3 className={`text-lg font-semibold transition-colors duration-300 ${
                       isSelected
                         ? "text-blue-400"
                         : "text-white group-hover:text-blue-400"
                     }`}>
-                      {item.name}
+                      {item.title}
                     </h3>
                   </div>
 
@@ -182,14 +117,9 @@ export default function BooksPage() {
                   </p>
 
                   <div className="flex justify-between items-center">
-                    {item.price && item.price !== "" && item.price !== "0" && (
-                      <span className="text-lg font-bold text-blue-400">
-                        {item.price}
-                      </span>
-                    )}
                     {booksBaseUrl && (
                       <a
-                        href={`${booksBaseUrl}${item.url}`}
+                        href={`${booksBaseUrl}${item.slug}`}
                         className="hero-cta-nav inline-flex rounded-[999px] px-4 py-2 text-sm text-white"
                       >
                         <span className="hero-cta-nav-inner">

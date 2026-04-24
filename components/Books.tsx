@@ -2,6 +2,7 @@
 import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { GRADIENTS } from "@/constants/styles";
+import { booksData } from "@/data/books";
 
 export default function Books() {
     const scrollRef = useRef<HTMLDivElement>(null);
@@ -42,15 +43,7 @@ export default function Books() {
         }
     };
 
-    const books = [
-        { title: "There Is No Such Thing As Self-Made", year: 2025, cover: "/books/there-is-no-such-thing-as-self-made.png" },
-        { title: "The Risk of Success", year: 2019, cover: "/books/success-risk.png" },
-        { title: "Both Sides of POOR and RICH", year: 2024, cover: "/books/both-sides.jpeg" },
-        { title: "How To Get A Job And Keep It", year: 2023, cover: "/books/get-a-job.jpeg" },
-        { title: "Why Liberty Is so Important", year: 2022, cover: "/books/liberty.jpeg" },
-        { title: "They Never Saw It Coming", year: 2021, cover: "/books/never-saw-it.png" },
-        { title: "Overwhelming Force", year: 2020, cover: "/books/overwhelming-force.jpeg" },
-    ];
+    const books = booksData;
 
     return (
         <section id="books" className="relative py-24 theme-shell overflow-hidden">
@@ -104,7 +97,7 @@ export default function Books() {
                             <div className="relative bg-[linear-gradient(145deg,rgba(23,33,52,0.96)_0%,rgba(9,18,37,0.98)_100%)] rounded-2xl overflow-hidden">
                                 <div className="relative overflow-hidden">
                                     <img
-                                        src={book.cover}
+                                        src={book.image}
                                         alt={book.title}
                                         className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
                                         loading="lazy"
@@ -191,7 +184,7 @@ export default function Books() {
                     {/* Book cover container */}
                     <div className="relative max-w-2xl w-full flex flex-col items-center">
                         <img
-                            src={books[selectedBook].cover}
+                            src={books[selectedBook].image}
                             alt={books[selectedBook].title}
                             className="max-w-full max-h-[70vh] object-contain rounded-lg shadow-2xl"
                         />
@@ -201,9 +194,11 @@ export default function Books() {
                             <h3 className={`text-2xl md:text-3xl font-bold ${GRADIENTS.heroText} bg-clip-text text-transparent mb-2`}>
                                 {books[selectedBook].title}
                             </h3>
-                            <p className="text-white text-lg">
-                                Published {books[selectedBook].year}
-                            </p>
+                            {books[selectedBook].year && (
+                                <p className="text-white text-lg">
+                                    Published {books[selectedBook].year}
+                                </p>
+                            )}
                         </div>
                     </div>
 

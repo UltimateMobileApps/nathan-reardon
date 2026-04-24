@@ -84,7 +84,7 @@ export default function MajorGoals() {
                         {goals.map((goal) => (
                             <div
                                 key={goal.id}
-                                className="group relative theme-panel rounded-[1.6rem] overflow-hidden hover:border-[#7cb8ff]/45 transition-all duration-300 cursor-pointer"
+                                className="group relative flex h-full flex-col theme-panel rounded-[1.6rem] overflow-hidden hover:border-[#7cb8ff]/45 transition-all duration-300 cursor-pointer"
                                 onClick={() => openModal(goal.id - 1)}
                             >
                                 <div className="relative h-64 overflow-hidden">
@@ -98,15 +98,18 @@ export default function MajorGoals() {
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
 
-                                    <div className="absolute left-5 top-5">
-                                        <div className="rounded-full border border-white/10 bg-black/30 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#dce9ff] backdrop-blur-md">
-                                            Goal 0{goal.id}
-                                        </div>
-                                    </div>
-
                                     <div className="absolute top-4 right-4">
-                                        <div className={`flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-gradient-to-br ${goal.color} text-white font-bold text-lg shadow-lg shadow-black/35`}>
-                                            {goal.id}
+                                        <div className="relative overflow-hidden rounded-[18px] border border-[#c7d2fe]/45 bg-[linear-gradient(180deg,rgba(15,24,43,0.96)_0%,rgba(7,13,30,0.98)_100%)] px-3 py-2 shadow-[0_18px_34px_rgba(0,0,0,0.42),0_0_18px_rgba(59,130,246,0.12),inset_0_1px_0_rgba(255,255,255,0.12)]">
+                                            <div className="pointer-events-none absolute inset-[3px] rounded-[14px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.07)_0%,rgba(255,255,255,0)_42%),linear-gradient(90deg,rgba(59,130,246,0.08)_0%,rgba(255,255,255,0.02)_52%,rgba(215,100,124,0.08)_100%)]"></div>
+                                            <div className="relative flex items-end gap-2">
+                                                <div className="pb-1 text-[0.52rem] font-semibold uppercase tracking-[0.28em] text-[#8ea6c6]">
+                                                    Goal
+                                                </div>
+                                                <div className="font-display text-[1.65rem] leading-none text-transparent bg-[linear-gradient(180deg,#ffffff_0%,#eef4ff_26%,#9dc7ff_62%,#ffffff_100%)] bg-clip-text drop-shadow-[0_0_12px_rgba(147,197,253,0.28)]">
+                                                    {goal.id.toString().padStart(2, "0")}
+                                                </div>
+                                            </div>
+                                            <div className="relative mt-1.5 h-px w-full bg-gradient-to-r from-transparent via-[#93c5fd]/90 to-transparent shadow-[0_0_10px_rgba(147,197,253,0.3)]"></div>
                                         </div>
                                     </div>
 
@@ -117,14 +120,14 @@ export default function MajorGoals() {
                                     </div>
                                 </div>
 
-                                <div className="p-8">
+                                <div className="flex flex-1 flex-col p-8">
                                     <h3 className={`text-2xl font-bold mb-4 ${goal.textColor} group-hover:text-white transition-colors duration-300`}>
                                         {goal.title}
                                     </h3>
                                     <p className="text-[#cbd5e1] leading-relaxed group-hover:text-white transition-colors duration-300">
                                         {goal.description}
                                     </p>
-                                    <div className="mt-6 flex items-center justify-between">
+                                    <div className="mt-auto pt-6 flex items-center justify-between">
                                         <span className="text-[0.72rem] uppercase tracking-[0.24em] text-[#8ea6c6]">Open mission brief</span>
                                         <span className="h-px w-14 bg-gradient-to-r from-[#93c5fd] via-white/70 to-transparent transition-all duration-300 group-hover:w-20"></span>
                                     </div>
@@ -193,8 +196,17 @@ export default function MajorGoals() {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg"></div>
 
                             <div className="absolute top-4 left-4">
-                                <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${goals[selectedGoal].color} flex items-center justify-center text-white font-bold text-xl shadow-lg`}>
-                                    {goals[selectedGoal].id}
+                                <div className="relative overflow-hidden rounded-[20px] border border-[#c7d2fe]/50 bg-[linear-gradient(180deg,rgba(15,24,43,0.96)_0%,rgba(7,13,30,0.98)_100%)] px-4 py-3 shadow-[0_22px_42px_rgba(0,0,0,0.48),0_0_22px_rgba(59,130,246,0.14),inset_0_1px_0_rgba(255,255,255,0.12)]">
+                                    <div className="pointer-events-none absolute inset-[4px] rounded-[16px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.07)_0%,rgba(255,255,255,0)_42%),linear-gradient(90deg,rgba(59,130,246,0.08)_0%,rgba(255,255,255,0.02)_52%,rgba(215,100,124,0.08)_100%)]"></div>
+                                    <div className="relative flex items-end gap-3">
+                                        <div className="pb-1 text-[0.56rem] font-semibold uppercase tracking-[0.3em] text-[#8ea6c6]">
+                                            Goal
+                                        </div>
+                                        <div className="font-display text-[2rem] leading-none text-transparent bg-[linear-gradient(180deg,#ffffff_0%,#eef4ff_26%,#9dc7ff_62%,#ffffff_100%)] bg-clip-text drop-shadow-[0_0_14px_rgba(147,197,253,0.3)]">
+                                            {goals[selectedGoal].id.toString().padStart(2, "0")}
+                                        </div>
+                                    </div>
+                                    <div className="relative mt-2 h-px w-full bg-gradient-to-r from-transparent via-[#93c5fd]/90 to-transparent shadow-[0_0_10px_rgba(147,197,253,0.3)]"></div>
                                 </div>
                             </div>
                         </div>

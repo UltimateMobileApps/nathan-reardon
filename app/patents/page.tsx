@@ -163,8 +163,8 @@ export default function PatentsPage() {
 
             <section className="relative z-10 px-4 pb-20">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {filteredPatents.map((patent) => (
-                        <PatentCard key={patent.id} patent={patent} onImageClick={openPatentModal} />
+                    {filteredPatents.map((patent, index) => (
+                        <PatentCard key={patent.id} patent={patent} index={index + 1} onImageClick={openPatentModal} />
                     ))}
 
                     {filteredPatents.length === 0 && (
@@ -298,11 +298,12 @@ function Stat({
     );
 }
 
-function PatentCard({ patent, onImageClick }: { patent: Patent; onImageClick: (patent: Patent) => void }) {
+function PatentCard({ patent, index, onImageClick }: { patent: Patent; index: number; onImageClick: (patent: Patent) => void }) {
     const { href, isExternal, buttonText } = getPatentLink(patent);
+    const displayNumber = index.toString().padStart(2, "0");
     
     return (
-        <div className="group relative theme-panel-soft rounded-2xl overflow-hidden hover:border-[#93c5fd]/34 transition-all duration-500 hover:scale-[1.02]">
+        <div className="group relative flex h-full flex-col theme-panel-soft rounded-2xl overflow-hidden hover:border-[#93c5fd]/34 transition-all duration-500 hover:scale-[1.02]">
             <div 
                 className="relative h-48 overflow-hidden cursor-pointer group/image bg-[#050913]"
                 onClick={() => onImageClick(patent)}
@@ -317,6 +318,9 @@ function PatentCard({ patent, onImageClick }: { patent: Patent; onImageClick: (p
                 <div className="absolute bottom-3 left-3 bg-black/70 backdrop-blur-sm text-blue-400 px-2 py-1 rounded-full text-xs">
                     {patent.category}
                 </div>
+                <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-white px-2.5 py-1 rounded-full text-xs font-semibold tracking-[0.18em]">
+                    #{displayNumber}
+                </div>
 
                 <div className="absolute inset-0 bg-black/0 group-hover/image:bg-black/20 transition-colors duration-300 flex items-center justify-center">
                     <div className="opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 bg-white/20 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
@@ -325,7 +329,7 @@ function PatentCard({ patent, onImageClick }: { patent: Patent; onImageClick: (p
                 </div>
             </div>
 
-            <div className="p-4">
+            <div className="flex flex-1 flex-col p-4">
                 <h3 className="text-lg font-bold mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-[linear-gradient(90deg,#eef4ff_0%,#8ec7ff_58%,#d7647c_100%)] transition-all duration-300 line-clamp-2">
                     {patent.title}
                 </h3>
@@ -351,7 +355,7 @@ function PatentCard({ patent, onImageClick }: { patent: Patent; onImageClick: (p
                     <a
                         href={href}
                         {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                        className="hero-cta-nav inline-flex rounded-[999px] px-4 py-2 text-sm text-white"
+                        className="hero-cta-nav mt-auto inline-flex rounded-[999px] px-4 py-2 text-sm text-white"
                     >
                         <span className="hero-cta-nav-inner">
                             <span className="hero-cta-nav-label">{buttonText}</span>

@@ -4,8 +4,11 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, Mail, MapPin, Phone, Send, CheckCircle, AlertCircle } from 'lucide-react';
+import patentsData from '@/data/patents.json';
 
 export default function ContactPage() {
+    const patentCount = patentsData.length;
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -199,7 +202,7 @@ export default function ContactPage() {
                                 </div>
                             </div>
                             <p className="text-[#d6e0ef] leading-relaxed text-sm md:text-base">
-                                With 26 years of experience in automotive innovation and 25 patents filed across multiple industries, 
+                                With 26 years of experience in automotive innovation and {patentCount} patents filed across multiple industries, 
                                 I'm passionate about creating solutions that make a real difference in people's lives.
                             </p>
                         </div>
