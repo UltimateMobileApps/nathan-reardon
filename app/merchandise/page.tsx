@@ -101,7 +101,7 @@ export default function MerchandisePage() {
       category: "Books",
       image: "/merch/addicted-to-assets.png",
       description: "A comprehensive guide to building and managing assets for long-term wealth and financial freedom.",
-      price: "",
+      price: "$29.99",
       url: "addicted-to-assets",
     },
     {
