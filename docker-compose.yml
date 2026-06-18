@@ -1,0 +1,15 @@
+services:
+  nathan-portfolio:
+    container_name: nathan-portfolio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nathan-portfolio:latest
+    restart: unless-stopped
+    ports:
+      - "3002:3000"
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      HOSTNAME: 0.0.0.0
+      RESEND_API_KEY: ${RESEND_API_KEY:-}
