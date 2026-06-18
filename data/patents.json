@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Heal Link",
     "category": "APP / TECH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/heal-link.png",
     "description": "Heal Link is part of Nathan Reardon's patent portfolio in software / saas. Detailed commercialization materials are in development.",
     "applications": [
       "Software platforms",
@@ -31,7 +31,7 @@
     "id": 3,
     "title": "Work History Registry",
     "category": "APP / TECH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/work-history-registry.png",
     "description": "Work History Registry is part of Nathan Reardon's patent portfolio in software / saas. Detailed commercialization materials are in development.",
     "applications": [
       "Software platforms",
@@ -45,7 +45,7 @@
     "id": 4,
     "title": "Apex Hunter",
     "category": "APP / TECH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/apex-hunter.png",
     "description": "Apex Hunter is part of Nathan Reardon's patent portfolio in software / saas. Detailed commercialization materials are in development.",
     "applications": [
       "Software platforms",
@@ -59,7 +59,7 @@
     "id": 5,
     "title": "Reardon AI",
     "category": "APP / TECH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/reardon-ai.jpg",
     "description": "Reardon AI is part of Nathan Reardon's patent portfolio in software / saas. Detailed commercialization materials are in development.",
     "applications": [
       "Software platforms",
@@ -101,7 +101,7 @@
     "id": 8,
     "title": "Right Jobs",
     "category": "APP / TECH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/right-jobs.png",
     "description": "Right Jobs is part of Nathan Reardon's patent portfolio in software / saas. Detailed commercialization materials are in development.",
     "applications": [
       "Software platforms",
@@ -115,7 +115,7 @@
     "id": 9,
     "title": "Company Reels",
     "category": "APP / TECH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/company-reels.png",
     "description": "Company Reels is part of Nathan Reardon's patent portfolio in software / saas. Detailed commercialization materials are in development.",
     "applications": [
       "Software platforms",
@@ -129,7 +129,7 @@
     "id": 10,
     "title": "Liberty Vibe",
     "category": "APP / TECH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/liberty-vibe.png",
     "description": "Liberty Vibe is part of Nathan Reardon's patent portfolio in software / saas. Detailed commercialization materials are in development.",
     "applications": [
       "Software platforms",
@@ -143,7 +143,7 @@
     "id": 11,
     "title": "Liberty Live",
     "category": "APP / TECH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/liberty-live.png",
     "description": "Liberty Live is part of Nathan Reardon's patent portfolio in software / saas. Detailed commercialization materials are in development.",
     "applications": [
       "Software platforms",
@@ -157,7 +157,7 @@
     "id": 12,
     "title": "Liberty Verify",
     "category": "APP / TECH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/liberty-verify.png",
     "description": "Liberty Verify is part of Nathan Reardon's patent portfolio in software / saas. Detailed commercialization materials are in development.",
     "applications": [
       "Software platforms",
@@ -171,7 +171,7 @@
     "id": 13,
     "title": "Reply IQ",
     "category": "APP / TECH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/clear-hire.png",
     "description": "Reply IQ is part of Nathan Reardon's patent portfolio in software / saas. Detailed commercialization materials are in development.",
     "applications": [
       "Software platforms",
@@ -199,7 +199,7 @@
     "id": 15,
     "title": "Knowledge Vault",
     "category": "APP / TECH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/knowledge-vault.png",
     "description": "Knowledge Vault is part of Nathan Reardon's patent portfolio in software / saas. Detailed commercialization materials are in development.",
     "applications": [
       "Software platforms",
@@ -213,7 +213,7 @@
     "id": 16,
     "title": "Vendor Vault",
     "category": "APP / TECH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/vendor-vault.png",
     "description": "Vendor Vault is part of Nathan Reardon's patent portfolio in software / saas. Detailed commercialization materials are in development.",
     "applications": [
       "Software platforms",
@@ -227,7 +227,7 @@
     "id": 17,
     "title": "Guardian Co",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/guardian-co.png",
     "description": "Guardian Co is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -255,7 +255,7 @@
     "id": 19,
     "title": "Choice Parts",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/choice-parts.png",
     "description": "Choice Parts is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -269,7 +269,7 @@
     "id": 20,
     "title": "Clear Shift Covers",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/clear-shift.png",
     "description": "Clear Shift Covers is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -283,7 +283,7 @@
     "id": 21,
     "title": "Clear View Mirror",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/clear-view.png",
     "description": "Clear View Mirror is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -297,7 +297,7 @@
     "id": 22,
     "title": "The Daisy System",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/the-daisy-system.png",
     "description": "The Daisy System is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -311,7 +311,7 @@
     "id": 23,
     "title": "Deca+",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/deca+.png",
     "description": "Deca+ is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -339,7 +339,7 @@
     "id": 25,
     "title": "Fuel Maxx",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/fuel-maxx.png",
     "description": "Fuel Maxx is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -353,7 +353,7 @@
     "id": 26,
     "title": "Gentle Vent",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/gentle-vent.png",
     "description": "Gentle Vent is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -381,7 +381,7 @@
     "id": 28,
     "title": "Slip Safe",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/slip-safe.png",
     "description": "Slip Safe is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -409,7 +409,7 @@
     "id": 30,
     "title": "Sun Armor Tires",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/sun-armor.png",
     "description": "Sun Armor Tires is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -423,7 +423,7 @@
     "id": 31,
     "title": "Hydro Spool Turbo",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/hydro-spool.png",
     "description": "Hydro Spool Turbo is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -437,7 +437,7 @@
     "id": 32,
     "title": "X-Intake",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/x-intake.png",
     "description": "X-Intake is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -479,7 +479,7 @@
     "id": 35,
     "title": "ThermaLock",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/therma-lock.png",
     "description": "ThermaLock is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -493,7 +493,7 @@
     "id": 36,
     "title": "Thermal Access Port",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/thermal-access-point.png",
     "description": "Thermal Access Port is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -507,7 +507,7 @@
     "id": 37,
     "title": "360 Weld",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/360-weld.png",
     "description": "360 Weld is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -521,7 +521,7 @@
     "id": 38,
     "title": "AeroStop",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/aero-stop.png",
     "description": "AeroStop is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -535,7 +535,7 @@
     "id": 39,
     "title": "Automind Scanner",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/auto-mind-scanner.png",
     "description": "Automind Scanner is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -549,7 +549,7 @@
     "id": 40,
     "title": "Breakshot",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/break-shot.png",
     "description": "Breakshot is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -563,7 +563,7 @@
     "id": 41,
     "title": "Pull Core",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/pull-core.png",
     "description": "Pull Core is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -577,7 +577,7 @@
     "id": 42,
     "title": "M1 Razor",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/m1-razor.png",
     "description": "M1 Razor is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -591,7 +591,7 @@
     "id": 43,
     "title": "LABS",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/frog-peeler.png",
     "description": "LABS is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -605,7 +605,7 @@
     "id": 44,
     "title": "Wash IQ",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/wash-iq.png",
     "description": "Wash IQ is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -619,7 +619,7 @@
     "id": 45,
     "title": "Life Barrier",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/life-barrier.png",
     "description": "Life Barrier is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -633,7 +633,7 @@
     "id": 46,
     "title": "Tire Master",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/tire-master.png",
     "description": "Tire Master is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -674,7 +674,7 @@
     "id": 49,
     "title": "Service Writer HUB",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/service-writer-hub.png",
     "description": "Service Writer HUB is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -688,7 +688,7 @@
     "id": 50,
     "title": "Path Alert",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/path-alert.png",
     "description": "Path Alert is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -702,7 +702,7 @@
     "id": 51,
     "title": "Phantom Key",
     "category": "AUTO",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/phantom-key.png",
     "description": "Phantom Key is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -730,7 +730,7 @@
     "id": 53,
     "title": "Quantus-cap",
     "category": "ENERGY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/quantus-cap.png",
     "description": "Quantus-cap is part of Nathan Reardon's patent portfolio in energy technology. Detailed commercialization materials are in development.",
     "applications": [
       "Energy generation",
@@ -800,7 +800,7 @@
     "id": 58,
     "title": "Thermal Dominion",
     "category": "ENERGY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/thermal-dominion.png",
     "description": "Thermal Dominion is part of Nathan Reardon's patent portfolio in energy technology. Detailed commercialization materials are in development.",
     "applications": [
       "Energy generation",
@@ -814,7 +814,7 @@
     "id": 59,
     "title": "Perp-Power",
     "category": "ENERGY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/perp-power.png",
     "description": "Perp-Power is part of Nathan Reardon's patent portfolio in energy technology. Detailed commercialization materials are in development.",
     "applications": [
       "Energy generation",
@@ -884,7 +884,7 @@
     "id": 64,
     "title": "Hydrocleanse",
     "category": "ENVIRONMENT",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/hydro-clean.png",
     "description": "Hydrocleanse is part of Nathan Reardon's patent portfolio in environmental technology. Detailed commercialization materials are in development.",
     "applications": [
       "Environmental protection",
@@ -912,7 +912,7 @@
     "id": 66,
     "title": "Marine Guardian",
     "category": "ENVIRONMENT",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/marine-guardian.png",
     "description": "Marine Guardian is part of Nathan Reardon's patent portfolio in environmental technology. Detailed commercialization materials are in development.",
     "applications": [
       "Environmental protection",
@@ -940,7 +940,7 @@
     "id": 68,
     "title": "Freedom Bag",
     "category": "ENVIRONMENT",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/freedom-bag.png",
     "description": "Freedom Bag is part of Nathan Reardon's patent portfolio in environmental technology. Detailed commercialization materials are in development.",
     "applications": [
       "Environmental protection",
@@ -954,7 +954,7 @@
     "id": 69,
     "title": "Evergreen Fund",
     "category": "FINANCIAL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/cogni-break.png",
     "description": "Evergreen Fund is part of Nathan Reardon's patent portfolio in financial technology. Detailed commercialization materials are in development.",
     "applications": [
       "Financial services",
@@ -968,7 +968,7 @@
     "id": 70,
     "title": "AtlasBooks",
     "category": "FINANCIAL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/atlas-books.png",
     "description": "AtlasBooks is part of Nathan Reardon's patent portfolio in financial technology. Detailed commercialization materials are in development.",
     "applications": [
       "Financial services",
@@ -982,7 +982,7 @@
     "id": 71,
     "title": "Legal Connect",
     "category": "LEGAL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/legal-connect.png",
     "description": "Legal Connect is part of Nathan Reardon's patent portfolio in legal technology. Detailed commercialization materials are in development.",
     "applications": [
       "Legal services",
@@ -996,7 +996,7 @@
     "id": 72,
     "title": "Legal Tracker",
     "category": "LEGAL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/legal-traker.png",
     "description": "Legal Tracker is part of Nathan Reardon's patent portfolio in legal technology. Detailed commercialization materials are in development.",
     "applications": [
       "Legal services",
@@ -1010,7 +1010,7 @@
     "id": 73,
     "title": "Benchmark Justice",
     "category": "LEGAL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/benchmark-justice.png",
     "description": "Benchmark Justice is part of Nathan Reardon's patent portfolio in legal technology. Detailed commercialization materials are in development.",
     "applications": [
       "Legal services",
@@ -1024,7 +1024,7 @@
     "id": 74,
     "title": "Mail Proofs",
     "category": "LEGAL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/mail-proofs.png",
     "description": "Mail Proofs is part of Nathan Reardon's patent portfolio in legal technology. Detailed commercialization materials are in development.",
     "applications": [
       "Legal services",
@@ -1038,7 +1038,7 @@
     "id": 75,
     "title": "SignaCore",
     "category": "LEGAL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/signa-core.png",
     "description": "SignaCore is part of Nathan Reardon's patent portfolio in legal technology. Detailed commercialization materials are in development.",
     "applications": [
       "Legal services",
@@ -1052,7 +1052,7 @@
     "id": 76,
     "title": "Aiir",
     "category": "MEDICAL / HEALTH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/aiir.png",
     "description": "Aiir is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1108,7 +1108,7 @@
     "id": 80,
     "title": "Calm Throat",
     "category": "MEDICAL / HEALTH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/calm-throat.png",
     "description": "Calm Throat is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1136,7 +1136,7 @@
     "id": 82,
     "title": "Core Barrier",
     "category": "MEDICAL / HEALTH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/core-barrier.png",
     "description": "Core Barrier is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1150,7 +1150,7 @@
     "id": 83,
     "title": "Cradle Guardian",
     "category": "MEDICAL / HEALTH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/cradle-guardian.png",
     "description": "Cradle Guardian is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1164,7 +1164,7 @@
     "id": 84,
     "title": "Cryo Fresh Pod",
     "category": "MEDICAL / HEALTH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/cryo-fresh-pod.png",
     "description": "Cryo Fresh Pod is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1178,7 +1178,7 @@
     "id": 85,
     "title": "Derma Seal",
     "category": "MEDICAL / HEALTH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/derma-seal.png",
     "description": "Derma Seal is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1220,7 +1220,7 @@
     "id": 88,
     "title": "Immunova Vaccine",
     "category": "MEDICAL / HEALTH",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/immunova.png",
     "description": "Immunova Vaccine is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1234,7 +1234,7 @@
     "id": 89,
     "title": "Intense Maxx",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/intense-maxx.png",
     "description": "Intense Maxx is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1290,7 +1290,7 @@
     "id": 93,
     "title": "LASE",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/LASE.png",
     "description": "LASE is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1304,7 +1304,7 @@
     "id": 94,
     "title": "Genesis One Olfactory",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/gluco-void.png",
     "description": "Genesis One Olfactory is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1318,7 +1318,7 @@
     "id": 95,
     "title": "Lecti Cure",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/lecti-cure.png",
     "description": "Lecti Cure is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1346,7 +1346,7 @@
     "id": 97,
     "title": "Neuro Restore",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/neuro-restore.png",
     "description": "Neuro Restore is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1360,7 +1360,7 @@
     "id": 98,
     "title": "Neuro Shield",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/neuro-shield.png",
     "description": "Neuro Shield is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1388,7 +1388,7 @@
     "id": 100,
     "title": "Poly Purge",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/poly-purge.png",
     "description": "Poly Purge is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1402,7 +1402,7 @@
     "id": 101,
     "title": "Strip Check",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/strip-check.png",
     "description": "Strip Check is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1430,7 +1430,7 @@
     "id": 103,
     "title": "Recall Max",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/recall-max.png",
     "description": "Recall Max is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1458,7 +1458,7 @@
     "id": 105,
     "title": "Stage Steady",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/stage-steady.png",
     "description": "Stage Steady is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1500,7 +1500,7 @@
     "id": 108,
     "title": "Ticked Off",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/ticked-off.png",
     "description": "Ticked Off is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1514,7 +1514,7 @@
     "id": 109,
     "title": "Truth Drop",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/truth-drop.png",
     "description": "Truth Drop is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1542,7 +1542,7 @@
     "id": 111,
     "title": "Zero Derm",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/zero-derm.png",
     "description": "Zero Derm is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1556,7 +1556,7 @@
     "id": 112,
     "title": "Neurovasc",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/neuro-vasc.png",
     "description": "Neurovasc is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1570,7 +1570,7 @@
     "id": 113,
     "title": "Apogenix",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/apogenix.png",
     "description": "Apogenix is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1584,7 +1584,7 @@
     "id": 114,
     "title": "Daily Dose",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/daily-dose.png",
     "description": "Daily Dose is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1598,7 +1598,7 @@
     "id": 115,
     "title": "Mercury Zero",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/mercury-zero.png",
     "description": "Mercury Zero is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1612,7 +1612,7 @@
     "id": 116,
     "title": "Panic Brake",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/panic-brake.png",
     "description": "Panic Brake is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1626,7 +1626,7 @@
     "id": 117,
     "title": "Thermostat",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/thermo-stat.png",
     "description": "Thermostat is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1640,7 +1640,7 @@
     "id": 118,
     "title": "Cycle Stable",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/cycle-stable.png",
     "description": "Cycle Stable is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1654,7 +1654,7 @@
     "id": 119,
     "title": "Hormone Shield",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/hormone-shield.png",
     "description": "Hormone Shield is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1696,7 +1696,7 @@
     "id": 122,
     "title": "Atlas (AB)",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/atlas-AB.png",
     "description": "Atlas (AB) is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1724,7 +1724,7 @@
     "id": 124,
     "title": "Yeast Guard",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/yeast-guard.png",
     "description": "Yeast Guard is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1738,7 +1738,7 @@
     "id": 125,
     "title": "ALZ Clear",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/alz-clear.png",
     "description": "ALZ Clear is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1752,7 +1752,7 @@
     "id": 126,
     "title": "CFShield",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/cf-shield.png",
     "description": "CFShield is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1766,7 +1766,7 @@
     "id": 127,
     "title": "Attenex",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/attenex.png",
     "description": "Attenex is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1780,7 +1780,7 @@
     "id": 128,
     "title": "Snap Protein",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/snap-protein.png",
     "description": "Snap Protein is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1794,7 +1794,7 @@
     "id": 129,
     "title": "Acidown",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/acidown.png",
     "description": "Acidown is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1808,7 +1808,7 @@
     "id": 130,
     "title": "Sentra",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/sentra.png",
     "description": "Sentra is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1822,7 +1822,7 @@
     "id": 131,
     "title": "Stabilis",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/stabilis.png",
     "description": "Stabilis is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1836,7 +1836,7 @@
     "id": 132,
     "title": "Dawn Block",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/dawn-block.jpg",
     "description": "Dawn Block is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1850,7 +1850,7 @@
     "id": 133,
     "title": "Cravex Necklace",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/cravex.png",
     "description": "Cravex Necklace is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1864,7 +1864,7 @@
     "id": 134,
     "title": "Hemosense",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/hemo-sense.png",
     "description": "Hemosense is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1878,7 +1878,7 @@
     "id": 135,
     "title": "Urgenta",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/urgentra.png",
     "description": "Urgenta is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1892,7 +1892,7 @@
     "id": 136,
     "title": "Kid Calm",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/kid-calm.png",
     "description": "Kid Calm is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1906,7 +1906,7 @@
     "id": 137,
     "title": "Endo Core",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/endo-core.png",
     "description": "Endo Core is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1920,7 +1920,7 @@
     "id": 138,
     "title": "Sting Stop",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/sting-stop.png",
     "description": "Sting Stop is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1934,7 +1934,7 @@
     "id": 139,
     "title": "Gout Guard",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/gout-guard.png",
     "description": "Gout Guard is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1948,7 +1948,7 @@
     "id": 140,
     "title": "Gout Sense",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/gout-sense.png",
     "description": "Gout Sense is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1962,7 +1962,7 @@
     "id": 141,
     "title": "Metabolic Sense",
     "category": "Repair",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/metabolic-sense.png",
     "description": "Metabolic Sense is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
     "applications": [
       "Patient care",
@@ -1976,7 +1976,7 @@
     "id": 142,
     "title": "Maine Pulse",
     "category": "NEWS",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/maine-pulse.jpg",
     "description": "Maine Pulse is part of Nathan Reardon's patent portfolio in media technology. Detailed commercialization materials are in development.",
     "applications": [
       "Publishing",
@@ -1990,7 +1990,7 @@
     "id": 143,
     "title": "Maine News Now",
     "category": "NEWS",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/maine-news-now.png",
     "description": "Maine News Now is part of Nathan Reardon's patent portfolio in media technology. Detailed commercialization materials are in development.",
     "applications": [
       "Publishing",
@@ -2032,7 +2032,7 @@
     "id": 146,
     "title": "Custody Pulse",
     "category": "POLICE / FIRE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/custody-pulse.png",
     "description": "Custody Pulse is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -2088,7 +2088,7 @@
     "id": 150,
     "title": "Shock Stop",
     "category": "POLICE / FIRE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/shock-stop.png",
     "description": "Shock Stop is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -2102,7 +2102,7 @@
     "id": 151,
     "title": "Custody Care",
     "category": "POLICE / FIRE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/custody-care.png",
     "description": "Custody Care is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -2116,7 +2116,7 @@
     "id": 152,
     "title": "Daisy Door Opener",
     "category": "POLICE / FIRE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/daisy-door-opener.png",
     "description": "Daisy Door Opener is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -2144,7 +2144,7 @@
     "id": 154,
     "title": "Tear Safe Sheets",
     "category": "POLICE / FIRE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/tear-safe-sheets.png",
     "description": "Tear Safe Sheets is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -2158,7 +2158,7 @@
     "id": 155,
     "title": "Wall Guard-Light",
     "category": "POLICE / FIRE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/wall-guard.png",
     "description": "Wall Guard-Light is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -2200,7 +2200,7 @@
     "id": 158,
     "title": "Reveal Core",
     "category": "POLICE / FIRE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/reveal-core.png",
     "description": "Reveal Core is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -2214,7 +2214,7 @@
     "id": 159,
     "title": "Needle Shield",
     "category": "POLICE / FIRE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/needle-shield.png",
     "description": "Needle Shield is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -2228,7 +2228,7 @@
     "id": 160,
     "title": "Strike Dry",
     "category": "POLICE / FIRE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/strike-dry.png",
     "description": "Strike Dry is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -2242,7 +2242,7 @@
     "id": 161,
     "title": "Chain Vault",
     "category": "POLICE / FIRE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/chain-vault.png",
     "description": "Chain Vault is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -2256,7 +2256,7 @@
     "id": 162,
     "title": "Vault Port",
     "category": "POLICE / FIRE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/vault-port.png",
     "description": "Vault Port is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -2298,7 +2298,7 @@
     "id": 165,
     "title": "Break Guard",
     "category": "POLICE / FIRE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/break-guard.png",
     "description": "Break Guard is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -2326,7 +2326,7 @@
     "id": 167,
     "title": "Intake Flow",
     "category": "POLICE / FIRE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/intake-flow.png",
     "description": "Intake Flow is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -2340,7 +2340,7 @@
     "id": 168,
     "title": "Justice Pay-Locate",
     "category": "POLICE / FIRE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/justice-pay-locate.png",
     "description": "Justice Pay-Locate is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -2354,7 +2354,7 @@
     "id": 169,
     "title": "ResponderSense",
     "category": "POLICE / FIRE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/responder-sense.png",
     "description": "ResponderSense is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -2396,7 +2396,7 @@
     "id": 172,
     "title": "Stable Buddy",
     "category": "REAL ESTATE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/stable-buddy.png",
     "description": "Stable Buddy is part of Nathan Reardon's patent portfolio in real estate technology. Detailed commercialization materials are in development.",
     "applications": [
       "Property protection",
@@ -2424,7 +2424,7 @@
     "id": 174,
     "title": "Ice Shield Roof",
     "category": "REAL ESTATE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/iceshield-roof.jpg",
     "description": "Ice Shield Roof is part of Nathan Reardon's patent portfolio in real estate technology. Detailed commercialization materials are in development.",
     "applications": [
       "Property protection",
@@ -2438,7 +2438,7 @@
     "id": 175,
     "title": "Lumatherm",
     "category": "REAL ESTATE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/sugar-shield.png",
     "description": "Lumatherm is part of Nathan Reardon's patent portfolio in real estate technology. Detailed commercialization materials are in development.",
     "applications": [
       "Property protection",
@@ -2466,7 +2466,7 @@
     "id": 177,
     "title": "PaneShield",
     "category": "REAL ESTATE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/pane-shield.png",
     "description": "PaneShield is part of Nathan Reardon's patent portfolio in real estate technology. Detailed commercialization materials are in development.",
     "applications": [
       "Property protection",
@@ -2480,7 +2480,7 @@
     "id": 178,
     "title": "Onespace Residential",
     "category": "REAL ESTATE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/one-space-residential.png",
     "description": "Onespace Residential is part of Nathan Reardon's patent portfolio in real estate technology. Detailed commercialization materials are in development.",
     "applications": [
       "Property protection",
@@ -2494,7 +2494,7 @@
     "id": 179,
     "title": "Onespace Commercial",
     "category": "REAL ESTATE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/one-space-commercial.png",
     "description": "Onespace Commercial is part of Nathan Reardon's patent portfolio in real estate technology. Detailed commercialization materials are in development.",
     "applications": [
       "Property protection",
@@ -2508,7 +2508,7 @@
     "id": 180,
     "title": "Onespace Industrial",
     "category": "REAL ESTATE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/one-space-industrial.png",
     "description": "Onespace Industrial is part of Nathan Reardon's patent portfolio in real estate technology. Detailed commercialization materials are in development.",
     "applications": [
       "Property protection",
@@ -2522,7 +2522,7 @@
     "id": 181,
     "title": "Onespace Land",
     "category": "REAL ESTATE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/one-space-land.png",
     "description": "Onespace Land is part of Nathan Reardon's patent portfolio in real estate technology. Detailed commercialization materials are in development.",
     "applications": [
       "Property protection",
@@ -2550,7 +2550,7 @@
     "id": 183,
     "title": "R-tape",
     "category": "REAL ESTATE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/r-tape.png",
     "description": "R-tape is part of Nathan Reardon's patent portfolio in real estate technology. Detailed commercialization materials are in development.",
     "applications": [
       "Property protection",
@@ -2564,7 +2564,7 @@
     "id": 184,
     "title": "Wild Shield",
     "category": "REAL ESTATE",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/wild-shield.png",
     "description": "Wild Shield is part of Nathan Reardon's patent portfolio in real estate technology. Detailed commercialization materials are in development.",
     "applications": [
       "Property protection",
@@ -2578,7 +2578,7 @@
     "id": 185,
     "title": "Leak Hawk",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/leak-hawk.jpg",
     "description": "Leak Hawk is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2592,7 +2592,7 @@
     "id": 186,
     "title": "Leaf Mate",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/leaf-mate.png",
     "description": "Leaf Mate is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2606,7 +2606,7 @@
     "id": 187,
     "title": "Mega Grow",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/mega-grow.png",
     "description": "Mega Grow is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2620,7 +2620,7 @@
     "id": 188,
     "title": "Never Stuck Trax",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/never-stuck-trax.png",
     "description": "Never Stuck Trax is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2690,7 +2690,7 @@
     "id": 193,
     "title": "Sleep Cool",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/sleep-cool.png",
     "description": "Sleep Cool is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2704,7 +2704,7 @@
     "id": 194,
     "title": "Snap Carry",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/snap-carry.png",
     "description": "Snap Carry is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2718,7 +2718,7 @@
     "id": 195,
     "title": "Surge Internal",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/surge-internal.png",
     "description": "Surge Internal is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2732,7 +2732,7 @@
     "id": 196,
     "title": "Wring Max",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/wring-max.png",
     "description": "Wring Max is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2746,7 +2746,7 @@
     "id": 197,
     "title": "Infiniti-D",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/infini-d.png",
     "description": "Infiniti-D is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2760,7 +2760,7 @@
     "id": 198,
     "title": "Anti-Splash",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/antisplash.png",
     "description": "Anti-Splash is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2774,7 +2774,7 @@
     "id": 199,
     "title": "BedSeal",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/bed-seal.png",
     "description": "BedSeal is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2788,7 +2788,7 @@
     "id": 200,
     "title": "Lock Guard",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/lock-guard.png",
     "description": "Lock Guard is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2802,7 +2802,7 @@
     "id": 201,
     "title": "Cali-BondNails",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/cali-bond-nails.jpg",
     "description": "Cali-BondNails is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2816,7 +2816,7 @@
     "id": 202,
     "title": "Fuel Trigger",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/fuel-trigger.png",
     "description": "Fuel Trigger is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2830,7 +2830,7 @@
     "id": 203,
     "title": "Halo Cut",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/halo-cut.png",
     "description": "Halo Cut is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2844,7 +2844,7 @@
     "id": 204,
     "title": "Membership Plowing",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/membership-plowing.png",
     "description": "Membership Plowing is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2858,7 +2858,7 @@
     "id": 205,
     "title": "Share Pour",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/share-pour.png",
     "description": "Share Pour is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2872,7 +2872,7 @@
     "id": 206,
     "title": "Glare Guard",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/glare-guard.png",
     "description": "Glare Guard is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2886,7 +2886,7 @@
     "id": 207,
     "title": "Choice Pizza",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/choice-pizza.png",
     "description": "Choice Pizza is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2900,7 +2900,7 @@
     "id": 208,
     "title": "Conservative Coffee",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/conservative-coffee.png",
     "description": "Conservative Coffee is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2914,7 +2914,7 @@
     "id": 209,
     "title": "Flex Shield",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/flex-shield.png",
     "description": "Flex Shield is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2928,7 +2928,7 @@
     "id": 210,
     "title": "Never Stuck Trax Robot",
     "category": "RETAIL",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/never-stuck-trax-robot.png",
     "description": "Never Stuck Trax Robot is part of Nathan Reardon's patent portfolio in consumer product technology. Detailed commercialization materials are in development.",
     "applications": [
       "Consumer products",
@@ -2942,7 +2942,7 @@
     "id": 211,
     "title": "BeastBlock",
     "category": "SAFETY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/beast-blocker.jpg",
     "description": "BeastBlock is part of Nathan Reardon's patent portfolio in safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Risk reduction",
@@ -2984,7 +2984,7 @@
     "id": 214,
     "title": "IntelliShield Plane",
     "category": "SAFETY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/intelli-shield.png",
     "description": "IntelliShield Plane is part of Nathan Reardon's patent portfolio in safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Risk reduction",
@@ -2998,7 +2998,7 @@
     "id": 215,
     "title": "Invisishield Film",
     "category": "SAFETY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/invisi-shield-glass.png",
     "description": "Invisishield Film is part of Nathan Reardon's patent portfolio in safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Risk reduction",
@@ -3068,7 +3068,7 @@
     "id": 220,
     "title": "Stability OS",
     "category": "SAFETY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/stability-os.png",
     "description": "Stability OS is part of Nathan Reardon's patent portfolio in safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Risk reduction",
@@ -3096,7 +3096,7 @@
     "id": 222,
     "title": "Cross Shield Trailer",
     "category": "SAFETY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/cross-shield-trailer.jpg",
     "description": "Cross Shield Trailer is part of Nathan Reardon's patent portfolio in safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Risk reduction",
@@ -3110,7 +3110,7 @@
     "id": 223,
     "title": "Cross Shield Aero",
     "category": "SAFETY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/cross-shield-aero.jpg",
     "description": "Cross Shield Aero is part of Nathan Reardon's patent portfolio in safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Risk reduction",
@@ -3124,7 +3124,7 @@
     "id": 224,
     "title": "APEX Shield",
     "category": "SECURITY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/apex-shield.jpg",
     "description": "APEX Shield is part of Nathan Reardon's patent portfolio in security technology. Detailed commercialization materials are in development.",
     "applications": [
       "Threat detection",
@@ -3180,7 +3180,7 @@
     "id": 228,
     "title": "Blackout Shield",
     "category": "SECURITY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/blackout-shield.png",
     "description": "Blackout Shield is part of Nathan Reardon's patent portfolio in security technology. Detailed commercialization materials are in development.",
     "applications": [
       "Threat detection",
@@ -3208,7 +3208,7 @@
     "id": 230,
     "title": "Aeroflow",
     "category": "SECURITY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/aero-flow.png",
     "description": "Aeroflow is part of Nathan Reardon's patent portfolio in security technology. Detailed commercialization materials are in development.",
     "applications": [
       "Threat detection",
@@ -3222,7 +3222,7 @@
     "id": 231,
     "title": "GateShield",
     "category": "SECURITY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/gateshield.png",
     "description": "GateShield is part of Nathan Reardon's patent portfolio in security technology. Detailed commercialization materials are in development.",
     "applications": [
       "Threat detection",
@@ -3236,7 +3236,7 @@
     "id": 232,
     "title": "Drone Defender",
     "category": "SECURITY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/drone-defender.png",
     "description": "Drone Defender is part of Nathan Reardon's patent portfolio in security technology. Detailed commercialization materials are in development.",
     "applications": [
       "Threat detection",
@@ -3264,7 +3264,7 @@
     "id": 234,
     "title": "Watchtower",
     "category": "SECURITY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/watchtower.png",
     "description": "Watchtower is part of Nathan Reardon's patent portfolio in security technology. Detailed commercialization materials are in development.",
     "applications": [
       "Threat detection",
@@ -3278,7 +3278,7 @@
     "id": 235,
     "title": "Command Room",
     "category": "SECURITY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/command-room.png",
     "description": "Command Room is part of Nathan Reardon's patent portfolio in security technology. Detailed commercialization materials are in development.",
     "applications": [
       "Threat detection",
@@ -3292,7 +3292,7 @@
     "id": 236,
     "title": "Pin Core",
     "category": "SECURITY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/pin-core.png",
     "description": "Pin Core is part of Nathan Reardon's patent portfolio in security technology. Detailed commercialization materials are in development.",
     "applications": [
       "Threat detection",
@@ -3306,7 +3306,7 @@
     "id": 237,
     "title": "Call Firewall",
     "category": "SECURITY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/call-firewall.png",
     "description": "Call Firewall is part of Nathan Reardon's patent portfolio in security technology. Detailed commercialization materials are in development.",
     "applications": [
       "Threat detection",
@@ -3320,7 +3320,7 @@
     "id": 238,
     "title": "Command Core",
     "category": "SECURITY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/command-core.png",
     "description": "Command Core is part of Nathan Reardon's patent portfolio in security technology. Detailed commercialization materials are in development.",
     "applications": [
       "Threat detection",
@@ -3334,7 +3334,7 @@
     "id": 239,
     "title": "Voice Pass",
     "category": "SECURITY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/voice-pass.png",
     "description": "Voice Pass is part of Nathan Reardon's patent portfolio in security technology. Detailed commercialization materials are in development.",
     "applications": [
       "Threat detection",
@@ -3348,7 +3348,7 @@
     "id": 240,
     "title": "Quiet Case",
     "category": "SECURITY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/quiet-case.png",
     "description": "Quiet Case is part of Nathan Reardon's patent portfolio in security technology. Detailed commercialization materials are in development.",
     "applications": [
       "Threat detection",
@@ -3362,7 +3362,7 @@
     "id": 241,
     "title": "Sector Safe",
     "category": "SECURITY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/sector-safe.png",
     "description": "Sector Safe is part of Nathan Reardon's patent portfolio in security technology. Detailed commercialization materials are in development.",
     "applications": [
       "Threat detection",
@@ -3376,7 +3376,7 @@
     "id": 242,
     "title": "Sword Lock",
     "category": "SECURITY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/sword-lock.png",
     "description": "Sword Lock is part of Nathan Reardon's patent portfolio in security technology. Detailed commercialization materials are in development.",
     "applications": [
       "Threat detection",
@@ -3390,7 +3390,7 @@
     "id": 243,
     "title": "Hydra Wall",
     "category": "SECURITY",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/hydra-wall.png",
     "description": "Hydra Wall is part of Nathan Reardon's patent portfolio in security technology. Detailed commercialization materials are in development.",
     "applications": [
       "Threat detection",
@@ -3418,7 +3418,7 @@
     "id": 245,
     "title": "Storm Forge",
     "category": "WEATHER",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/storm-forge.png",
     "description": "Storm Forge is part of Nathan Reardon's patent portfolio in weather technology. Detailed commercialization materials are in development.",
     "applications": [
       "Storm mitigation",
@@ -3432,7 +3432,7 @@
     "id": 246,
     "title": "Sure Drain",
     "category": "WEATHER",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/sure-drain.png",
     "description": "Sure Drain is part of Nathan Reardon's patent portfolio in weather technology. Detailed commercialization materials are in development.",
     "applications": [
       "Storm mitigation",
@@ -3460,7 +3460,7 @@
     "id": 248,
     "title": "Storm Forge-Coastal",
     "category": "WEATHER",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/storm-forge-coastal.png",
     "description": "Storm Forge-Coastal is part of Nathan Reardon's patent portfolio in weather technology. Detailed commercialization materials are in development.",
     "applications": [
       "Storm mitigation",
@@ -3474,7 +3474,7 @@
     "id": 249,
     "title": "Storm Forge-Municipal",
     "category": "WEATHER",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/storm-forge-municipal.jpg",
     "description": "Storm Forge-Municipal is part of Nathan Reardon's patent portfolio in weather technology. Detailed commercialization materials are in development.",
     "applications": [
       "Storm mitigation",
@@ -3488,7 +3488,7 @@
     "id": 250,
     "title": "Storm Forge-Wind",
     "category": "WEATHER",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/storm-forge-wind.png",
     "description": "Storm Forge-Wind is part of Nathan Reardon's patent portfolio in weather. Detailed commercialization materials are in development.",
     "applications": [
       "Storm mitigation",
@@ -3502,7 +3502,7 @@
     "id": 251,
     "title": "Storm Forge-Hydracore",
     "category": "WEATHER",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/storm-forge-hydracore.png",
     "description": "Storm Forge-Hydracore is part of Nathan Reardon's patent portfolio in weather. Detailed commercialization materials are in development.",
     "applications": [
       "Storm mitigation",
@@ -3516,7 +3516,7 @@
     "id": 252,
     "title": "AlwaysHome",
     "category": "Charity",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/always-home.jpg",
     "description": "AlwaysHome is part of Nathan Reardon's patent portfolio under 501(c)(3). Detailed commercialization materials are in development.",
     "applications": [
       "Nonprofit initiatives",
@@ -3530,7 +3530,7 @@
     "id": 253,
     "title": "Meals that Heal",
     "category": "Charity",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/meals-that-heal.jpeg",
     "description": "Meals that Heal is part of Nathan Reardon's patent portfolio under 501(c)(3). Detailed commercialization materials are in development.",
     "applications": [
       "Nonprofit initiatives",
@@ -3544,7 +3544,7 @@
     "id": 254,
     "title": "WWCW",
     "category": "Charity",
-    "image": "/patents/placeholder.png",
+    "image": "/patents/wwcw(world wide clean water).jpeg",
     "description": "WWCW is part of Nathan Reardon's patent portfolio under 501(c)(3). Detailed commercialization materials are in development.",
     "applications": [
       "Nonprofit initiatives",
