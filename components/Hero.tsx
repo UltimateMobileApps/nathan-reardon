@@ -96,7 +96,7 @@ export default function Hero() {
                 <div className="mt-10 grid items-center gap-10 md:grid-cols-[minmax(0,1.08fr)_minmax(320px,0.92fr)] md:gap-14">
                     <div className="space-y-6 text-center md:text-left">
                         <p className="font-display text-[0.82rem] tracking-[0.32em] text-[#dce9ff] md:text-[0.92rem]">
-                            FATHER • ENTREPRENEUR • AUTHOR • INVENTOR
+                            FATHER • ENTREPRENEUR • AUTHOR • INVENTOR • INTERNATIONAL PROBLEM SOLVER
                         </p>
 
                         <p className="mx-auto max-w-[680px] text-base leading-8 text-[#d9e3f1] md:mx-0 md:text-[1.08rem]">
