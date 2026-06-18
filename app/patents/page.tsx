@@ -101,7 +101,7 @@ export default function PatentsPage() {
                         Patent Portfolio
                     </h1>
                     <p className="text-base md:text-lg lg:text-xl max-w-3xl mx-auto mb-3">
-                        77 Filed Patents Spanning Multiple Industries
+                        250 Patents Spanning More Than 35 Industries
                     </p>
                     <p className="text-sm md:text-base max-w-2xl mx-auto section-tech-subtitle">
                         From world-changing defense systems to life-saving medical breakthroughs, explore a comprehensive collection

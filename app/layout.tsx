@@ -15,8 +15,8 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: "Nathan Reardon | Inventor, Entrepreneur & Innovator | 77+ Patents",
-  description: "Discover Nathan Reardon's portfolio of 77+ filed patents and 120+ in development spanning technology, healthcare, automotive, energy, aerospace, and more. American inventor and entrepreneur.",
+  title: "Nathan Reardon | Inventor, Entrepreneur & Innovator | 250 Patents",
+  description: "Discover Nathan Reardon's 250-patent portfolio spanning more than 35 industries and over 50 market segments across technology, healthcare, automotive, energy, security, real estate, and more.",
   keywords: "Nathan Reardon, inventor, innovator, patents, entrepreneur, technology, healthcare, automotive, energy, aerospace, defense, consumer products",
   authors: [{ name: "Nathan Reardon" }],
   creator: "Nathan Reardon",
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     canonical: 'https://nathanreardon.com',
   },
   openGraph: {
-    title: "Nathan Reardon | Inventor, Entrepreneur & Innovator | 77+ Patents",
-    description: "Explore 77+ filed patents and 120+ patents in development by American inventor Nathan Reardon. Innovation across 14+ industries.",
+    title: "Nathan Reardon | Inventor, Entrepreneur & Innovator | 250 Patents",
+    description: "Explore Nathan Reardon's 250-patent portfolio spanning more than 35 industries and over 50 market segments.",
     url: "https://nathanreardon.com",
     siteName: "Nathan Reardon - Patent Portfolio & Innovations",
     images: [
@@ -48,8 +48,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nathan Reardon | Inventor & Innovator | 77+ Patents",
-    description: "Explore breakthrough patents in technology, healthcare, energy, and defense by inventor Nathan Reardon.",
+    title: "Nathan Reardon | Inventor & Innovator | 250 Patents",
+    description: "Explore breakthrough patents across technology, healthcare, energy, security, and public safety by inventor Nathan Reardon.",
     images: ["/og-image.png"],
     creator: "@nathanreardon",
   },

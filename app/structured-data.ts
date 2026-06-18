@@ -3,7 +3,7 @@ export const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Nathan Reardon',
-  description: 'American inventor, entrepreneur, and strategist with 34 patents filed and over 120 patents in development',
+  description: 'American inventor, entrepreneur, and strategist with a 250-patent portfolio spanning more than 35 industries and over 50 market segments',
   image: 'https://nathanreardon.com/new-nathan.png',
   jobTitle: ['Inventor', 'Entrepreneur', 'Author'],
   url: 'https://nathanreardon.com',

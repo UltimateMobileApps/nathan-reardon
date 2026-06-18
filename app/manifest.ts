@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Nathan Reardon | Inventor & Innovator',
     short_name: 'Nathan Reardon',
-    description: 'Patent portfolio of American inventor Nathan Reardon with 34 filed patents spanning 14+ industries',
+    description: 'Patent portfolio of American inventor Nathan Reardon with 250 patents spanning more than 35 industries and over 50 market segments',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',

@@ -101,7 +101,7 @@ export default function Hero() {
 
                         <p className="mx-auto max-w-[680px] text-base leading-8 text-[#d9e3f1] md:mx-0 md:text-[1.08rem]">
                             Nathan Reardon is a prolific American inventor, entrepreneur,
-                            and strategist with 80+ patents filed and over 200 patents in development spanning 14 industries including technology, healthcare, automotive, energy, aerospace, real estate, manufacturing, and consumer products.
+                            and strategist with a 250-patent portfolio spanning more than 35 industries and over 50 market segments, including technology, healthcare, automotive, energy, security, real estate, public safety, and consumer products.
                         </p>
 
                         <div className="flex flex-wrap items-center justify-center gap-3 md:justify-start">

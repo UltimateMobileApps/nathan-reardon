@@ -484,9 +484,9 @@ export default function AchievementsPage() {
         },
         {
             id: 2,
-            title: "Patents in Development",
-            description: "Working on over 120 patents in development across automotive and other industries",
-            metric: "120+",
+            title: "Patent Portfolio",
+            description: "Built a 250-patent portfolio spanning more than 35 industries and over 50 market segments",
+            metric: "250",
             unit: "Patents",
             icon: (
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -759,7 +759,7 @@ export default function AchievementsPage() {
                 >
                     <h3 className="text-2xl font-bold text-white mb-4">Interested in Collaboration?</h3>
                     <p className="section-tech-subtitle mb-6 max-w-2xl mx-auto">
-                        With 31 ASE certifications <a href="/ASE.jpeg" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline inline-flex items-center gap-1"><ExternalLink className="w-3 h-3" /></a>, over 120 patents in development, and 26+ years of automotive industry leadership, 
+                        With 31 ASE certifications <a href="/ASE.jpeg" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline inline-flex items-center gap-1"><ExternalLink className="w-3 h-3" /></a>, a 250-patent portfolio, and 26+ years of automotive industry leadership, 
                         Nathan is always open to discussing new opportunities and partnerships.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
