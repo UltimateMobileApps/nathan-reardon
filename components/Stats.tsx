@@ -4,7 +4,7 @@ import { booksData } from "@/data/books";
 export default function Stats() {
     const stats = [
         { label: "Years Innovating", value: "26+", href: "/gallery" },
-        { label: "Patents Filed", value: "77+", href: "/patents" },
+        { label: "Patents Filed", value: "252", href: "/patents" },
         { label: "Books Authored", value: booksData.length.toString(), href: "#books" },
         { label: "Awards Received", value: "9", href: "/achievements" },
     ];

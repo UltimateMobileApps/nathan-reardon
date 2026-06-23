@@ -68,7 +68,7 @@ export default function About() {
                             </div>
 
                             <div className="flex flex-wrap justify-center gap-8 text-center">
-                                <div className="text-xl font-semibold text-[#f1c1cc]">77+ Patents Filed</div>
+                                <div className="text-xl font-semibold text-[#f1c1cc]">252 Patents Filed</div>
                                 <div className="text-xl font-semibold text-[#8ec7ff]">26+ Years in Business</div>
                             </div>
                         </div>

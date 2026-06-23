@@ -325,7 +325,7 @@
     "id": 24,
     "title": "No Dry Starts",
     "category": "AUTO",
-    "image": "/patents/no-dry-starts.jpeg",
+    "image": "/patents/no-dry-starts.png",
     "description": "No Dry Starts is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -493,7 +493,7 @@
     "id": 36,
     "title": "Thermal Access Port",
     "category": "AUTO",
-    "image": "/patents/thermal-access-point.png",
+    "image": "/patents/thermal-access-port.png",
     "description": "Thermal Access Port is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -574,24 +574,10 @@
     "website": ""
   },
   {
-    "id": 42,
-    "title": "M1 Razor",
-    "category": "AUTO",
-    "image": "/patents/m1-razor.png",
-    "description": "M1 Razor is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
-    "applications": [
-      "Vehicle systems",
-      "Automotive services",
-      "Driver safety",
-      "Fleet applications"
-    ],
-    "website": ""
-  },
-  {
     "id": 43,
     "title": "LABS",
     "category": "AUTO",
-    "image": "/patents/frog-peeler.png",
+    "image": "/patents/LABS.png",
     "description": "LABS is part of Nathan Reardon's patent portfolio in automotive technology. Detailed commercialization materials are in development.",
     "applications": [
       "Vehicle systems",
@@ -647,7 +633,7 @@
     "id": 47,
     "title": "Auto Clerk",
     "category": "AUTO",
-    "image": "/patents/autonomous-service-writer.png",
+    "image": "/patents/auto-clerk.png",
     "description": "AI-powered system that automatically generates service reports and diagnostics for vehicles.",
     "applications": [
       "Vehicle service",
@@ -1847,20 +1833,6 @@
     "website": ""
   },
   {
-    "id": 133,
-    "title": "Cravex Necklace",
-    "category": "Repair",
-    "image": "/patents/cravex.png",
-    "description": "Cravex Necklace is part of Nathan Reardon's patent portfolio in health technology. Detailed commercialization materials are in development.",
-    "applications": [
-      "Patient care",
-      "Health monitoring",
-      "Clinical workflows",
-      "Consumer wellness"
-    ],
-    "website": ""
-  },
-  {
     "id": 134,
     "title": "Hemosense",
     "category": "Repair",
@@ -2142,9 +2114,9 @@
   },
   {
     "id": 154,
-    "title": "Tear Safe Sheets",
+    "title": "Tear Safe",
     "category": "POLICE / FIRE",
-    "image": "/patents/tear-safe-sheets.png",
+    "image": "/patents/tear-safe.png",
     "description": "Tear Safe Sheets is part of Nathan Reardon's patent portfolio in public safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Emergency response",
@@ -3094,10 +3066,10 @@
   },
   {
     "id": 222,
-    "title": "Cross Shield Trailer",
+    "title": "Cross Shield",
     "category": "SAFETY",
     "image": "/patents/cross-shield-trailer.jpg",
-    "description": "Cross Shield Trailer is part of Nathan Reardon's patent portfolio in safety technology. Detailed commercialization materials are in development.",
+    "description": "Cross Shield is part of Nathan Reardon's patent portfolio in safety technology. Detailed commercialization materials are in development.",
     "applications": [
       "Risk reduction",
       "Protective systems",

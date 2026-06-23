@@ -4,13 +4,13 @@ import Image from "next/image";
 import { ExternalLink, Building2, Newspaper } from "lucide-react";
 
 export default function Companies() {
-  const companies = [
+    const companies = [
     {
-      name: "Ultimate Property Holdings",
+      name: "Atlas Properties",
       role: "Founder",
-      logo: "/companies/Ultimate-Property-Holdings.avif",
-      description: "A leading property management and real estate investment firm dedicated to quality holdings and strategic development.",
-      url: "https://www.ultimatepropertyholdings.com",
+      logo: "/companies/atlas-properties.png",
+      description: "A property management and real estate investment firm focused on strategic development and high-quality holdings.",
+      url: "https://atlasproperties.net",
       icon: Building2,
       color: "from-[#5aa9ff]/18 to-[#cfe2ff]/14",
       borderColor: "border-[#5aa9ff]/30"
