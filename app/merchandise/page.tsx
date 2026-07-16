@@ -91,6 +91,15 @@ export default function MerchandisePage() {
       price: "",
       url: "success-risk",
     },
+    {
+      id: 7,
+      name: "The Inefficiencies of Correction and How to Fix It",
+      category: "Books",
+      image: "/books/the-inefficiencies-of-correction-and-how-to-fix-it.png",
+      description: "Understanding the risks and rewards on the path to success.",
+      price: "",
+      url: "the-inefficiencies-of-correction-and-how-to-fix-it",
+    },
   ];
 
   // Other merchandise items - based on actual images in public/merch
