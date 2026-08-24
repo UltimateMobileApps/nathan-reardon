@@ -160,6 +160,18 @@ export default function Footer() {
                     <p className="text-[#8c9ab2] text-sm">
                         © 1999 - {currentYear} nathanreardon.com - All Rights Reserved.
                     </p>
+                    <p className="text-[#8c9ab2] text-sm mt-2">
+                        Part of the{" "}
+                        <a
+                            href="https://se7eninc.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[#8ec7ff] hover:text-[#dce9ff] underline"
+                        >
+                            Se7en
+                        </a>{" "}
+                        family of companies.
+                    </p>
                 </div>
             </div>
         </footer>
