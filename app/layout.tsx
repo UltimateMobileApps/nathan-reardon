@@ -124,6 +124,11 @@ export default function RootLayout({
           <main className="flex-1 w-full overflow-x-hidden">{children}</main>
           <Footer />
         </div>
+        <Script
+          src="https://now-hiring-eta.vercel.app/widget.js"
+          data-icon="Lightbulb"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
